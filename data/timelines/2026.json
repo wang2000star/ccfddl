@@ -53,6 +53,19 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "cav",
+    "abbreviation": "CAV",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-01-28",
+    "notification": "2026-04-01",
+    "conference_start": "2026-07-19",
+    "conference_end": "2026-07-24",
+    "location": "Toronto, Canada",
+    "source_url": "https://i-cav.org/2026/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ccs",
     "abbreviation": "CCS",
     "year": 2026,
@@ -90,7 +103,10 @@
     "year": 2026,
     "round": 1,
     "submission_deadline": "2025-07-15",
-    "notification": "2025-09-01",
+    "rebuttal_start": "2025-08-28",
+    "rebuttal_end": "2025-08-31",
+    "notification": "2025-09-15",
+    "camera_ready": "2025-10-14",
     "conference_start": "2026-10-11",
     "conference_end": "2026-10-15",
     "location": "Antalya, Turkiye",
@@ -103,7 +119,10 @@
     "year": 2026,
     "round": 2,
     "submission_deadline": "2025-10-15",
-    "notification": "2025-12-01",
+    "rebuttal_start": "2025-11-27",
+    "rebuttal_end": "2025-12-02",
+    "notification": "2025-12-15",
+    "camera_ready": "2026-01-14",
     "conference_start": "2026-10-11",
     "conference_end": "2026-10-15",
     "location": "Antalya, Turkiye",
@@ -116,7 +135,10 @@
     "year": 2026,
     "round": 3,
     "submission_deadline": "2026-01-15",
-    "notification": "2026-03-01",
+    "rebuttal_start": "2026-02-26",
+    "rebuttal_end": "2026-03-01",
+    "notification": "2026-03-15",
+    "camera_ready": "2026-04-14",
     "conference_start": "2026-10-11",
     "conference_end": "2026-10-15",
     "location": "Antalya, Turkiye",
@@ -129,7 +151,10 @@
     "year": 2026,
     "round": 4,
     "submission_deadline": "2026-04-15",
-    "notification": "2026-06-01",
+    "rebuttal_start": "2026-05-28",
+    "rebuttal_end": "2026-05-31",
+    "notification": "2026-06-15",
+    "camera_ready": "2026-07-14",
     "conference_start": "2026-10-11",
     "conference_end": "2026-10-15",
     "location": "Antalya, Turkiye",
@@ -177,6 +202,20 @@
       "accepted": 3210,
       "acceptance_rate": 24.7
     }
+  },
+  {
+    "venue_id": "emnlp",
+    "abbreviation": "EMNLP",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-05-25",
+    "notification": "2026-08-20",
+    "camera_ready": "2026-09-20",
+    "conference_start": "2026-10-24",
+    "conference_end": "2026-10-29",
+    "location": "Budapest, Hungary",
+    "source_url": "https://2026.emnlp.org/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "eurocrypt",
@@ -272,6 +311,32 @@
     }
   },
   {
+    "venue_id": "icde",
+    "abbreviation": "ICDE",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-06-18",
+    "notification": "2025-10-20",
+    "conference_start": "2026-05-04",
+    "conference_end": "2026-05-08",
+    "location": "Hong Kong, China",
+    "source_url": "https://icde2026.github.io/",
+    "timezone": "US Pacific"
+  },
+  {
+    "venue_id": "icde",
+    "abbreviation": "ICDE",
+    "year": 2026,
+    "round": 2,
+    "submission_deadline": "2025-10-27",
+    "notification": "2026-02-23",
+    "conference_start": "2026-05-04",
+    "conference_end": "2026-05-08",
+    "location": "Hong Kong, China",
+    "source_url": "https://icde2026.github.io/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "iclr",
     "abbreviation": "ICLR",
     "year": 2026,
@@ -312,6 +377,20 @@
     }
   },
   {
+    "venue_id": "icra",
+    "abbreviation": "ICRA",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-09-15",
+    "notification": "2026-01-15",
+    "camera_ready": "2026-03-31",
+    "conference_start": "2026-05-18",
+    "conference_end": "2026-05-22",
+    "location": "San Antonio, TX, USA",
+    "source_url": "https://2026.ieee-icra.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "isca",
     "abbreviation": "ISCA",
     "year": 2026,
@@ -322,6 +401,20 @@
     "conference_end": "2026-07-01",
     "location": "Raleigh, NC, USA",
     "source_url": "https://iscaconf.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "lics",
+    "abbreviation": "LICS",
+    "year": 2026,
+    "round": 1,
+    "abstract_deadline": "2026-01-15",
+    "submission_deadline": "2026-01-22",
+    "notification": "2026-04-01",
+    "conference_start": "2026-06-29",
+    "conference_end": "2026-07-03",
+    "location": "Vancouver, Canada",
+    "source_url": "https://lics.siglog.org/lics26/",
     "timezone": "AoE"
   },
   {
@@ -375,6 +468,47 @@
       "accepted": 4020,
       "acceptance_rate": 25.7
     }
+  },
+  {
+    "venue_id": "nsdi",
+    "abbreviation": "NSDI",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-04-25",
+    "notification": "2025-07-24",
+    "camera_ready": "2025-10-21",
+    "conference_start": "2026-05-04",
+    "conference_end": "2026-05-06",
+    "location": "Renton, WA, USA",
+    "source_url": "https://www.usenix.org/conference/nsdi26/",
+    "timezone": "US PDT"
+  },
+  {
+    "venue_id": "nsdi",
+    "abbreviation": "NSDI",
+    "year": 2026,
+    "round": 2,
+    "submission_deadline": "2025-09-18",
+    "notification": "2025-12-09",
+    "camera_ready": "2026-03-05",
+    "conference_start": "2026-05-04",
+    "conference_end": "2026-05-06",
+    "location": "Renton, WA, USA",
+    "source_url": "https://www.usenix.org/conference/nsdi26/",
+    "timezone": "US PDT"
+  },
+  {
+    "venue_id": "osdi",
+    "abbreviation": "OSDI",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-12-11",
+    "notification": "2026-03-15",
+    "conference_start": "2026-07-13",
+    "conference_end": "2026-07-15",
+    "location": "Seattle, WA, USA",
+    "source_url": "https://www.usenix.org/conference/osdi26/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "pldi",
@@ -492,6 +626,19 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "sosp",
+    "abbreviation": "SOSP",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-04-01",
+    "notification": "2026-06-15",
+    "conference_start": "2026-10-25",
+    "conference_end": "2026-10-28",
+    "location": "Koblenz, Germany",
+    "source_url": "https://sosp2026.mpi-sws.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "tcc",
     "abbreviation": "TCC",
     "year": 2026,
@@ -513,6 +660,32 @@
     "conference_start": "2026-03-15",
     "conference_end": "2026-03-18",
     "location": "New York, NY, USA",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "ubicomp",
+    "abbreviation": "UbiComp",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-05-01",
+    "notification": "2026-07-01",
+    "conference_start": "2026-09-13",
+    "conference_end": "2026-09-17",
+    "location": "Helsinki, Finland",
+    "source_url": "https://www.ubicomp.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "uist",
+    "abbreviation": "UIST",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-03-31",
+    "notification": "2026-06-15",
+    "conference_start": "2026-10-11",
+    "conference_end": "2026-10-14",
+    "location": "Kyoto, Japan",
+    "source_url": "https://uist.acm.org/2026/",
     "timezone": "AoE"
   },
   {
