@@ -8,7 +8,7 @@ const Search = {
         category: 'all',
         year: 'all',
         query: '',
-        sort: 'default',
+        sort: 'deadline',
         view: 'cards',
     },
 
@@ -88,17 +88,10 @@ const Search = {
             return new Date(tl[field]).getTime();
         };
 
-        if (this.state.sort === 'deadline') {
-            expanded.sort((a, b) => getTime(a, 'submission_deadline') - getTime(b, 'submission_deadline'));
-        } else if (this.state.sort === 'conference') {
+        if (this.state.sort === 'conference') {
             expanded.sort((a, b) => getTime(a, 'conference_start') - getTime(b, 'conference_start'));
         } else {
-            const rankOrder = { A: 0, B: 1, C: 2 };
-            expanded.sort((a, b) => {
-                const rDiff = rankOrder[a.ccf_rank] - rankOrder[b.ccf_rank];
-                if (rDiff !== 0) return rDiff;
-                return a.abbreviation.localeCompare(b.abbreviation);
-            });
+            expanded.sort((a, b) => getTime(a, 'submission_deadline') - getTime(b, 'submission_deadline'));
         }
 
         return expanded;
