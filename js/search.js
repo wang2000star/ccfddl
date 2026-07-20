@@ -2,37 +2,30 @@
  * search.js - Search and filter logic
  */
 const Search = {
-    // Current filter state
     state: {
         type: 'conference',
         ranks: new Set(['A', 'B', 'C']),
         category: 'all',
         year: 'all',
         query: '',
-        sort: 'default',    // 'default' | 'deadline' | 'conference'
-        view: 'cards',      // 'cards' | 'timeline'
+        sort: 'default',
+        view: 'cards',
     },
 
-    // Get filtered venues based on current state
     filter() {
         let venues;
+        const yearFilter = this.state.year || 'all';
 
         // 1. Type filter
         if (this.state.type === 'all') {
             venues = DataLoader.getAllVenues();
         } else if (this.state.type === 'conference') {
             venues = [...DataLoader.conferences];
-            // Add journal-type overrides (CHES, TCHES, etc.)
             for (const j of DataLoader.journals) {
-                if (DataLoader.JOURNAL_TYPE_OVERRIDES.has(j.abbreviation)) {
-                    venues.push(j);
-                }
+                if (DataLoader.JOURNAL_TYPE_OVERRIDES.has(j.abbreviation)) venues.push(j);
             }
         } else {
-            // journal: exclude journal-type overrides
-            venues = DataLoader.journals.filter(
-                j => !DataLoader.JOURNAL_TYPE_OVERRIDES.has(j.abbreviation)
-            );
+            venues = DataLoader.journals.filter(j => !DataLoader.JOURNAL_TYPE_OVERRIDES.has(j.abbreviation));
         }
 
         // 2. Rank filter
@@ -45,66 +38,28 @@ const Search = {
             venues = venues.filter(v => v.category_zh === this.state.category);
         }
 
-        // 4. Search query (fuzzy, case-insensitive)
+        // 4. Search query
         if (this.state.query.trim()) {
             const q = this.state.query.trim().toLowerCase();
-            venues = venues.filter(v => {
-                return v.abbreviation.toLowerCase().includes(q) ||
-                       v.full_name.toLowerCase().includes(q) ||
-                       (v.category_zh && v.category_zh.includes(q)) ||
-                       (v.category_en && v.category_en.toLowerCase().includes(q));
-            });
+            venues = venues.filter(v =>
+                v.abbreviation.toLowerCase().includes(q) ||
+                v.full_name.toLowerCase().includes(q) ||
+                (v.category_zh && v.category_zh.includes(q)) ||
+                (v.category_en && v.category_en.toLowerCase().includes(q))
+            );
         }
 
-        // 5. Sort
-        const rankOrder = { A: 0, B: 1, C: 2 };
-        const now = new Date();
-
-        const year = this.state.year || '2026';
-        if (this.state.sort === 'deadline') {
-            venues.sort((a, b) => {
-                const tlA = DataLoader.getTimeline(a.id, year) || {};
-                const tlB = DataLoader.getTimeline(b.id, year) || {};
-                const dA = tlA.submission_deadline ? new Date(tlA.submission_deadline) : null;
-                const dB = tlB.submission_deadline ? new Date(tlB.submission_deadline) : null;
-                if (dA && !dB) return -1;
-                if (!dA && dB) return 1;
-                if (!dA && !dB) return rankOrder[a.ccf_rank] - rankOrder[b.ccf_rank];
-                return dA - dB;
-            });
-        } else if (this.state.sort === 'conference') {
-            venues.sort((a, b) => {
-                const tlA = DataLoader.getTimeline(a.id) || {};
-                const tlB = DataLoader.getTimeline(b.id) || {};
-                const dA = tlA.conference_start ? new Date(tlA.conference_start) : null;
-                const dB = tlB.conference_start ? new Date(tlB.conference_start) : null;
-                if (dA && !dB) return -1;
-                if (!dA && dB) return 1;
-                if (!dA && !dB) return rankOrder[a.ccf_rank] - rankOrder[b.ccf_rank];
-                return dA - dB;
-            });
-        } else {
-            venues.sort((a, b) => {
-                const rDiff = rankOrder[a.ccf_rank] - rankOrder[b.ccf_rank];
-                if (rDiff !== 0) return rDiff;
-                return a.abbreviation.localeCompare(b.abbreviation);
-            });
-        }
-
-        // 6. Year filter: if specific year, only include entries with timelines for that year
-        const yearFilter = this.state.year || 'all';
+        // 5. Year filter: only venues with timeline data for selected year
         if (yearFilter !== 'all') {
             venues = venues.filter(v => {
-                const timelines = DataLoader.getTimelines(v.id, yearFilter);
-                return timelines && timelines.length > 0;
+                const tls = DataLoader.getTimelines(v.id, yearFilter);
+                return tls && tls.length > 0;
             });
         }
 
-        // 7. Expand multi-round: one entry per round
+        // 6. Expand multi-round: one card per round, with its own _timeline
         const expanded = [];
         for (const v of venues) {
-            const timelines = DataLoader.getTimelines(v.id, yearFilter === 'all' ? '2026' : yearFilter);
-            // For 'all' mode, collect timelines from all years
             let allTLs = [];
             if (yearFilter === 'all') {
                 for (const y of ['2025','2026','2027']) {
@@ -112,23 +67,51 @@ const Search = {
                     if (tls) allTLs = allTLs.concat(tls);
                 }
             } else {
-                allTLs = timelines;
+                allTLs = DataLoader.getTimelines(v.id, yearFilter) || [];
             }
 
             if (allTLs.length > 1) {
                 for (let i = 0; i < allTLs.length; i++) {
-                    expanded.push({ ...v, _roundIndex: i, _totalRounds: allTLs.length, _timelineYear: allTLs[i].year || yearFilter });
+                    expanded.push({ ...v, _roundIndex: i, _totalRounds: allTLs.length, _timelineYear: allTLs[i].year || yearFilter, _timeline: allTLs[i] });
                 }
             } else if (allTLs.length === 1) {
-                expanded.push({ ...v, _roundIndex: 0, _totalRounds: 1, _timelineYear: allTLs[0].year || yearFilter });
+                expanded.push({ ...v, _roundIndex: 0, _totalRounds: 1, _timelineYear: allTLs[0].year || yearFilter, _timeline: allTLs[0] });
             } else {
-                expanded.push({ ...v, _roundIndex: 0, _totalRounds: 1, _timelineYear: yearFilter });
+                expanded.push({ ...v, _roundIndex: 0, _totalRounds: 1, _timelineYear: yearFilter, _timeline: null });
             }
         }
+
+        // 7. Sort: applied AFTER expansion, uses each card's specific timeline
+        if (this.state.sort === 'deadline') {
+            expanded.sort((a, b) => {
+                const dA = (a._timeline && a._timeline.submission_deadline) ? new Date(a._timeline.submission_deadline) : null;
+                const dB = (b._timeline && b._timeline.submission_deadline) ? new Date(b._timeline.submission_deadline) : null;
+                if (dA && !dB) return -1;
+                if (!dA && dB) return 1;
+                if (!dA && !dB) return 0;
+                return dA - dB;
+            });
+        } else if (this.state.sort === 'conference') {
+            expanded.sort((a, b) => {
+                const dA = (a._timeline && a._timeline.conference_start) ? new Date(a._timeline.conference_start) : null;
+                const dB = (b._timeline && b._timeline.conference_start) ? new Date(b._timeline.conference_start) : null;
+                if (dA && !dB) return -1;
+                if (!dA && dB) return 1;
+                if (!dA && !dB) return 0;
+                return dA - dB;
+            });
+        } else {
+            const rankOrder = { A: 0, B: 1, C: 2 };
+            expanded.sort((a, b) => {
+                const rDiff = rankOrder[a.ccf_rank] - rankOrder[b.ccf_rank];
+                if (rDiff !== 0) return rDiff;
+                return a.abbreviation.localeCompare(b.abbreviation);
+            });
+        }
+
         return expanded;
     },
 
-    // Update a single filter state and return new results
     updateFilter(key, value) {
         this.state[key] = value;
         return this.filter();

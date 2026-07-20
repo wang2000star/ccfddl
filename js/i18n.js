@@ -37,7 +37,7 @@ const I18N = {
             accepted: '录用数',
             acceptanceRate: '录用率',
             sortDefault: '默认排序',
-            sortDeadline: '投稿截止倒计时',
+            sortDeadline: '按投稿时间',
             sortConference: '会议召开时间',
             daysLeft: '天后截止',
             daysOverdue: '天前截止',
