@@ -81,25 +81,17 @@ const Search = {
             }
         }
 
-        // 7. Sort: applied AFTER expansion, uses each card's specific timeline
+        // 7. Sort by actual date value (earliest first)
+        const getTime = (entry, field) => {
+            const tl = entry._timeline;
+            if (!tl || !tl[field]) return Infinity; // no date → sort to end
+            return new Date(tl[field]).getTime();
+        };
+
         if (this.state.sort === 'deadline') {
-            expanded.sort((a, b) => {
-                const dA = (a._timeline && a._timeline.submission_deadline) ? new Date(a._timeline.submission_deadline) : null;
-                const dB = (b._timeline && b._timeline.submission_deadline) ? new Date(b._timeline.submission_deadline) : null;
-                if (dA && !dB) return -1;
-                if (!dA && dB) return 1;
-                if (!dA && !dB) return 0;
-                return dA - dB;
-            });
+            expanded.sort((a, b) => getTime(a, 'submission_deadline') - getTime(b, 'submission_deadline'));
         } else if (this.state.sort === 'conference') {
-            expanded.sort((a, b) => {
-                const dA = (a._timeline && a._timeline.conference_start) ? new Date(a._timeline.conference_start) : null;
-                const dB = (b._timeline && b._timeline.conference_start) ? new Date(b._timeline.conference_start) : null;
-                if (dA && !dB) return -1;
-                if (!dA && dB) return 1;
-                if (!dA && !dB) return 0;
-                return dA - dB;
-            });
+            expanded.sort((a, b) => getTime(a, 'conference_start') - getTime(b, 'conference_start'));
         } else {
             const rankOrder = { A: 0, B: 1, C: 2 };
             expanded.sort((a, b) => {
