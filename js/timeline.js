@@ -55,10 +55,10 @@ const Timeline = {
         if (!timeline) return '';
         const rows = [];
         const items = [
-            { key: 'submissionDeadline', label: this.t('submissionDeadline') },
-            { key: 'abstractDeadline', label: this.t('abstractDeadline') },
+            { key: 'submission_deadline', label: this.t('submissionDeadline') },
+            { key: 'abstract_deadline', label: this.t('abstractDeadline') },
             { key: 'notification', label: this.t('notification') },
-            { key: 'cameraReady', label: this.t('cameraReady') },
+            { key: 'camera_ready', label: this.t('cameraReady') },
         ];
 
         for (const item of items) {
