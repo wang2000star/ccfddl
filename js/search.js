@@ -91,7 +91,19 @@ const Search = {
             });
         }
 
-        return venues;
+        // 6. Expand multi-round: one entry per round
+        const expanded = [];
+        for (const v of venues) {
+            const timelines = DataLoader.getTimelines(v.id, year);
+            if (timelines.length > 1) {
+                for (let i = 0; i < timelines.length; i++) {
+                    expanded.push({ ...v, _roundIndex: i, _totalRounds: timelines.length });
+                }
+            } else {
+                expanded.push({ ...v, _roundIndex: 0, _totalRounds: 1 });
+            }
+        }
+        return expanded;
     },
 
     // Update a single filter state and return new results
