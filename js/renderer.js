@@ -80,7 +80,7 @@ const Renderer = {
         <div class="venue-card" data-id="${venue.id}">
             <div class="venue-card-header">
                 <div class="venue-card-title">
-                    <div class="venue-abbr">${this.esc(venue.abbreviation)}</div>
+                    <div class="venue-abbr">${this.esc(venue.abbreviation)} ${year}</div>
                     <div class="venue-full-name">${this.esc(venue.full_name)}</div>
                 </div>
                 <div class="venue-badges">
@@ -219,7 +219,7 @@ const Renderer = {
             <div class="gantt-row ${rankCls}">
                 <div class="gantt-label">
                     <span class="badge badge-rank badge-${v.ccf_rank.toLowerCase()}">${v.ccf_rank}</span>
-                    <strong>${this.esc(v.abbreviation)}${roundLabel}</strong>
+                    <strong>${this.esc(v.abbreviation)} ${year}${roundLabel}</strong>
                     <span style="font-size:0.65rem;color:var(--color-text-muted)">${this.esc(tl.location || '')}</span>
                 </div>
                 <div class="gantt-bars">${barHTML}</div>
