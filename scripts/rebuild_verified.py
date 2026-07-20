@@ -54,6 +54,17 @@ verified = [
     {"venue_id":"acl","abbreviation":"ACL","year":2026,"round":1,"submission_deadline":"2026-02-15","notification":"2026-05-10","camera_ready":"2026-06-01","conference_start":"2026-08-02","conference_end":"2026-08-07","location":"Vienna, Austria","source_url":"https://2026.aclweb.org/","timezone":"AoE","stats":{"submissions":4935,"accepted":1152,"acceptance_rate":23.3}},
     # WWW 2026
     {"venue_id":"www","abbreviation":"WWW","year":2026,"round":1,"submission_deadline":"2025-10-24","rebuttal_start":"2026-01-06","rebuttal_end":"2026-01-13","notification":"2026-01-24","camera_ready":"2026-02-14","conference_start":"2026-04-19","conference_end":"2026-04-24","location":"Perth, Australia","source_url":"https://www2026.thewebconf.org/","timezone":"AoE","stats":{"submissions":2060,"accepted":409,"acceptance_rate":19.9}},
+    # PLDI 2026 (sigplan.org)
+    {"venue_id":"pldi","abbreviation":"PLDI","year":2026,"round":1,"submission_deadline":"2025-11-13","rebuttal_start":"2026-02-17","rebuttal_end":"2026-02-21","notification":"2026-03-05","conference_start":"2026-06-15","conference_end":"2026-06-19","location":"Boulder, CO, USA","source_url":"https://pldi26.sigplan.org/","timezone":"AoE"},
+    # SIGMOD 2026 (sigmod.org) - 4 rounds
+    {"venue_id":"sigmod","abbreviation":"SIGMOD","year":2026,"round":1,"submission_deadline":"2025-01-17","notification":"2025-03-15","conference_start":"2026-05-31","conference_end":"2026-06-05","location":"Bangalore, India","source_url":"https://2026.sigmod.org/","timezone":"AoE"},
+    {"venue_id":"sigmod","abbreviation":"SIGMOD","year":2026,"round":2,"submission_deadline":"2025-04-17","notification":"2025-06-15","conference_start":"2026-05-31","conference_end":"2026-06-05","location":"Bangalore, India","source_url":"https://2026.sigmod.org/","timezone":"AoE"},
+    {"venue_id":"sigmod","abbreviation":"SIGMOD","year":2026,"round":3,"submission_deadline":"2025-07-17","notification":"2025-09-15","conference_start":"2026-05-31","conference_end":"2026-06-05","location":"Bangalore, India","source_url":"https://2026.sigmod.org/","timezone":"AoE"},
+    {"venue_id":"sigmod","abbreviation":"SIGMOD","year":2026,"round":4,"submission_deadline":"2025-10-17","rebuttal_start":"2025-12-01","rebuttal_end":"2025-12-08","notification":"2026-01-04","conference_start":"2026-05-31","conference_end":"2026-06-05","location":"Bangalore, India","source_url":"https://2026.sigmod.org/","timezone":"AoE"},
+    # ISCA 2026 (iscaconf.org / openresearch.org)
+    {"venue_id":"isca","abbreviation":"ISCA","year":2026,"round":1,"submission_deadline":"2025-11-17","notification":"2026-03-27","conference_start":"2026-06-27","conference_end":"2026-07-01","location":"Raleigh, NC, USA","source_url":"https://iscaconf.org/","timezone":"AoE"},
+    # MICRO 2026 (openresearch.org)
+    {"venue_id":"micro","abbreviation":"MICRO","year":2026,"round":1,"submission_deadline":"2026-04-07","conference_start":"2026-10-31","conference_end":"2026-11-04","location":"Athens, Greece","source_url":"https://www.microarch.org/","timezone":"AoE"},
 
     # === 2027: VERIFIED from official sources ===
     # CHES 2027 (ches.iacr.org/2027)
