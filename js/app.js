@@ -156,4 +156,21 @@ const App = {
 };
 
 // Boot
-document.addEventListener('DOMContentLoaded', () => App.init());
+(function boot() {
+    // Show a visible marker that JS is running
+    const body = document.body;
+    body.setAttribute('data-js', 'running');
+
+    // Try to init
+    App.init().catch(err => {
+        console.error('App init error:', err);
+        const el = document.getElementById('loadingState');
+        if (el) {
+            el.innerHTML = `<div style="color:#dc2626;text-align:center;padding:40px;">
+                <h2>⚠️ 加载失败 / Load Failed</h2>
+                <p>${err.message || 'Unknown error'}</p>
+                <p style="font-size:0.8rem;color:#666;">请尝试刷新页面或检查控制台 / Try refreshing or check console</p>
+            </div>`;
+        }
+    });
+})();
