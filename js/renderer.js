@@ -74,17 +74,17 @@ const Renderer = {
         const website = (typeof DataLoader !== 'undefined' && DataLoader.getWebsite) ? DataLoader.getWebsite(venue.abbreviation) : null;
         const tl = (typeof DataLoader !== 'undefined' && DataLoader.getTimeline) ? DataLoader.getTimeline(venue.id) : null;
 
+        const webLink = website ? `<a href="${this.escape(website)}" target="_blank" class="badge badge-website" onclick="event.stopPropagation()" title="${this.t('officialWebsite')}">🌐 ${this.t('officialWebsite')}</a>` : '';
+
         return `
         <div class="venue-card" data-id="${venue.id}">
             <div class="venue-card-header">
                 <div class="venue-card-title">
-                    <div class="venue-abbr">
-                        ${this.escape(venue.abbreviation)}
-                        ${website ? `<a href="${this.escape(website)}" target="_blank" class="website-link" title="${I18n.t('officialWebsite')}" onclick="event.stopPropagation()">🔗</a>` : ''}
-                    </div>
+                    <div class="venue-abbr">${this.escape(venue.abbreviation)}</div>
                     <div class="venue-full-name">${this.escape(venue.full_name)}</div>
                 </div>
                 <div class="venue-badges">
+                    ${webLink}
                     <span class="badge badge-rank ${rankClass}">${rankLabel}</span>
                     ${isJournalType ? `<span class="badge badge-journal-type">${this.t('journalType')}</span>` : ''}
                     <span class="badge badge-category">${this.escape(venue.category_zh)}</span>

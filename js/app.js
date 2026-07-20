@@ -157,30 +157,16 @@ const App = {
 
 // Boot
 (function boot() {
-    const loadingEl = document.getElementById('loadingState');
-    const log = (msg) => {
-        console.log('[CCF]', msg);
-        if (loadingEl) {
-            const line = document.createElement('div');
-            line.style.cssText = 'font-size:0.7rem;color:#94a3b8;font-family:monospace;padding:2px 0;';
-            line.textContent = msg;
-            loadingEl.appendChild(line);
-        }
-    };
-
-    log('JS booted, testing fetch...');
-
-    // Test raw fetch first
-    fetch('data/conferences.json')
-        .then(r => { log(`Fetch status: ${r.status} ${r.statusText}`); return r.json(); })
-        .then(d => { log(`✅ Parsed OK: ${d.length} conferences`); log(`Sample: [${d[0].ccf_rank}] ${d[0].abbreviation}`); })
-        .catch(e => log(`❌ Fetch FAILED: ${e.message}`));
-
-    log('Calling App.init()...');
-    App.init().then(() => {
-        log('✅ App.init() completed successfully');
-    }).catch(err => {
-        log(`❌ App.init() FAILED: ${err.message || 'Unknown'}`);
+    document.body.setAttribute('data-js', 'running');
+    App.init().catch(err => {
         console.error('App init error:', err);
+        const el = document.getElementById('loadingState');
+        if (el) {
+            el.innerHTML = `<div style="color:#dc2626;text-align:center;padding:40px;">
+                <h2>⚠️ 加载失败 / Load Failed</h2>
+                <p>${err.message || 'Unknown error'}</p>
+                <p style="font-size:0.8rem;color:#666;">请尝试刷新页面 / Try refreshing the page</p>
+            </div>`;
+        }
     });
 })();
