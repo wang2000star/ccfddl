@@ -105,7 +105,7 @@ const Renderer = {
         let html = '';
         for (let i = 0; i < timelines.length; i++) {
             const tl = timelines[i];
-            const roundLabel = timelines.length > 1 ? `<div class="timeline-round-label">📋 Round ${tl.round || (i+1)}</div>` : '';
+            const roundLabel = timelines.length > 1 ? `<div class="timeline-round-label">📋 ${venue.abbreviation} ${tl.year || ''} #${tl.round || (i+1)}</div>` : '';
             html += roundLabel + Timeline.buildTimelineHTML(tl);
             if (tl.submission_deadline) {
                 const cd = this.countdown(tl.submission_deadline);
@@ -213,7 +213,7 @@ const Renderer = {
                     </div>`;
             }
 
-            const roundLabel = row.totalRounds > 1 ? ` <span style="font-size:0.6rem;color:var(--color-primary);font-weight:700;">R${row.round}</span>` : '';
+            const roundLabel = row.totalRounds > 1 ? ` <span style="font-size:0.6rem;color:var(--color-primary);font-weight:700;">#${row.round}</span>` : '';
 
             bodyHTML += `
             <div class="gantt-row ${rankCls}">
