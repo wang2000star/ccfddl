@@ -6,21 +6,24 @@ const DataLoader = {
     journals: [],
     metadata: null,
     timelines: {}, // year -> venue_id -> timeline entry
+    websites: {},  // abbr -> website URL
     loaded: false,
 
     async init() {
         if (this.loaded) return;
         try {
-            const [confResp, jrnResp, metaResp, tlResp] = await Promise.all([
+            const [confResp, jrnResp, metaResp, tlResp, webResp] = await Promise.all([
                 fetch('data/conferences.json'),
                 fetch('data/journals.json'),
                 fetch('data/metadata.json'),
-                fetch('data/timelines/2026.json').catch(() => Promise.resolve({ json: () => [] }))
+                fetch('data/timelines/2026.json').catch(() => Promise.resolve({ json: () => [] })),
+                fetch('data/websites.json').catch(() => Promise.resolve({ json: () => ({}) }))
             ]);
             this.conferences = await confResp.json();
             this.journals = await jrnResp.json();
             this.metadata = await metaResp.json();
             const tlArray = await tlResp.json();
+            this.websites = await webResp.json();
 
             // Index timelines by venue_id
             this.timelines = {};
@@ -31,7 +34,7 @@ const DataLoader = {
             }
 
             this.loaded = true;
-            console.log(`Loaded: ${this.conferences.length} conferences, ${this.journals.length} journals, ${tlArray.length} timelines`);
+            console.log(`Loaded: ${this.conferences.length} conferences, ${this.journals.length} journals, ${tlArray.length} timelines, ${Object.keys(this.websites).length} websites`);
         } catch (err) {
             console.error('Failed to load data:', err);
             throw err;
@@ -82,6 +85,10 @@ const DataLoader = {
             if (counts[v.ccf_rank] !== undefined) counts[v.ccf_rank]++;
         }
         return counts;
+    },
+
+    getWebsite(abbr) {
+        return this.websites[abbr] || null;
     },
 
     // Journal-type overrides: these journals are treated as conferences

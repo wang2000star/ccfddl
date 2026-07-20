@@ -57,12 +57,17 @@ const Renderer = {
         const rankClass = `badge-${venue.ccf_rank.toLowerCase()}`;
         const rankLabel = I18N.t(`rank${venue.ccf_rank}`) || `CCF-${venue.ccf_rank}`;
         const isJournalType = venue.sub_type === 'journal-type' || DataLoader.JOURNAL_TYPE_OVERRIDES.has(venue.abbreviation);
+        const website = DataLoader.getWebsite(venue.abbreviation);
+        const tl = DataLoader.getTimeline(venue.id);
 
         return `
         <div class="venue-card" data-id="${venue.id}">
             <div class="venue-card-header">
                 <div class="venue-card-title">
-                    <div class="venue-abbr">${this.escape(venue.abbreviation)}</div>
+                    <div class="venue-abbr">
+                        ${this.escape(venue.abbreviation)}
+                        ${website ? `<a href="${this.escape(website)}" target="_blank" class="website-link" title="${I18n.t('officialWebsite')}" onclick="event.stopPropagation()">🔗</a>` : ''}
+                    </div>
                     <div class="venue-full-name">${this.escape(venue.full_name)}</div>
                 </div>
                 <div class="venue-badges">
@@ -72,6 +77,18 @@ const Renderer = {
                 </div>
             </div>
             ${this.buildTimeline(venue)}
+            ${tl && tl.stats ? this.buildStats(tl.stats) : ''}
+        </div>`;
+    },
+
+    buildStats(stats) {
+        return `
+        <div class="venue-stats">
+            <div class="stats-row">
+                <span class="stat-item" title="${I18n.t('submissions')}">📄 ${stats.submissions?.toLocaleString() || '—'}</span>
+                <span class="stat-item" title="${I18n.t('accepted')}">✅ ${stats.accepted?.toLocaleString() || '—'}</span>
+                <span class="stat-item stat-rate" title="${I18n.t('acceptanceRate')}">📊 ${stats.acceptance_rate != null ? stats.acceptance_rate + '%' : '—'}</span>
+            </div>
         </div>`;
     },
 

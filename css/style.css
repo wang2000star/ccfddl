@@ -479,6 +479,47 @@ a:hover { text-decoration: underline; }
 .timeline-bar-segment.review { background: var(--rank-b); }
 .timeline-bar-segment.final { background: var(--rank-a); }
 
+/* --- Website Link --- */
+.website-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.7rem;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: opacity var(--transition);
+    margin-left: 4px;
+    vertical-align: middle;
+}
+.website-link:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+/* --- Statistics --- */
+.venue-stats {
+    border-top: 1px solid var(--color-border);
+    padding-top: 8px;
+    margin-top: 2px;
+}
+
+.stats-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    font-size: 0.72rem;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.stat-rate {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
 /* --- Empty & Loading States --- */
 .empty-state, .loading-state {
     text-align: center;

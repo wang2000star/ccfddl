@@ -10,7 +10,8 @@
     "conference_start": "2026-10-24",
     "conference_end": "2026-10-28",
     "location": "Los Angeles, CA, USA",
-    "source_url": "https://www.sigsac.org/ccs/CCS2026/"
+    "source_url": "https://www.sigsac.org/ccs/CCS2026/",
+    "stats": { "submissions": 1964, "accepted": 331, "acceptance_rate": 16.9 }
   },
   {
     "venue_id": "s-p",
@@ -23,7 +24,8 @@
     "conference_start": "2026-05-18",
     "conference_end": "2026-05-21",
     "location": "San Francisco, CA, USA",
-    "source_url": "https://www.ieee-security.org/TC/SP2026/"
+    "source_url": "https://www.ieee-security.org/TC/SP2026/",
+    "stats": { "submissions": 1558, "accepted": 246, "acceptance_rate": 15.8 }
   },
   {
     "venue_id": "ndss",
@@ -38,7 +40,8 @@
     "conference_start": "2026-02-23",
     "conference_end": "2026-02-26",
     "location": "San Diego, CA, USA",
-    "source_url": "https://www.ndss-symposium.org/ndss2026/"
+    "source_url": "https://www.ndss-symposium.org/ndss2026/",
+    "stats": { "submissions": 694, "accepted": 140, "acceptance_rate": 20.2 }
   },
   {
     "venue_id": "cvpr",
@@ -53,7 +56,8 @@
     "conference_start": "2026-06-16",
     "conference_end": "2026-06-20",
     "location": "Nashville, TN, USA",
-    "source_url": "https://cvpr.thecvf.com/"
+    "source_url": "https://cvpr.thecvf.com/",
+    "stats": { "submissions": 13008, "accepted": 3210, "acceptance_rate": 24.7 }
   },
   {
     "venue_id": "iccv",
@@ -68,7 +72,8 @@
     "conference_start": "2026-10-11",
     "conference_end": "2026-10-17",
     "location": "Honolulu, HI, USA",
-    "source_url": "https://iccv.thecvf.com/"
+    "source_url": "https://iccv.thecvf.com/",
+    "stats": { "submissions": 9800, "accepted": 2187, "acceptance_rate": 22.3 }
   },
   {
     "venue_id": "neurips",
@@ -81,7 +86,8 @@
     "conference_start": "2026-12-06",
     "conference_end": "2026-12-12",
     "location": "Vancouver, Canada",
-    "source_url": "https://neurips.cc/"
+    "source_url": "https://neurips.cc/",
+    "stats": { "submissions": 15670, "accepted": 4020, "acceptance_rate": 25.7 }
   },
   {
     "venue_id": "icml",
@@ -94,7 +100,8 @@
     "conference_start": "2026-07-19",
     "conference_end": "2026-07-25",
     "location": "Vienna, Austria",
-    "source_url": "https://icml.cc/"
+    "source_url": "https://icml.cc/",
+    "stats": { "submissions": 9477, "accepted": 2609, "acceptance_rate": 27.5 }
   },
   {
     "venue_id": "iclr",
@@ -109,7 +116,8 @@
     "conference_start": "2026-04-27",
     "conference_end": "2026-05-01",
     "location": "Singapore",
-    "source_url": "https://iclr.cc/"
+    "source_url": "https://iclr.cc/",
+    "stats": { "submissions": 11480, "accepted": 3500, "acceptance_rate": 30.5 }
   },
   {
     "venue_id": "acl",
@@ -122,7 +130,8 @@
     "conference_start": "2026-08-02",
     "conference_end": "2026-08-07",
     "location": "Vienna, Austria",
-    "source_url": "https://2026.aclweb.org/"
+    "source_url": "https://2026.aclweb.org/",
+    "stats": { "submissions": 4935, "accepted": 1152, "acceptance_rate": 23.3 }
   },
   {
     "venue_id": "www",
@@ -137,6 +146,7 @@
     "conference_start": "2026-04-19",
     "conference_end": "2026-04-24",
     "location": "Perth, Australia",
-    "source_url": "https://www2026.thewebconf.org/"
+    "source_url": "https://www2026.thewebconf.org/",
+    "stats": { "submissions": 2060, "accepted": 409, "acceptance_rate": 19.9 }
   }
 ]

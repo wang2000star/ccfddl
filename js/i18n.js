@@ -32,6 +32,10 @@ const I18N = {
             rankA: 'CCF-A',
             rankB: 'CCF-B',
             rankC: 'CCF-C',
+            officialWebsite: '官网',
+            submissions: '投稿数',
+            accepted: '录用数',
+            acceptanceRate: '录用率',
         },
         en: {
             appTitle: 'CCF Conference/Journal Timeline',
@@ -60,6 +64,10 @@ const I18N = {
             rankA: 'CCF-A',
             rankB: 'CCF-B',
             rankC: 'CCF-C',
+            officialWebsite: 'Website',
+            submissions: 'Submissions',
+            accepted: 'Accepted',
+            acceptanceRate: 'Rate',
         }
     },
 
