@@ -80,7 +80,7 @@ const Renderer = {
         <div class="venue-card" data-id="${venue.id}">
             <div class="venue-card-header">
                 <div class="venue-card-title">
-                    <div class="venue-abbr">${this.esc(venue.abbreviation)} ${year}${venue._totalRounds > 1 ? ` <span style="font-size:0.65em;color:var(--color-primary);">#${(venue._roundIndex||0)+1}</span>` : ''}</div>
+                    <div class="venue-abbr">${this.esc(venue.abbreviation)} ${year}${venue._totalRounds > 1 ? '_' + ((venue._roundIndex||0)+1) : ''}</div>
                     <div class="venue-full-name">${this.esc(venue.full_name)}</div>
                 </div>
                 <div class="venue-badges">
@@ -108,7 +108,7 @@ const Renderer = {
         if (!tl) return `<div class="venue-timeline"><div class="timeline-no-data">${this.t('noTimeline')}</div></div>`;
 
         const total = venue._totalRounds || timelines.length;
-        const label = total > 1 ? `📋 #${idx + 1}/${total}` : '';
+        const label = total > 1 ? `📋 ${venue.abbreviation} ${year}_${idx + 1}` : '';
         let html = label ? `<div class="timeline-round-label">${label}</div>` : '';
         html += Timeline.buildTimelineHTML(tl);
         if (tl.submission_deadline) {
@@ -222,7 +222,7 @@ const Renderer = {
             <div class="gantt-row ${rankCls}">
                 <div class="gantt-label">
                     <span class="badge badge-rank badge-${v.ccf_rank.toLowerCase()}">${v.ccf_rank}</span>
-                    <strong>${this.esc(v.abbreviation)} ${year}${roundLabel}</strong>
+                    <strong>${this.esc(v.abbreviation)} ${year}${row.totalRounds > 1 ? '_' + row.round : ''}</strong>
                     <span style="font-size:0.65rem;color:var(--color-text-muted)">${this.esc(tl.location || '')}</span>
                 </div>
                 <div class="gantt-bars">${barHTML}</div>
