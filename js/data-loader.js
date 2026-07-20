@@ -25,10 +25,10 @@ const DataLoader = {
             const tlArray = await tlResp.json();
             this.websites = await webResp.json();
 
-            // Index timelines by venue_id
+            // Index timelines by venue_id (use string keys for consistency)
             this.timelines = {};
             for (const tl of tlArray) {
-                const year = tl.year || '2026';
+                const year = String(tl.year || '2026');
                 if (!this.timelines[year]) this.timelines[year] = {};
                 this.timelines[year][tl.venue_id] = tl;
             }
