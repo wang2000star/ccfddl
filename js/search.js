@@ -57,26 +57,37 @@ const Search = {
             });
         }
 
-        // 6. Expand multi-round: one card per round, with its own _timeline
+        // 6. Expand multi-round: one card per round, round index resets per year
         const expanded = [];
         for (const v of venues) {
-            let allTLs = [];
+            // Group timelines by year
+            const byYear = {};
             if (yearFilter === 'all') {
                 for (const y of ['2025','2026','2027']) {
                     const tls = DataLoader.getTimelines(v.id, y);
-                    if (tls) allTLs = allTLs.concat(tls);
+                    if (tls && tls.length > 0) byYear[y] = tls;
                 }
             } else {
-                allTLs = DataLoader.getTimelines(v.id, yearFilter) || [];
+                const tls = DataLoader.getTimelines(v.id, yearFilter);
+                if (tls && tls.length > 0) byYear[yearFilter] = tls;
             }
 
-            if (allTLs.length > 1) {
-                for (let i = 0; i < allTLs.length; i++) {
-                    expanded.push({ ...v, _roundIndex: i, _totalRounds: allTLs.length, _timelineYear: allTLs[i].year || yearFilter, _timeline: allTLs[i] });
+            let totalAllYears = 0;
+            for (const tls of Object.values(byYear)) totalAllYears += tls.length;
+
+            for (const [y, tls] of Object.entries(byYear)) {
+                for (let i = 0; i < tls.length; i++) {
+                    expanded.push({
+                        ...v,
+                        _roundIndex: i,           // resets per year: 0,1,2,3 for each year
+                        _totalRounds: tls.length,  // per-year round count
+                        _timelineYear: y,
+                        _timeline: tls[i]
+                    });
                 }
-            } else if (allTLs.length === 1) {
-                expanded.push({ ...v, _roundIndex: 0, _totalRounds: 1, _timelineYear: allTLs[0].year || yearFilter, _timeline: allTLs[0] });
-            } else {
+            }
+
+            if (totalAllYears === 0) {
                 expanded.push({ ...v, _roundIndex: 0, _totalRounds: 1, _timelineYear: yearFilter, _timeline: null });
             }
         }

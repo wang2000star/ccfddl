@@ -89,6 +89,35 @@ verified = [
     {"venue_id":"micro","abbreviation":"MICRO","year":2026,"round":1,"submission_deadline":"2026-04-07","conference_start":"2026-10-31","conference_end":"2026-11-04","location":"Athens, Greece","source_url":"https://www.microarch.org/","timezone":"AoE"},
 
     # === 2027: VERIFIED from official sources ===
+    # ISSTA 2026
+    {"venue_id":"issta","abbreviation":"ISSTA","year":2026,"round":1,"submission_deadline":"2026-01-29","notification":"2026-04-15","conference_start":"2026-10-03","conference_end":"2026-10-09","location":"Oakland, CA, USA","source_url":"https://conf.researchr.org/series/issta","timezone":"AoE"},
+    # ASE 2026
+    {"venue_id":"ase","abbreviation":"ASE","year":2026,"round":1,"submission_deadline":"2026-03-26","notification":"2026-06-15","conference_start":"2026-10-12","conference_end":"2026-10-16","location":"Munich, Germany","source_url":"https://conf.researchr.org/series/ase","timezone":"AoE"},
+    # FSE 2026 (software engineering, not crypto)
+    {"venue_id":"fse","abbreviation":"FSE","year":2026,"round":1,"submission_deadline":"2025-09-11","notification":"2025-12-15","conference_start":"2026-07-05","conference_end":"2026-07-09","location":"Montreal, Canada","source_url":"https://conf.researchr.org/series/fse","timezone":"AoE"},
+    # ASPLOS 2026 - 2 rounds
+    {"venue_id":"asplos","abbreviation":"ASPLOS","year":2026,"round":1,"submission_deadline":"2025-03-12","notification":"2025-06-24","conference_start":"2026-03-28","conference_end":"2026-04-01","location":"San Diego, CA, USA","source_url":"https://www.asplos-conference.org/asplos2026/","timezone":"US Eastern"},
+    {"venue_id":"asplos","abbreviation":"ASPLOS","year":2026,"round":2,"submission_deadline":"2025-08-20","notification":"2025-11-24","conference_start":"2026-03-28","conference_end":"2026-04-01","location":"San Diego, CA, USA","source_url":"https://www.asplos-conference.org/asplos2026/","timezone":"US Eastern"},
+    # CHI 2026
+    {"venue_id":"chi","abbreviation":"CHI","year":2026,"round":1,"submission_deadline":"2025-09-11","notification":"2026-01-15","conference_start":"2026-04-13","conference_end":"2026-04-17","location":"Barcelona, Spain","source_url":"https://chi2026.acm.org/","timezone":"AoE"},
+    # MICCAI 2026
+    {"venue_id":"miccai","abbreviation":"MICCAI","year":2026,"round":1,"submission_deadline":"2026-02-26","notification":"2026-05-15","conference_start":"2026-10-04","conference_end":"2026-10-08","location":"Munich, Germany","source_url":"https://conferences.miccai.org/2026/","timezone":"US Pacific"},
+    # ICSE 2026 (submission already passed)
+    {"venue_id":"icse","abbreviation":"ICSE","year":2026,"round":1,"submission_deadline":"2025-07-18","notification":"2025-10-15","conference_start":"2026-04-12","conference_end":"2026-04-18","location":"Rio de Janeiro, Brazil","source_url":"https://conf.researchr.org/series/icse","timezone":"AoE"},
+
+    # === SECURITY: additional B-class ===
+    # ACSAC 2026
+    {"venue_id":"acsac","abbreviation":"ACSAC","year":2026,"round":1,"submission_deadline":"2026-05-26","notification":"2026-08-15","conference_start":"2026-12-07","conference_end":"2026-12-11","location":"Los Angeles, CA, USA","source_url":"https://www.acsac.org/","timezone":"AoE"},
+    # CSF 2026 (formerly CSFW) - 3 rolling cycles
+    {"venue_id":"csfw","abbreviation":"CSF","year":2026,"round":1,"submission_deadline":"2025-07-24","notification":"2025-09-25","conference_start":"2026-07-26","conference_end":"2026-07-29","location":"Lisbon, Portugal","source_url":"https://www.ieee-security.org/TC/CSF2026/","timezone":"AoE"},
+    {"venue_id":"csfw","abbreviation":"CSF","year":2026,"round":2,"submission_deadline":"2025-10-09","notification":"2025-12-11","conference_start":"2026-07-26","conference_end":"2026-07-29","location":"Lisbon, Portugal","source_url":"https://www.ieee-security.org/TC/CSF2026/","timezone":"AoE"},
+    {"venue_id":"csfw","abbreviation":"CSF","year":2026,"round":3,"submission_deadline":"2026-01-29","notification":"2026-04-01","conference_start":"2026-07-26","conference_end":"2026-07-29","location":"Lisbon, Portugal","source_url":"https://www.ieee-security.org/TC/CSF2026/","timezone":"AoE"},
+    # SRDS 2026
+    {"venue_id":"srds","abbreviation":"SRDS","year":2026,"round":1,"submission_deadline":"2026-05-08","notification":"2026-07-03","camera_ready":"2026-07-31","conference_start":"2026-09-21","conference_end":"2026-09-25","location":"TBD","source_url":"https://srds-conference.org/","timezone":"AoE"},
+    # WiSec 2026
+    {"venue_id":"wisec","abbreviation":"WiSec","year":2026,"round":1,"submission_deadline":"2026-01-13","notification":"2026-03-01","conference_start":"2026-06-30","conference_end":"2026-07-03","location":"Saarbrucken, Germany","source_url":"https://www.sigmobile.org/wisec/2026/","timezone":"AoE"},
+    {"venue_id":"wisec","abbreviation":"WiSec","year":2026,"round":2,"submission_deadline":"2026-04-14","notification":"2026-05-15","conference_start":"2026-06-30","conference_end":"2026-07-03","location":"Saarbrucken, Germany","source_url":"https://www.sigmobile.org/wisec/2026/","timezone":"AoE"},
+
     # CHES 2027 (ches.iacr.org/2027/papersubmission.php)
     {"venue_id":"ches","abbreviation":"CHES","year":2027,"round":1,"submission_deadline":"2026-07-15","rebuttal_start":"2026-08-23","rebuttal_end":"2026-08-28","notification":"2026-09-15","camera_ready":"2026-10-14","conference_start":"2027-09-06","conference_end":"2027-09-09","location":"Cancun, Mexico","source_url":"https://ches.iacr.org/2027/","timezone":"AoE"},
     {"venue_id":"ches","abbreviation":"CHES","year":2027,"round":2,"submission_deadline":"2026-10-15","rebuttal_start":"2026-11-23","rebuttal_end":"2026-11-28","notification":"2026-12-15","camera_ready":"2027-01-14","conference_start":"2027-09-06","conference_end":"2027-09-09","location":"Cancun, Mexico","source_url":"https://ches.iacr.org/2027/","timezone":"AoE"},
