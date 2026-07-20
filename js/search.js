@@ -7,7 +7,7 @@ const Search = {
         type: 'conference',
         ranks: new Set(['A', 'B', 'C']),
         category: 'all',
-        year: '2026',
+        year: 'all',
         query: '',
         sort: 'default',    // 'default' | 'deadline' | 'conference'
         view: 'cards',      // 'cards' | 'timeline'
@@ -91,16 +91,38 @@ const Search = {
             });
         }
 
-        // 6. Expand multi-round: one entry per round
+        // 6. Year filter: if specific year, only include entries with timelines for that year
+        const yearFilter = this.state.year || 'all';
+        if (yearFilter !== 'all') {
+            venues = venues.filter(v => {
+                const timelines = DataLoader.getTimelines(v.id, yearFilter);
+                return timelines && timelines.length > 0;
+            });
+        }
+
+        // 7. Expand multi-round: one entry per round
         const expanded = [];
         for (const v of venues) {
-            const timelines = DataLoader.getTimelines(v.id, year);
-            if (timelines.length > 1) {
-                for (let i = 0; i < timelines.length; i++) {
-                    expanded.push({ ...v, _roundIndex: i, _totalRounds: timelines.length });
+            const timelines = DataLoader.getTimelines(v.id, yearFilter === 'all' ? '2026' : yearFilter);
+            // For 'all' mode, collect timelines from all years
+            let allTLs = [];
+            if (yearFilter === 'all') {
+                for (const y of ['2025','2026','2027']) {
+                    const tls = DataLoader.getTimelines(v.id, y);
+                    if (tls) allTLs = allTLs.concat(tls);
                 }
             } else {
-                expanded.push({ ...v, _roundIndex: 0, _totalRounds: 1 });
+                allTLs = timelines;
+            }
+
+            if (allTLs.length > 1) {
+                for (let i = 0; i < allTLs.length; i++) {
+                    expanded.push({ ...v, _roundIndex: i, _totalRounds: allTLs.length, _timelineYear: allTLs[i].year || yearFilter });
+                }
+            } else if (allTLs.length === 1) {
+                expanded.push({ ...v, _roundIndex: 0, _totalRounds: 1, _timelineYear: allTLs[0].year || yearFilter });
+            } else {
+                expanded.push({ ...v, _roundIndex: 0, _totalRounds: 1, _timelineYear: yearFilter });
             }
         }
         return expanded;

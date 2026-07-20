@@ -80,7 +80,7 @@ const Renderer = {
         <div class="venue-card" data-id="${venue.id}">
             <div class="venue-card-header">
                 <div class="venue-card-title">
-                    <div class="venue-abbr">${this.esc(venue.abbreviation)} ${year}${venue._totalRounds > 1 ? '_' + ((venue._roundIndex||0)+1) : ''}</div>
+                    <div class="venue-abbr">${this.esc(venue.abbreviation)} ${venue._timelineYear || year}${venue._totalRounds > 1 ? '_' + ((venue._roundIndex||0)+1) : ''}</div>
                     <div class="venue-full-name">${this.esc(venue.full_name)}</div>
                 </div>
                 <div class="venue-badges">
@@ -96,19 +96,20 @@ const Renderer = {
     },
 
     buildTimeline(venue, _tl) {
-        const year = (typeof Search !== 'undefined') ? (Search.state.year || '2026') : '2026';
-        const timelines = DataLoader.getTimelines ? DataLoader.getTimelines(venue.id, year) : [];
+        const tlYear = venue._timelineYear || (typeof Search !== 'undefined' ? Search.state.year : '2026');
+        const year = (typeof Search !== 'undefined' && Search.state.year !== 'all') ? Search.state.year : tlYear;
+
+        const timelines = DataLoader.getTimelines ? DataLoader.getTimelines(venue.id, tlYear) : [];
         if (timelines.length === 0) {
             return `<div class="venue-timeline"><div class="timeline-no-data">${this.t('noTimeline')}</div></div>`;
         }
 
-        // Show only the round for this card (venue._roundIndex)
         const idx = (venue._roundIndex != null) ? venue._roundIndex : 0;
         const tl = timelines[idx] || timelines[0];
         if (!tl) return `<div class="venue-timeline"><div class="timeline-no-data">${this.t('noTimeline')}</div></div>`;
 
         const total = venue._totalRounds || timelines.length;
-        const label = total > 1 ? `📋 ${venue.abbreviation} ${year}_${idx + 1}` : '';
+        const label = total > 1 ? `📋 ${venue.abbreviation} ${tl.year}_${idx + 1}` : '';
         let html = label ? `<div class="timeline-round-label">${label}</div>` : '';
         html += Timeline.buildTimelineHTML(tl);
         if (tl.submission_deadline) {
