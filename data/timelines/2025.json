@@ -854,6 +854,17 @@
     "abbreviation": "ASIACRYPT",
     "year": 2025,
     "round": 1,
+    "submission_deadline": "2025-02-15",
+    "notification": "2025-05-01",
+    "conference_start": "2025-12-06",
+    "conference_end": "2025-12-10",
+    "location": "Hong Kong, China"
+  },
+  {
+    "venue_id": "asiacrypt",
+    "abbreviation": "ASIACRYPT",
+    "year": 2025,
+    "round": 2,
     "submission_deadline": "2025-05-15",
     "notification": "2025-08-01",
     "conference_start": "2025-12-06",
@@ -905,8 +916,8 @@
     "location": "Prague, Czech Republic"
   },
   {
-    "venue_id": "fse-crypto",
-    "abbreviation": "FSE (ToSC)",
+    "venue_id": "fse",
+    "abbreviation": "FSE",
     "year": 2025,
     "round": 1,
     "submission_deadline": "2024-08-15",
@@ -916,8 +927,8 @@
     "location": "Utrecht, Netherlands"
   },
   {
-    "venue_id": "fse-crypto",
-    "abbreviation": "FSE (ToSC)",
+    "venue_id": "fse",
+    "abbreviation": "FSE",
     "year": 2025,
     "round": 2,
     "submission_deadline": "2024-11-15",
@@ -927,12 +938,23 @@
     "location": "Utrecht, Netherlands"
   },
   {
-    "venue_id": "fse-crypto",
-    "abbreviation": "FSE (ToSC)",
+    "venue_id": "fse",
+    "abbreviation": "FSE",
     "year": 2025,
     "round": 3,
     "submission_deadline": "2025-02-15",
     "notification": "2025-04-15",
+    "conference_start": "2025-03-15",
+    "conference_end": "2025-03-18",
+    "location": "Utrecht, Netherlands"
+  },
+  {
+    "venue_id": "fse",
+    "abbreviation": "FSE",
+    "year": 2025,
+    "round": 4,
+    "submission_deadline": "2025-05-15",
+    "notification": "2025-07-15",
     "conference_start": "2025-03-15",
     "conference_end": "2025-03-18",
     "location": "Utrecht, Netherlands"
@@ -958,28 +980,6 @@
     "conference_start": "2025-03-15",
     "conference_end": "2025-03-18",
     "location": "New York, NY, USA"
-  },
-  {
-    "venue_id": "asiacrypt",
-    "abbreviation": "ASIACRYPT",
-    "year": 2025,
-    "round": 1,
-    "submission_deadline": "2025-02-15",
-    "notification": "2025-05-01",
-    "conference_start": "2025-12-06",
-    "conference_end": "2025-12-10",
-    "location": "Hong Kong, China"
-  },
-  {
-    "venue_id": "asiacrypt",
-    "abbreviation": "ASIACRYPT",
-    "year": 2025,
-    "round": 2,
-    "submission_deadline": "2025-05-15",
-    "notification": "2025-08-01",
-    "conference_start": "2025-12-06",
-    "conference_end": "2025-12-10",
-    "location": "Hong Kong, China"
   },
   {
     "venue_id": "dsn",
