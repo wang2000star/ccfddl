@@ -1167,5 +1167,37 @@
     "location": "Perth, Australia",
     "source_url": "https://www2026.thewebconf.org/",
     "timezone": "AoE"
+  },
+  {
+    "venue_id": "www",
+    "abbreviation": "WWW",
+    "year": 2027,
+    "round": 2,
+    "submission_deadline": "2026-04-29",
+    "rebuttal_start": "2027-01-06",
+    "rebuttal_end": "2027-01-13",
+    "notification": "2026-07-01",
+    "camera_ready": "2027-02-14",
+    "conference_start": "2027-04-19",
+    "conference_end": "2027-04-24",
+    "location": "Perth, Australia",
+    "source_url": "https://www2026.thewebconf.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "www",
+    "abbreviation": "WWW",
+    "year": 2027,
+    "round": 2,
+    "submission_deadline": "2025-11-13",
+    "rebuttal_start": "2027-01-06",
+    "rebuttal_end": "2027-01-13",
+    "notification": "2026-02-01",
+    "camera_ready": "2027-02-14",
+    "conference_start": "2027-04-19",
+    "conference_end": "2027-04-24",
+    "location": "Perth, Australia",
+    "source_url": "https://www2026.thewebconf.org/",
+    "timezone": "AoE"
   }
 ]

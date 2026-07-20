@@ -9,70 +9,42 @@ const DataLoader = {
     websites: {},  // abbr -> website URL
     loaded: false,
 
-    loadedYears: new Set(),
-
     async init() {
         if (this.loaded) return;
         try {
-            const [confResp, jrnResp, metaResp, webResp] = await Promise.all([
+            const [confResp, jrnResp, metaResp, webResp, tlResp] = await Promise.all([
                 fetch('data/conferences.json'),
                 fetch('data/journals.json'),
                 fetch('data/metadata.json'),
-                fetch('data/websites.json').catch(() => Promise.resolve({ json: () => ({}) }))
+                fetch('data/websites.json').catch(() => Promise.resolve({ json: () => ({}) })),
+                fetch('data/timelines/all.json').catch(() => Promise.resolve({ json: () => [] }))
             ]);
             this.conferences = await confResp.json();
             this.journals = await jrnResp.json();
             this.metadata = await metaResp.json();
             this.websites = await webResp.json();
+            const tlArray = await tlResp.json();
+
+            // Index by year -> venue_id -> [entries]
             this.timelines = {};
-
-            // Load initial year
-            await this.loadYear('2026');
-            // Preload adjacent years
-            this.loadYear('2025').catch(() => {});
-            this.loadYear('2027').catch(() => {});
-
-            this.loaded = true;
-            console.log(`Loaded: ${this.conferences.length} conferences, ${this.journals.length} journals, ${Object.keys(this.websites).length} websites`);
-        } catch (err) {
-            console.error('Failed to load data:', err);
-            throw err;
-        }
-    },
-
-    async loadYear(year) {
-        year = String(year);
-        if (this.loadedYears.has(year)) return;
-        try {
-            const resp = await fetch(`data/timelines/${year}.json`);
-            if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-            const tlArray = await resp.json();
-            if (!this.timelines[year]) this.timelines[year] = {};
             for (const tl of tlArray) {
-                const y = String(tl.year || year);
+                const y = String(tl.year || '2026');
                 if (!this.timelines[y]) this.timelines[y] = {};
                 if (!this.timelines[y][tl.venue_id]) this.timelines[y][tl.venue_id] = [];
                 this.timelines[y][tl.venue_id].push(tl);
             }
-            for (const vid of Object.keys(this.timelines[year])) {
-                this.timelines[year][vid].sort((a, b) => {
-                    return (a.submission_deadline || '9999').localeCompare(b.submission_deadline || '9999');
-                });
+            for (const y of Object.keys(this.timelines)) {
+                for (const vid of Object.keys(this.timelines[y])) {
+                    this.timelines[y][vid].sort((a, b) => (a.submission_deadline||'9999').localeCompare(b.submission_deadline||'9999'));
+                }
             }
-            this.loadedYears.add(year);
-            console.log(`Loaded timeline ${year}: ${tlArray.length} entries`);
-        } catch (err) {
-            console.warn(`Timeline ${year} not available:`, err.message);
-            if (!this.timelines[year]) this.timelines[year] = {};
-        }
-    },
 
-    getAvailableYears() {
-        // Return years that have been loaded or are known to exist
-        const years = [];
-        for (const y of this.loadedYears) years.push(y);
-        years.sort();
-        return years.length > 0 ? years : ['2026'];
+            this.loaded = true;
+            console.log('Loaded:', this.conferences.length, 'conferences,', this.journals.length, 'journals,', tlArray.length, 'timelines (all years),', Object.keys(this.websites).length, 'websites');
+        } catch (err) {
+            console.error('Failed to load data:', err);
+            throw err;
+        }
     },
 
     getTimeline(venueId, year) {

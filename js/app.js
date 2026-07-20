@@ -63,13 +63,7 @@ const App = {
         this.refresh();
     },
 
-    async refresh() {
-        // Load year data if needed
-        const year = Search.state.year || '2026';
-        if (!DataLoader.loadedYears.has(year)) {
-            Renderer.showLoading();
-            await DataLoader.loadYear(year);
-        }
+    refresh() {
         const results = Search.filter();
         Renderer.render(results);
     },
@@ -141,9 +135,9 @@ const App = {
     setupYearFilter() {
         const select = document.getElementById('yearFilter');
         if (!select) return;
-        select.addEventListener('change', async () => {
+        select.addEventListener('change', () => {
             Search.updateFilter('year', select.value);
-            await this.refresh();
+            this.refresh();
         });
     },
 
