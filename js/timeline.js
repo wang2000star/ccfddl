@@ -12,24 +12,45 @@ const Timeline = {
         catch(e) { return 'en-US'; }
     },
 
-    formatDate(dateStr) {
+    TIMEZONES: { 'AoE': 'UTC-12', 'UTC': 'UTC', 'PST': 'UTC-8', 'EST': 'UTC-5', 'CET': 'UTC+1', 'CST': 'UTC+8', 'JST': 'UTC+9' },
+
+    formatDate(dateStr, tz) {
         if (!dateStr) return '';
         try {
-            const d = new Date(dateStr + (dateStr.includes('T') ? '' : 'T00:00:00'));
+            const d = this._parseDate(dateStr);
             if (isNaN(d.getTime())) return dateStr;
             const locale = this.getLocale();
             const month = d.toLocaleDateString(locale, { month: 'short' });
             const day = d.getDate();
-            return `${month} ${day}`;
+            const tzLabel = tz ? ` (${tz})` : '';
+            return `${month} ${day}${tzLabel}`;
         } catch { return dateStr; }
     },
 
-    formatFullDate(dateStr) {
+    formatFullDate(dateStr, tz) {
         if (!dateStr) return '';
         try {
-            const d = new Date(dateStr + (dateStr.includes('T') ? '' : 'T00:00:00'));
+            const d = this._parseDate(dateStr);
             if (isNaN(d.getTime())) return dateStr;
-            return d.toLocaleDateString(this.getLocale(), { year: 'numeric', month: 'short', day: 'numeric' });
+            const localStr = d.toLocaleDateString(this.getLocale(), { year: 'numeric', month: 'short', day: 'numeric' });
+            const tzLabel = tz ? ` AoE` : '';
+            return `${localStr}${tzLabel}`;
+        } catch { return dateStr; }
+    },
+
+    _parseDate(dateStr) {
+        // AoE = UTC-12, so "2026-01-15 AoE" = 2026-01-15T12:00:00Z
+        // For display, parse as UTC midnight and note the timezone
+        return new Date(dateStr.replace(' AoE', '') + 'T12:00:00Z');
+    },
+
+    toLocalTime(dateStr, tz) {
+        // Convert an AoE deadline to the user's local time for display
+        if (!dateStr) return '';
+        try {
+            const d = this._parseDate(dateStr);
+            if (isNaN(d.getTime())) return dateStr;
+            return d.toLocaleString(this.getLocale(), { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' });
         } catch { return dateStr; }
     },
 
@@ -61,23 +82,26 @@ const Timeline = {
             { key: 'camera_ready', label: this.t('cameraReady') },
         ];
 
+        const tz = timeline.timezone || 'AoE';
+
         for (const item of items) {
             if (timeline[item.key]) {
                 const cls = this.urgencyClass(timeline[item.key]);
                 const daysInfo = this.daysUntil(timeline[item.key]);
-                const daysText = daysInfo && !daysInfo.past ? ` (${daysInfo.days}d)` : '';
+                const daysText = daysInfo && !daysInfo.past ? ` (${daysInfo.d}d)` : '';
+                const localTime = (item.key === 'submission_deadline') ? `<br><span style="font-size:0.6rem;color:var(--color-text-muted)">🕐 ${this.toLocalTime(timeline[item.key], tz)} 本地</span>` : '';
                 rows.push(`
                     <div class="timeline-row">
                         <span class="timeline-label">${item.label}</span>
-                        <span class="timeline-value ${cls}">${this.formatFullDate(timeline[item.key])}${daysText}</span>
+                        <span class="timeline-value ${cls}">${this.formatFullDate(timeline[item.key], tz)}${daysText}${localTime}</span>
                     </div>
                 `);
             }
         }
 
         if (timeline.rebuttal_start || timeline.rebuttal_end) {
-            const start = this.formatDate(timeline.rebuttal_start);
-            const end = this.formatDate(timeline.rebuttal_end);
+            const start = this.formatDate(timeline.rebuttal_start, tz);
+            const end = this.formatDate(timeline.rebuttal_end, tz);
             rows.push(`
                 <div class="timeline-row">
                     <span class="timeline-label">${this.t('rebuttalPeriod')}</span>

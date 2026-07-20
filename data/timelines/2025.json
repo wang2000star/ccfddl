@@ -10,6 +10,7 @@
     "conference_start": "2025-10-24",
     "conference_end": "2025-10-28",
     "location": "Los Angeles, CA, USA",
+    "timezone": "AoE",
     "source_url": "https://www.sigsac.org/ccs/CCS2026/",
     "stats": {
       "submissions": 1964,
@@ -33,7 +34,8 @@
       "submissions": 1558,
       "accepted": 246,
       "acceptance_rate": 15.8
-    }
+    },
+    "timezone": "AoE"
   },
   {
     "venue_id": "ndss",
@@ -53,7 +55,8 @@
       "submissions": 694,
       "accepted": 140,
       "acceptance_rate": 20.2
-    }
+    },
+    "timezone": "AoE"
   },
   {
     "venue_id": "usenix-security",
@@ -71,7 +74,8 @@
       "submissions": 1741,
       "accepted": 307,
       "acceptance_rate": 17.6
-    }
+    },
+    "timezone": "AoE"
   },
   {
     "venue_id": "eurocrypt",
@@ -87,7 +91,8 @@
       "submissions": 425,
       "accepted": 98,
       "acceptance_rate": 23.1
-    }
+    },
+    "timezone": "AoE"
   },
   {
     "venue_id": "crypto",
@@ -103,7 +108,8 @@
       "submissions": 403,
       "accepted": 98,
       "acceptance_rate": 24.3
-    }
+    },
+    "timezone": "AoE"
   },
   {
     "venue_id": "cvpr",
@@ -123,7 +129,8 @@
       "submissions": 13008,
       "accepted": 3210,
       "acceptance_rate": 24.7
-    }
+    },
+    "timezone": "AoE"
   },
   {
     "venue_id": "iccv",
@@ -143,7 +150,8 @@
       "submissions": 9800,
       "accepted": 2187,
       "acceptance_rate": 22.3
-    }
+    },
+    "timezone": "AoE"
   },
   {
     "venue_id": "neurips",
@@ -161,7 +169,8 @@
       "submissions": 15670,
       "accepted": 4020,
       "acceptance_rate": 25.7
-    }
+    },
+    "timezone": "AoE"
   },
   {
     "venue_id": "icml",
@@ -179,7 +188,8 @@
       "submissions": 9477,
       "accepted": 2609,
       "acceptance_rate": 27.5
-    }
+    },
+    "timezone": "AoE"
   },
   {
     "venue_id": "iclr",
@@ -199,7 +209,8 @@
       "submissions": 11480,
       "accepted": 3500,
       "acceptance_rate": 30.5
-    }
+    },
+    "timezone": "AoE"
   },
   {
     "venue_id": "aaai",
@@ -216,7 +227,8 @@
       "submissions": 12957,
       "accepted": 2880,
       "acceptance_rate": 22.2
-    }
+    },
+    "timezone": "AoE"
   },
   {
     "venue_id": "acl",
@@ -234,7 +246,8 @@
       "submissions": 4935,
       "accepted": 1152,
       "acceptance_rate": 23.3
-    }
+    },
+    "timezone": "AoE"
   },
   {
     "venue_id": "ecai",
@@ -245,7 +258,8 @@
     "notification": "2025-06-10",
     "conference_start": "2025-10-19",
     "conference_end": "2025-10-23",
-    "location": "Málaga, Spain"
+    "location": "Málaga, Spain",
+    "timezone": "AoE"
   },
   {
     "venue_id": "eccv",
@@ -262,7 +276,8 @@
       "submissions": 8600,
       "accepted": 2020,
       "acceptance_rate": 23.5
-    }
+    },
+    "timezone": "AoE"
   },
   {
     "venue_id": "emnlp",
@@ -273,7 +288,8 @@
     "notification": "2025-09-01",
     "conference_start": "2025-11-07",
     "conference_end": "2025-11-11",
-    "location": "Miami, FL, USA"
+    "location": "Miami, FL, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "naacl",
@@ -284,7 +300,8 @@
     "notification": "2025-01-20",
     "conference_start": "2025-04-19",
     "conference_end": "2025-04-24",
-    "location": "Albuquerque, NM, USA"
+    "location": "Albuquerque, NM, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "coling",
@@ -295,7 +312,8 @@
     "notification": "2025-09-15",
     "conference_start": "2025-12-01",
     "conference_end": "2025-12-05",
-    "location": "Kyoto, Japan"
+    "location": "Kyoto, Japan",
+    "timezone": "AoE"
   },
   {
     "venue_id": "ijcai",
@@ -311,7 +329,8 @@
       "submissions": 5853,
       "accepted": 878,
       "acceptance_rate": 15.0
-    }
+    },
+    "timezone": "AoE"
   },
   {
     "venue_id": "aistats",
@@ -322,7 +341,8 @@
     "notification": "2025-01-15",
     "conference_start": "2025-05-04",
     "conference_end": "2025-05-07",
-    "location": "Valencia, Spain"
+    "location": "Valencia, Spain",
+    "timezone": "AoE"
   },
   {
     "venue_id": "icra",
@@ -333,7 +353,8 @@
     "notification": "2025-01-15",
     "conference_start": "2025-05-18",
     "conference_end": "2025-05-22",
-    "location": "San Antonio, TX, USA"
+    "location": "San Antonio, TX, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "www",
@@ -353,7 +374,8 @@
       "submissions": 2060,
       "accepted": 409,
       "acceptance_rate": 19.9
-    }
+    },
+    "timezone": "AoE"
   },
   {
     "venue_id": "sigmod",
@@ -369,7 +391,8 @@
       "submissions": 720,
       "accepted": 158,
       "acceptance_rate": 21.9
-    }
+    },
+    "timezone": "AoE"
   },
   {
     "venue_id": "sigkdd",
@@ -380,7 +403,8 @@
     "notification": "2025-05-15",
     "conference_start": "2025-08-02",
     "conference_end": "2025-08-06",
-    "location": "Philadelphia, PA, USA"
+    "location": "Philadelphia, PA, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "vldb",
@@ -391,7 +415,8 @@
     "notification": "2025-05-15",
     "conference_start": "2025-08-30",
     "conference_end": "2025-09-04",
-    "location": "Berlin, Germany"
+    "location": "Berlin, Germany",
+    "timezone": "AoE"
   },
   {
     "venue_id": "icde",
@@ -402,7 +427,8 @@
     "notification": "2025-02-10",
     "conference_start": "2025-05-04",
     "conference_end": "2025-05-08",
-    "location": "Hong Kong, China"
+    "location": "Hong Kong, China",
+    "timezone": "AoE"
   },
   {
     "venue_id": "sigir",
@@ -413,7 +439,8 @@
     "notification": "2025-04-10",
     "conference_start": "2025-07-12",
     "conference_end": "2025-07-16",
-    "location": "Copenhagen, Denmark"
+    "location": "Copenhagen, Denmark",
+    "timezone": "AoE"
   },
   {
     "venue_id": "icse",
@@ -424,7 +451,8 @@
     "notification": "2024-11-15",
     "conference_start": "2025-04-11",
     "conference_end": "2025-04-18",
-    "location": "Rio de Janeiro, Brazil"
+    "location": "Rio de Janeiro, Brazil",
+    "timezone": "AoE"
   },
   {
     "venue_id": "fse",
@@ -435,7 +463,8 @@
     "notification": "2025-06-01",
     "conference_start": "2025-11-14",
     "conference_end": "2025-11-18",
-    "location": "Portland, OR, USA"
+    "location": "Portland, OR, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "pldi",
@@ -446,7 +475,8 @@
     "notification": "2025-02-15",
     "conference_start": "2025-06-15",
     "conference_end": "2025-06-19",
-    "location": "Copenhagen, Denmark"
+    "location": "Copenhagen, Denmark",
+    "timezone": "AoE"
   },
   {
     "venue_id": "popl",
@@ -457,7 +487,8 @@
     "notification": "2024-10-01",
     "conference_start": "2025-01-20",
     "conference_end": "2025-01-22",
-    "location": "Philadelphia, PA, USA"
+    "location": "Philadelphia, PA, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "sosp",
@@ -468,7 +499,8 @@
     "notification": "2025-03-15",
     "conference_start": "2025-10-25",
     "conference_end": "2025-10-28",
-    "location": "Koblenz, Germany"
+    "location": "Koblenz, Germany",
+    "timezone": "AoE"
   },
   {
     "venue_id": "osdi",
@@ -479,7 +511,8 @@
     "notification": "2025-03-31",
     "conference_start": "2025-07-13",
     "conference_end": "2025-07-15",
-    "location": "Seattle, WA, USA"
+    "location": "Seattle, WA, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "issta",
@@ -490,7 +523,8 @@
     "notification": "2025-03-01",
     "conference_start": "2025-07-13",
     "conference_end": "2025-07-17",
-    "location": "Trondheim, Norway"
+    "location": "Trondheim, Norway",
+    "timezone": "AoE"
   },
   {
     "venue_id": "ase",
@@ -501,7 +535,8 @@
     "notification": "2025-07-31",
     "conference_start": "2025-10-26",
     "conference_end": "2025-10-30",
-    "location": "Sacramento, CA, USA"
+    "location": "Sacramento, CA, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "oopsla",
@@ -512,7 +547,8 @@
     "notification": "2025-07-15",
     "conference_start": "2025-10-25",
     "conference_end": "2025-10-30",
-    "location": "Singapore"
+    "location": "Singapore",
+    "timezone": "AoE"
   },
   {
     "venue_id": "asplos",
@@ -523,7 +559,8 @@
     "notification": "2024-11-01",
     "conference_start": "2025-03-28",
     "conference_end": "2025-04-01",
-    "location": "San Diego, CA, USA"
+    "location": "San Diego, CA, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "hpca",
@@ -534,7 +571,8 @@
     "notification": "2024-10-15",
     "conference_start": "2025-02-21",
     "conference_end": "2025-02-25",
-    "location": "San Diego, CA, USA"
+    "location": "San Diego, CA, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "micro",
@@ -545,7 +583,8 @@
     "notification": "2025-07-15",
     "conference_start": "2025-10-17",
     "conference_end": "2025-10-21",
-    "location": "Austin, TX, USA"
+    "location": "Austin, TX, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "isca",
@@ -556,7 +595,8 @@
     "notification": "2025-02-28",
     "conference_start": "2025-06-20",
     "conference_end": "2025-06-24",
-    "location": "New York, NY, USA"
+    "location": "New York, NY, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "sc",
@@ -567,7 +607,8 @@
     "notification": "2025-06-15",
     "conference_start": "2025-11-15",
     "conference_end": "2025-11-20",
-    "location": "Atlanta, GA, USA"
+    "location": "Atlanta, GA, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "fast",
@@ -578,7 +619,8 @@
     "notification": "2024-12-10",
     "conference_start": "2025-02-24",
     "conference_end": "2025-02-26",
-    "location": "Santa Clara, CA, USA"
+    "location": "Santa Clara, CA, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "eurosys",
@@ -589,7 +631,8 @@
     "notification": "2025-01-31",
     "conference_start": "2025-04-13",
     "conference_end": "2025-04-16",
-    "location": "Rotterdam, Netherlands"
+    "location": "Rotterdam, Netherlands",
+    "timezone": "AoE"
   },
   {
     "venue_id": "atc",
@@ -600,7 +643,8 @@
     "notification": "2025-04-01",
     "conference_start": "2025-07-13",
     "conference_end": "2025-07-15",
-    "location": "Seattle, WA, USA"
+    "location": "Seattle, WA, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "dac",
@@ -611,7 +655,8 @@
     "notification": "2025-02-15",
     "conference_start": "2025-06-21",
     "conference_end": "2025-06-25",
-    "location": "San Francisco, CA, USA"
+    "location": "San Francisco, CA, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "sigcomm",
@@ -628,7 +673,8 @@
       "submissions": 354,
       "accepted": 62,
       "acceptance_rate": 17.5
-    }
+    },
+    "timezone": "AoE"
   },
   {
     "venue_id": "nsdi",
@@ -644,7 +690,8 @@
       "submissions": 231,
       "accepted": 46,
       "acceptance_rate": 19.9
-    }
+    },
+    "timezone": "AoE"
   },
   {
     "venue_id": "infocom",
@@ -655,7 +702,8 @@
     "notification": "2024-12-01",
     "conference_start": "2025-05-11",
     "conference_end": "2025-05-14",
-    "location": "Toronto, Canada"
+    "location": "Toronto, Canada",
+    "timezone": "AoE"
   },
   {
     "venue_id": "mobicom",
@@ -666,7 +714,8 @@
     "notification": "2025-06-01",
     "conference_start": "2025-10-05",
     "conference_end": "2025-10-09",
-    "location": "Seoul, South Korea"
+    "location": "Seoul, South Korea",
+    "timezone": "AoE"
   },
   {
     "venue_id": "stoc",
@@ -677,7 +726,8 @@
     "notification": "2025-02-01",
     "conference_start": "2025-06-22",
     "conference_end": "2025-06-26",
-    "location": "Montreal, Canada"
+    "location": "Montreal, Canada",
+    "timezone": "AoE"
   },
   {
     "venue_id": "focs",
@@ -688,7 +738,8 @@
     "notification": "2025-07-01",
     "conference_start": "2025-10-26",
     "conference_end": "2025-10-29",
-    "location": "Chicago, IL, USA"
+    "location": "Chicago, IL, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "soda",
@@ -699,7 +750,8 @@
     "notification": "2024-10-01",
     "conference_start": "2025-01-11",
     "conference_end": "2025-01-14",
-    "location": "Washington, DC, USA"
+    "location": "Washington, DC, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "cav",
@@ -710,7 +762,8 @@
     "notification": "2025-04-01",
     "conference_start": "2025-07-19",
     "conference_end": "2025-07-24",
-    "location": "Toronto, Canada"
+    "location": "Toronto, Canada",
+    "timezone": "AoE"
   },
   {
     "venue_id": "lics",
@@ -721,7 +774,8 @@
     "notification": "2025-04-01",
     "conference_start": "2025-06-29",
     "conference_end": "2025-07-03",
-    "location": "Vancouver, Canada"
+    "location": "Vancouver, Canada",
+    "timezone": "AoE"
   },
   {
     "venue_id": "siggraph",
@@ -732,7 +786,8 @@
     "notification": "2025-04-01",
     "conference_start": "2025-08-09",
     "conference_end": "2025-08-13",
-    "location": "Los Angeles, CA, USA"
+    "location": "Los Angeles, CA, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "acm-mm",
@@ -743,7 +798,8 @@
     "notification": "2025-07-01",
     "conference_start": "2025-10-26",
     "conference_end": "2025-10-30",
-    "location": "Amsterdam, Netherlands"
+    "location": "Amsterdam, Netherlands",
+    "timezone": "AoE"
   },
   {
     "venue_id": "ieee-vis",
@@ -754,7 +810,8 @@
     "notification": "2025-06-15",
     "conference_start": "2025-10-25",
     "conference_end": "2025-10-30",
-    "location": "Vancouver, Canada"
+    "location": "Vancouver, Canada",
+    "timezone": "AoE"
   },
   {
     "venue_id": "vr",
@@ -765,7 +822,8 @@
     "notification": "2024-12-01",
     "conference_start": "2025-03-14",
     "conference_end": "2025-03-18",
-    "location": "Orlando, FL, USA"
+    "location": "Orlando, FL, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "chi",
@@ -781,7 +839,8 @@
       "submissions": 4852,
       "accepted": 1124,
       "acceptance_rate": 23.2
-    }
+    },
+    "timezone": "AoE"
   },
   {
     "venue_id": "cscw",
@@ -792,7 +851,8 @@
     "notification": "2024-10-01",
     "conference_start": "2025-04-11",
     "conference_end": "2025-04-15",
-    "location": "Minneapolis, MN, USA"
+    "location": "Minneapolis, MN, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "ubicomp",
@@ -803,7 +863,8 @@
     "notification": "2025-05-01",
     "conference_start": "2025-09-13",
     "conference_end": "2025-09-17",
-    "location": "Helsinki, Finland"
+    "location": "Helsinki, Finland",
+    "timezone": "AoE"
   },
   {
     "venue_id": "uist",
@@ -814,7 +875,8 @@
     "notification": "2025-06-15",
     "conference_start": "2025-10-11",
     "conference_end": "2025-10-14",
-    "location": "Kyoto, Japan"
+    "location": "Kyoto, Japan",
+    "timezone": "AoE"
   },
   {
     "venue_id": "rtss",
@@ -825,7 +887,8 @@
     "notification": "2025-08-15",
     "conference_start": "2025-12-01",
     "conference_end": "2025-12-04",
-    "location": "San Antonio, TX, USA"
+    "location": "San Antonio, TX, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "miccai",
@@ -836,7 +899,8 @@
     "notification": "2025-05-15",
     "conference_start": "2025-10-04",
     "conference_end": "2025-10-08",
-    "location": "Munich, Germany"
+    "location": "Munich, Germany",
+    "timezone": "AoE"
   },
   {
     "venue_id": "bibm",
@@ -847,7 +911,8 @@
     "notification": "2025-10-01",
     "conference_start": "2025-12-08",
     "conference_end": "2025-12-11",
-    "location": "Chicago, IL, USA"
+    "location": "Chicago, IL, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "asiacrypt",
@@ -862,7 +927,8 @@
     "conference_start": "2025-12-07",
     "conference_end": "2025-12-11",
     "location": "Hong Kong, China",
-    "source_url": "https://asiacrypt.iacr.org/2026/"
+    "source_url": "https://asiacrypt.iacr.org/2026/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "ches",
@@ -874,7 +940,8 @@
     "conference_start": "2025-10-11",
     "conference_end": "2025-10-15",
     "location": "Antalya, Türkiye",
-    "source_url": "https://ches.iacr.org/2026/"
+    "source_url": "https://ches.iacr.org/2026/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "ches",
@@ -886,7 +953,8 @@
     "conference_start": "2025-10-11",
     "conference_end": "2025-10-15",
     "location": "Antalya, Türkiye",
-    "source_url": "https://ches.iacr.org/2026/"
+    "source_url": "https://ches.iacr.org/2026/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "ches",
@@ -898,7 +966,8 @@
     "conference_start": "2025-10-11",
     "conference_end": "2025-10-15",
     "location": "Antalya, Türkiye",
-    "source_url": "https://ches.iacr.org/2026/"
+    "source_url": "https://ches.iacr.org/2026/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "ches",
@@ -910,7 +979,8 @@
     "conference_start": "2025-10-11",
     "conference_end": "2025-10-15",
     "location": "Antalya, Türkiye",
-    "source_url": "https://ches.iacr.org/2026/"
+    "source_url": "https://ches.iacr.org/2026/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "fse",
@@ -922,7 +992,8 @@
     "conference_start": "2025-03-23",
     "conference_end": "2025-03-27",
     "location": "Singapore",
-    "source_url": "https://fse.iacr.org/2026/"
+    "source_url": "https://fse.iacr.org/2026/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "fse",
@@ -934,7 +1005,8 @@
     "conference_start": "2025-03-23",
     "conference_end": "2025-03-27",
     "location": "Singapore",
-    "source_url": "https://fse.iacr.org/2026/"
+    "source_url": "https://fse.iacr.org/2026/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "fse",
@@ -946,7 +1018,8 @@
     "conference_start": "2025-03-23",
     "conference_end": "2025-03-27",
     "location": "Singapore",
-    "source_url": "https://fse.iacr.org/2026/"
+    "source_url": "https://fse.iacr.org/2026/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "fse",
@@ -958,7 +1031,8 @@
     "conference_start": "2025-03-23",
     "conference_end": "2025-03-27",
     "location": "Singapore",
-    "source_url": "https://fse.iacr.org/2026/"
+    "source_url": "https://fse.iacr.org/2026/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "tcc",
@@ -969,7 +1043,8 @@
     "notification": "2024-12-01",
     "conference_start": "2025-03-15",
     "conference_end": "2025-03-18",
-    "location": "New York, NY, USA"
+    "location": "New York, NY, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "tcc",
@@ -980,7 +1055,8 @@
     "notification": "2025-04-01",
     "conference_start": "2025-03-15",
     "conference_end": "2025-03-18",
-    "location": "New York, NY, USA"
+    "location": "New York, NY, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "dsn",
@@ -991,7 +1067,8 @@
     "notification": "2025-03-01",
     "conference_start": "2025-06-22",
     "conference_end": "2025-06-25",
-    "location": "Brisbane, Australia"
+    "location": "Brisbane, Australia",
+    "timezone": "AoE"
   },
   {
     "venue_id": "cikm",
@@ -1002,7 +1079,8 @@
     "notification": "2025-08-01",
     "conference_start": "2025-10-19",
     "conference_end": "2025-10-23",
-    "location": "Taipei, Taiwan"
+    "location": "Taipei, Taiwan",
+    "timezone": "AoE"
   },
   {
     "venue_id": "wsdm",
@@ -1013,7 +1091,8 @@
     "notification": "2024-10-15",
     "conference_start": "2025-02-23",
     "conference_end": "2025-02-27",
-    "location": "Barcelona, Spain"
+    "location": "Barcelona, Spain",
+    "timezone": "AoE"
   },
   {
     "venue_id": "recsys",
@@ -1024,7 +1103,8 @@
     "notification": "2025-07-01",
     "conference_start": "2025-09-22",
     "conference_end": "2025-09-26",
-    "location": "Singapore"
+    "location": "Singapore",
+    "timezone": "AoE"
   },
   {
     "venue_id": "icdm",
@@ -1035,7 +1115,8 @@
     "notification": "2025-09-01",
     "conference_start": "2025-12-07",
     "conference_end": "2025-12-10",
-    "location": "Sorrento, Italy"
+    "location": "Sorrento, Italy",
+    "timezone": "AoE"
   },
   {
     "venue_id": "aamas",
@@ -1046,7 +1127,8 @@
     "notification": "2025-01-01",
     "conference_start": "2025-05-04",
     "conference_end": "2025-05-08",
-    "location": "Detroit, MI, USA"
+    "location": "Detroit, MI, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "hpdc",
@@ -1057,7 +1139,8 @@
     "notification": "2025-04-01",
     "conference_start": "2025-06-15",
     "conference_end": "2025-06-18",
-    "location": "Lyon, France"
+    "location": "Lyon, France",
+    "timezone": "AoE"
   },
   {
     "venue_id": "date",
@@ -1068,7 +1151,8 @@
     "notification": "2024-11-15",
     "conference_start": "2025-03-09",
     "conference_end": "2025-03-13",
-    "location": "Grenoble, France"
+    "location": "Grenoble, France",
+    "timezone": "AoE"
   },
   {
     "venue_id": "iccad",
@@ -1079,7 +1163,8 @@
     "notification": "2025-07-01",
     "conference_start": "2025-11-02",
     "conference_end": "2025-11-05",
-    "location": "San Diego, CA, USA"
+    "location": "San Diego, CA, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "ipdps",
@@ -1090,7 +1175,8 @@
     "notification": "2025-01-01",
     "conference_start": "2025-05-25",
     "conference_end": "2025-05-29",
-    "location": "Barcelona, Spain"
+    "location": "Barcelona, Spain",
+    "timezone": "AoE"
   },
   {
     "venue_id": "icws",
@@ -1101,7 +1187,8 @@
     "notification": "2025-05-01",
     "conference_start": "2025-07-07",
     "conference_end": "2025-07-13",
-    "location": "Chicago, IL, USA"
+    "location": "Chicago, IL, USA",
+    "timezone": "AoE"
   },
   {
     "venue_id": "globecom",
@@ -1112,7 +1199,8 @@
     "notification": "2025-07-15",
     "conference_start": "2025-12-07",
     "conference_end": "2025-12-11",
-    "location": "Rio de Janeiro, Brazil"
+    "location": "Rio de Janeiro, Brazil",
+    "timezone": "AoE"
   },
   {
     "venue_id": "icc",
@@ -1123,7 +1211,8 @@
     "notification": "2025-01-15",
     "conference_start": "2025-06-07",
     "conference_end": "2025-06-11",
-    "location": "Seoul, South Korea"
+    "location": "Seoul, South Korea",
+    "timezone": "AoE"
   },
   {
     "venue_id": "icassp",
@@ -1134,7 +1223,8 @@
     "notification": "2025-01-01",
     "conference_start": "2025-04-19",
     "conference_end": "2025-04-24",
-    "location": "Barcelona, Spain"
+    "location": "Barcelona, Spain",
+    "timezone": "AoE"
   },
   {
     "venue_id": "icme",
@@ -1145,7 +1235,8 @@
     "notification": "2025-05-15",
     "conference_start": "2025-07-13",
     "conference_end": "2025-07-17",
-    "location": "Taipei, Taiwan"
+    "location": "Taipei, Taiwan",
+    "timezone": "AoE"
   },
   {
     "venue_id": "interspeech",
@@ -1156,6 +1247,7 @@
     "notification": "2025-06-01",
     "conference_start": "2025-08-30",
     "conference_end": "2025-09-03",
-    "location": "Dublin, Ireland"
+    "location": "Dublin, Ireland",
+    "timezone": "AoE"
   }
 ]
