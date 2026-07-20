@@ -169,29 +169,17 @@ const Renderer = {
         const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
         const monthW = 100 / 12;
 
-        let headerHTML = `<div class="gantt-title">${this.t('ganttTitle')}</div><div class="gantt-legend">${this.t('ganttLegend')} <span class="gleg sub">■ ${this.t('ganttSubmission')}</span> <span class="gleg review">■ ${this.t('ganttReview')}</span> <span class="gleg conf">■ ${this.t('ganttConference')}</span> <span class="gleg conflict">${this.t('ganttConflict')}</span></div>`;
+        let headerHTML = `<div class="gantt-title">${this.t('ganttTitle')}</div><div class="gantt-legend">${this.t('ganttLegend')} <span class="gleg sub">■ ${this.t('ganttSubmission')}</span> <span class="gleg review">■ ${this.t('ganttReview')}</span> <span class="gleg conf">▼ ${this.t('ganttConference')}</span></div>`;
         headerHTML += `<div class="gantt-months">${months.map(m => `<span style="width:${monthW}%">${m}</span>`).join('')}</div>`;
         if (this.ganttHeader) this.ganttHeader.innerHTML = headerHTML;
 
         // Build rows
         let bodyHTML = '';
 
-        // Check overlap between any two venue-round pairs
-        const checkOverlap = (a, b) => {
-            const tla = a.timeline, tlb = b.timeline;
-            const a1 = tla.submission_deadline ? new Date(tla.submission_deadline) : null;
-            const a2 = tla.conference_end ? new Date(tla.conference_end) : (tla.conference_start ? new Date(tla.conference_start) : null);
-            const b1 = tlb.submission_deadline ? new Date(tlb.submission_deadline) : null;
-            const b2 = tlb.conference_end ? new Date(tlb.conference_end) : (tlb.conference_start ? new Date(tlb.conference_start) : null);
-            if (!a1 || !a2 || !b1 || !b2) return false;
-            return a1 <= b2 && b1 <= a2;
-        };
-
         for (let i = 0; i < withTimeline.length; i++) {
             const row = withTimeline[i];
             const v = row.venue, tl = row.timeline;
             const rankCls = `gantt-${v.ccf_rank.toLowerCase()}`;
-            const hasConflict = withTimeline.some((row2, j) => i !== j && row.venue.id !== row2.venue.id && checkOverlap(row, row2));
 
             // Calculate positions as % of year
             const pos = (dateStr) => {
@@ -217,20 +205,13 @@ const Renderer = {
                     </div>`;
             }
 
-            // Check for overlap with previous row
-            let overlapWarning = '';
-            if (hasConflict) {
-                overlapWarning = `<span class="gantt-conflict-icon" title="${this.t('ganttConflict')}">⚠️</span>`;
-            }
-
             const roundLabel = row.totalRounds > 1 ? ` <span style="font-size:0.6rem;color:var(--color-primary);font-weight:700;">R${row.round}</span>` : '';
 
             bodyHTML += `
-            <div class="gantt-row ${rankCls} ${hasConflict ? 'has-conflict' : ''}">
+            <div class="gantt-row ${rankCls}">
                 <div class="gantt-label">
                     <span class="badge badge-rank badge-${v.ccf_rank.toLowerCase()}">${v.ccf_rank}</span>
                     <strong>${this.esc(v.abbreviation)}${roundLabel}</strong>
-                    ${overlapWarning}
                     <span style="font-size:0.65rem;color:var(--color-text-muted)">${this.esc(tl.location || '')}</span>
                 </div>
                 <div class="gantt-bars">${barHTML}</div>
