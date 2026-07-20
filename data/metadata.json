@@ -1,0 +1,54 @@
+{
+  "version": "2026-7th",
+  "description": "CCF Recommended International Conferences and Journals (7th Edition, March 2026)",
+  "description_zh": "中国计算机学会推荐国际学术会议和期刊目录（第七版，2026年3月）",
+  "conference_count": 386,
+  "journal_count": 297,
+  "categories": [
+    {
+      "zh": "计算机体系结构",
+      "en": "Computer Architecture"
+    },
+    {
+      "zh": "计算机网络",
+      "en": "Computer Networks"
+    },
+    {
+      "zh": "网络与信息安全",
+      "en": "Network & Information Security"
+    },
+    {
+      "zh": "软件工程",
+      "en": "Software Engineering"
+    },
+    {
+      "zh": "数据库/数据挖掘",
+      "en": "Databases & Data Mining"
+    },
+    {
+      "zh": "计算机科学理论",
+      "en": "Theory of Computer Science"
+    },
+    {
+      "zh": "计算机图形学与多媒体",
+      "en": "Computer Graphics & Multimedia"
+    },
+    {
+      "zh": "人工智能",
+      "en": "Artificial Intelligence"
+    },
+    {
+      "zh": "人机交互与普适计算",
+      "en": "HCI & Pervasive Computing"
+    },
+    {
+      "zh": "交叉/综合/新兴",
+      "en": "Cross-disciplinary"
+    }
+  ],
+  "ccf_ranks": [
+    "A",
+    "B",
+    "C"
+  ]
+}
