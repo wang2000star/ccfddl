@@ -708,7 +708,10 @@ a:hover { text-decoration: underline; }
 .gantt-seg { position:absolute; height:100%; border-radius:3px; top:0; min-width:3px; }
 .gantt-seg.submission { background:linear-gradient(90deg,#86efac,#4ade80); opacity:0.85; z-index:1; }
 .gantt-seg.review { background:linear-gradient(90deg,#fdba74,#fb923c); opacity:0.85; z-index:1; }
-.gantt-marker { position:absolute; font-size:9px; color:#7c3aed; transform:translateX(-50%); z-index:2; }
+.gantt-marker { position:absolute; font-size:9px; transform:translateX(-50%); z-index:2; cursor:help; }
+.gantt-marker.sub-marker { color:#16a34a; top:-8px; }
+.gantt-marker.notif-marker { color:#ea580c; top:50%; transform:translate(-50%,-50%); font-size:6px; }
+.gantt-marker.conf-marker { color:#7c3aed; top:-8px; }
 
 /* Sync horizontal scroll between months header and body */
 .gantt-months-scroll::-webkit-scrollbar { height:6px; }

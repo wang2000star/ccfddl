@@ -171,7 +171,7 @@ const Renderer = {
 
         // Title + legend
         if (this.ganttHeader) {
-            this.ganttHeader.innerHTML = `<div class="gantt-title">${this.t('ganttTitle')}</div><div class="gantt-legend">${this.t('ganttLegend')} <span class="gleg sub">■ ${this.t('ganttSubmission')}</span> <span class="gleg review">■ ${this.t('ganttReview')}</span> <span class="gleg conf">▼ ${this.t('ganttConference')}</span></div>`;
+            this.ganttHeader.innerHTML = `<div class="gantt-title">${this.t('ganttTitle')}</div><div class="gantt-legend">${this.t('ganttLegend')} <span class="gleg sub">▼投稿</span> → <span class="gleg sub">■${this.t('ganttSubmission')}</span> → <span class="gleg review">●${this.t('ganttReview')}</span> → <span class="gleg conf">▼会议</span></div>`;
         }
 
         // Sticky months header
@@ -201,13 +201,15 @@ const Renderer = {
             let barHTML = '';
             if (sub != null && conf != null) {
                 const mid = notif != null ? notif : (sub + conf) / 2;
-                const subW = mid - sub;
-                const revW = conf - mid;
+                const subW = Math.max(mid - sub, 1);
+                const revW = Math.max(conf - mid, 1);
                 barHTML = `
                     <div class="gantt-bar-wrap" style="position:relative;height:20px;margin:2px 0;">
-                        <div class="gantt-seg submission" style="left:${sub}%;width:${Math.max(subW,1)}%"></div>
-                        <div class="gantt-seg review" style="left:${mid}%;width:${Math.max(revW,1)}%"></div>
-                        ${conf != null ? `<div class="gantt-marker conf" style="left:${conf}%">▼</div>` : ''}
+                        <div class="gantt-marker sub-marker" style="left:${sub}%" title="📥 ${Timeline.formatFullDate(tl.submission_deadline)}">▼</div>
+                        <div class="gantt-seg submission" style="left:${sub}%;width:${subW}%"></div>
+                        ${notif != null ? `<div class="gantt-marker notif-marker" style="left:${notif}%" title="📢 ${Timeline.formatFullDate(tl.notification)}">●</div>` : ''}
+                        <div class="gantt-seg review" style="left:${mid}%;width:${revW}%"></div>
+                        <div class="gantt-marker conf-marker" style="left:${conf}%" title="📅 ${Timeline.formatFullDate(tl.conference_start)}">▼</div>
                     </div>`;
             }
 
