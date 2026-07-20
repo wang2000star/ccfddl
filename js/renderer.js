@@ -70,8 +70,9 @@ const Renderer = {
         const rankClass = `badge-${rank.toLowerCase()}`;
         const rankLabel = this.t(`rank${rank}`) || `CCF-${rank}`;
         const isJT = venue.sub_type === 'journal-type' || (DataLoader.JOURNAL_TYPE_OVERRIDES && DataLoader.JOURNAL_TYPE_OVERRIDES.has(venue.abbreviation));
+        const year = (typeof Search !== 'undefined') ? (Search.state.year || '2026') : '2026';
         const website = (DataLoader.getWebsite) ? DataLoader.getWebsite(venue.abbreviation) : null;
-        const tl = (DataLoader.getTimeline) ? DataLoader.getTimeline(venue.id) : null;
+        const tl = (DataLoader.getTimeline) ? DataLoader.getTimeline(venue.id, year) : null;
         const webLink = website ? `<a href="${this.esc(website)}" target="_blank" class="badge badge-website" onclick="event.stopPropagation()">🌐 ${this.t('officialWebsite')}</a>` : '';
 
         return `
@@ -94,7 +95,8 @@ const Renderer = {
     },
 
     buildTimeline(venue, _tl) {
-        const timelines = DataLoader.getTimelines ? DataLoader.getTimelines(venue.id) : [];
+        const year = (typeof Search !== 'undefined') ? (Search.state.year || '2026') : '2026';
+        const timelines = DataLoader.getTimelines ? DataLoader.getTimelines(venue.id, year) : [];
         if (timelines.length === 0) {
             return `<div class="venue-timeline"><div class="timeline-no-data">${this.t('noTimeline')}</div></div>`;
         }
@@ -141,9 +143,10 @@ const Renderer = {
         if (this.emptyState) this.emptyState.style.display = 'none';
 
         // Collect all venue-round combinations for Gantt
+        const year = (typeof Search !== 'undefined') ? (Search.state.year || '2026') : '2026';
         const ganttRows = [];
         for (const v of venues) {
-            const timelines = DataLoader.getTimelines ? DataLoader.getTimelines(v.id) : [];
+            const timelines = DataLoader.getTimelines ? DataLoader.getTimelines(v.id, year) : [];
             if (timelines.length === 0) continue;
             for (const tl of timelines) {
                 if (tl.submission_deadline || tl.conference_start) {
@@ -244,7 +247,7 @@ const Renderer = {
     updateStats(venues) {
         if (!this.statsBar) return;
         const counts = DataLoader.countByRank(venues);
-        const withTL = venues.filter(v => DataLoader.getTimeline && DataLoader.getTimeline(v.id)).length;
+        const withTL = venues.filter(v => DataLoader.getTimeline && DataLoader.getTimeline(v.id, year)).length;
         this.statsBar.innerHTML = `${this.t('showing')} <strong>${venues.length}</strong> ${this.t('results')} (A:${counts.A} B:${counts.B} C:${counts.C}) | 📅 ${withTL} ${this.t('ganttTitle').replace('📊 ','')}`;
     },
 

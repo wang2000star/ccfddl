@@ -9,47 +9,70 @@ const DataLoader = {
     websites: {},  // abbr -> website URL
     loaded: false,
 
+    loadedYears: new Set(),
+
     async init() {
         if (this.loaded) return;
         try {
-            const [confResp, jrnResp, metaResp, tlResp, webResp] = await Promise.all([
+            const [confResp, jrnResp, metaResp, webResp] = await Promise.all([
                 fetch('data/conferences.json'),
                 fetch('data/journals.json'),
                 fetch('data/metadata.json'),
-                fetch('data/timelines/2026.json').catch(() => Promise.resolve({ json: () => [] })),
                 fetch('data/websites.json').catch(() => Promise.resolve({ json: () => ({}) }))
             ]);
             this.conferences = await confResp.json();
             this.journals = await jrnResp.json();
             this.metadata = await metaResp.json();
-            const tlArray = await tlResp.json();
             this.websites = await webResp.json();
-
-            // Index timelines by venue_id, supporting multiple rounds per venue
             this.timelines = {};
-            for (const tl of tlArray) {
-                const year = String(tl.year || '2026');
-                if (!this.timelines[year]) this.timelines[year] = {};
-                if (!this.timelines[year][tl.venue_id]) this.timelines[year][tl.venue_id] = [];
-                this.timelines[year][tl.venue_id].push(tl);
-            }
-            // Sort each venue's rounds by submission deadline
-            for (const year of Object.keys(this.timelines)) {
-                for (const vid of Object.keys(this.timelines[year])) {
-                    this.timelines[year][vid].sort((a, b) => {
-                        const da = a.submission_deadline || '9999';
-                        const db = b.submission_deadline || '9999';
-                        return da.localeCompare(db);
-                    });
-                }
-            }
+
+            // Load initial year
+            await this.loadYear('2026');
+            // Preload adjacent years
+            this.loadYear('2025').catch(() => {});
+            this.loadYear('2027').catch(() => {});
 
             this.loaded = true;
-            console.log(`Loaded: ${this.conferences.length} conferences, ${this.journals.length} journals, ${tlArray.length} timelines, ${Object.keys(this.websites).length} websites`);
+            console.log(`Loaded: ${this.conferences.length} conferences, ${this.journals.length} journals, ${Object.keys(this.websites).length} websites`);
         } catch (err) {
             console.error('Failed to load data:', err);
             throw err;
         }
+    },
+
+    async loadYear(year) {
+        year = String(year);
+        if (this.loadedYears.has(year)) return;
+        try {
+            const resp = await fetch(`data/timelines/${year}.json`);
+            if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+            const tlArray = await resp.json();
+            if (!this.timelines[year]) this.timelines[year] = {};
+            for (const tl of tlArray) {
+                const y = String(tl.year || year);
+                if (!this.timelines[y]) this.timelines[y] = {};
+                if (!this.timelines[y][tl.venue_id]) this.timelines[y][tl.venue_id] = [];
+                this.timelines[y][tl.venue_id].push(tl);
+            }
+            for (const vid of Object.keys(this.timelines[year])) {
+                this.timelines[year][vid].sort((a, b) => {
+                    return (a.submission_deadline || '9999').localeCompare(b.submission_deadline || '9999');
+                });
+            }
+            this.loadedYears.add(year);
+            console.log(`Loaded timeline ${year}: ${tlArray.length} entries`);
+        } catch (err) {
+            console.warn(`Timeline ${year} not available:`, err.message);
+            if (!this.timelines[year]) this.timelines[year] = {};
+        }
+    },
+
+    getAvailableYears() {
+        // Return years that have been loaded or are known to exist
+        const years = [];
+        for (const y of this.loadedYears) years.push(y);
+        years.sort();
+        return years.length > 0 ? years : ['2026'];
     },
 
     getTimeline(venueId, year) {

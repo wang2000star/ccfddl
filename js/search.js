@@ -60,10 +60,11 @@ const Search = {
         const rankOrder = { A: 0, B: 1, C: 2 };
         const now = new Date();
 
+        const year = this.state.year || '2026';
         if (this.state.sort === 'deadline') {
             venues.sort((a, b) => {
-                const tlA = DataLoader.getTimeline(a.id) || {};
-                const tlB = DataLoader.getTimeline(b.id) || {};
+                const tlA = DataLoader.getTimeline(a.id, year) || {};
+                const tlB = DataLoader.getTimeline(b.id, year) || {};
                 const dA = tlA.submission_deadline ? new Date(tlA.submission_deadline) : null;
                 const dB = tlB.submission_deadline ? new Date(tlB.submission_deadline) : null;
                 if (dA && !dB) return -1;

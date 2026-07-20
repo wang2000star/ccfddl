@@ -31,6 +31,7 @@ const App = {
         this.setupCategoryFilter();
         this.setupSortFilter();
         this.setupViewToggle();
+        this.setupYearFilter();
         this.setupLanguageToggle();
 
         // Load data
@@ -62,7 +63,13 @@ const App = {
         this.refresh();
     },
 
-    refresh() {
+    async refresh() {
+        // Load year data if needed
+        const year = Search.state.year || '2026';
+        if (!DataLoader.loadedYears.has(year)) {
+            Renderer.showLoading();
+            await DataLoader.loadYear(year);
+        }
         const results = Search.filter();
         Renderer.render(results);
     },
@@ -128,6 +135,15 @@ const App = {
         select.addEventListener('change', () => {
             Search.updateFilter('sort', select.value);
             this.refresh();
+        });
+    },
+
+    setupYearFilter() {
+        const select = document.getElementById('yearFilter');
+        if (!select) return;
+        select.addEventListener('change', async () => {
+            Search.updateFilter('year', select.value);
+            await this.refresh();
         });
     },
 
