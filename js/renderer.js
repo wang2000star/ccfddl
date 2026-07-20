@@ -2,14 +2,15 @@
  * renderer.js - DOM rendering for venue cards + Gantt view
  */
 const Renderer = {
-    grid: null, ganttView: null, ganttHeader: null, ganttBody: null,
+    grid: null, ganttView: null, ganttHeader: null, ganttMonths: null, ganttBodyScroll: null,
     emptyState: null, loadingState: null, statsBar: null,
 
     init() {
         this.grid = document.getElementById('cardGrid');
         this.ganttView = document.getElementById('ganttView');
         this.ganttHeader = document.getElementById('ganttHeader');
-        this.ganttBody = document.getElementById('ganttBody');
+        this.ganttMonths = document.getElementById('ganttMonths');
+        this.ganttBodyScroll = document.getElementById('ganttBodyScroll');
         this.emptyState = document.getElementById('emptyState');
         this.loadingState = document.getElementById('loadingState');
         this.statsBar = document.getElementById('statsBar');
@@ -157,21 +158,26 @@ const Renderer = {
         const withTimeline = ganttRows;
 
         if (withTimeline.length === 0) {
-            if (this.ganttBody) this.ganttBody.innerHTML = `<div style="text-align:center;padding:60px;color:var(--color-text-muted);">📊 ${this.t('noTimeline')} — ${this.t('noResultsHint')}</div>`;
+            if (this.ganttBodyScroll) this.ganttBodyScroll.innerHTML = `<div style="text-align:center;padding:60px;color:var(--color-text-muted);">📊 ${this.t('noTimeline')} — ${this.t('noResultsHint')}</div>`;
             if (this.ganttHeader) this.ganttHeader.innerHTML = '';
+            if (this.ganttMonths) this.ganttMonths.innerHTML = '';
             this.updateStats(venues);
             return;
         }
 
         this.updateStats(venues);
 
-        // Build month columns
         const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-        const monthW = 100 / 12;
 
-        let headerHTML = `<div class="gantt-title">${this.t('ganttTitle')}</div><div class="gantt-legend">${this.t('ganttLegend')} <span class="gleg sub">■ ${this.t('ganttSubmission')}</span> <span class="gleg review">■ ${this.t('ganttReview')}</span> <span class="gleg conf">▼ ${this.t('ganttConference')}</span></div>`;
-        headerHTML += `<div class="gantt-months">${months.map(m => `<span style="width:${monthW}%">${m}</span>`).join('')}</div>`;
-        if (this.ganttHeader) this.ganttHeader.innerHTML = headerHTML;
+        // Title + legend
+        if (this.ganttHeader) {
+            this.ganttHeader.innerHTML = `<div class="gantt-title">${this.t('ganttTitle')}</div><div class="gantt-legend">${this.t('ganttLegend')} <span class="gleg sub">■ ${this.t('ganttSubmission')}</span> <span class="gleg review">■ ${this.t('ganttReview')}</span> <span class="gleg conf">▼ ${this.t('ganttConference')}</span></div>`;
+        }
+
+        // Sticky months header
+        if (this.ganttMonths) {
+            this.ganttMonths.innerHTML = `<div class="gantt-months-sticky"></div><div class="gantt-months-scroll">${months.map(m => `<span>${m}</span>`).join('')}</div>`;
+        }
 
         // Build rows
         let bodyHTML = '';
@@ -222,7 +228,20 @@ const Renderer = {
                 </div>
             </div>`;
         }
-        if (this.ganttBody) this.ganttBody.innerHTML = bodyHTML;
+        if (this.ganttBodyScroll) {
+            this.ganttBodyScroll.innerHTML = bodyHTML;
+            // Sync horizontal scroll: body ←→ months header
+            const monthsScroll = this.ganttMonths?.querySelector('.gantt-months-scroll');
+            if (monthsScroll) {
+                this.ganttBodyScroll.onscroll = function() {
+                    monthsScroll.scrollLeft = this.scrollLeft;
+                };
+                monthsScroll.onscroll = function() {
+                    const body = document.getElementById('ganttBodyScroll');
+                    if (body) body.scrollLeft = this.scrollLeft;
+                };
+            }
+        }
     },
 
     updateStats(venues) {
