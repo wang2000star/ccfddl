@@ -97,13 +97,11 @@
     <script src="js/renderer.js"></script>
     <script src="js/timeline.js"></script>
     <script src="js/search.js"></script>
-    <script>
-    // Diagnostic: test data loading
-    fetch('data/conferences.json')
-        .then(r => r.json())
-        .then(d => console.log('✅ Data fetch OK:', d.length, 'conferences'))
-        .catch(e => console.error('❌ Data fetch FAILED:', e));
-    </script>
     <script src="js/app.js"></script>
+    <noscript>
+        <div style="text-align:center;padding:40px;color:#dc2626;">
+            ⚠️ 请启用JavaScript以使用本网站 / Please enable JavaScript to use this site.
+        </div>
+    </noscript>
 </body>
 </html>

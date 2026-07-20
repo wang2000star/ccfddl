@@ -10,6 +10,20 @@ const App = {
         // Show loading state
         Renderer.showLoading();
 
+        // Safety timeout: hide loading after 10s even on error
+        const safetyTimer = setTimeout(() => {
+            if (!DataLoader.loaded) {
+                Renderer.hideLoading();
+                if (Renderer.emptyState) {
+                    Renderer.emptyState.style.display = 'flex';
+                    const h2 = Renderer.emptyState.querySelector('h2');
+                    if (h2) h2.textContent = I18N.locale === 'zh' ? '数据加载超时' : 'Data load timeout';
+                    const p = Renderer.emptyState.querySelector('p');
+                    if (p) p.textContent = I18N.locale === 'zh' ? '请刷新页面重试' : 'Please refresh the page';
+                }
+            }
+        }, 10000);
+
         // Set up event listeners
         this.setupTypeToggle();
         this.setupRankFilter();
@@ -21,13 +35,20 @@ const App = {
         try {
             await DataLoader.init();
         } catch (err) {
+            clearTimeout(safetyTimer);
             Renderer.hideLoading();
-            Renderer.emptyState.style.display = 'flex';
-            Renderer.emptyState.querySelector('h2').textContent = '数据加载失败';
-            Renderer.emptyState.querySelector('p').textContent = '请检查网络连接或刷新页面重试';
-            console.error(err);
+            if (Renderer.emptyState) {
+                Renderer.emptyState.style.display = 'flex';
+                const h2 = Renderer.emptyState.querySelector('h2');
+                if (h2) h2.textContent = I18N.locale === 'zh' ? '数据加载失败' : 'Data Load Failed';
+                const p = Renderer.emptyState.querySelector('p');
+                if (p) p.textContent = I18N.locale === 'zh' ? '请检查网络连接或刷新页面重试' : 'Check your network or refresh the page';
+            }
+            console.error('Data init failed:', err);
             return;
         }
+
+        clearTimeout(safetyTimer);
 
         // Populate category dropdown
         this.populateCategories();
