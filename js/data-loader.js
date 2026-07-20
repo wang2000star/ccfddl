@@ -17,7 +17,7 @@ const DataLoader = {
                 fetch('data/journals.json'),
                 fetch('data/metadata.json'),
                 fetch('data/websites.json').catch(() => Promise.resolve({ json: () => ({}) })),
-                fetch('data/timelines/all.json').catch(() => Promise.resolve({ json: () => [] }))
+                fetch('data/timelines/all.json?v=' + Date.now()).catch(() => Promise.resolve({ json: () => [] }))
             ]);
             this.conferences = await confResp.json();
             this.journals = await jrnResp.json();

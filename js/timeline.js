@@ -88,7 +88,7 @@ const Timeline = {
             if (timeline[item.key]) {
                 const cls = this.urgencyClass(timeline[item.key]);
                 const daysInfo = this.daysUntil(timeline[item.key]);
-                const daysText = daysInfo && !daysInfo.past ? ` (${daysInfo.d}d)` : '';
+                const daysText = (daysInfo && daysInfo.days != null && !daysInfo.past) ? ` (${daysInfo.days}d)` : '';
                 const localTime = (item.key === 'submission_deadline') ? `<br><span style="font-size:0.6rem;color:var(--color-text-muted)">🕐 ${this.toLocalTime(timeline[item.key], tz)} 本地</span>` : '';
                 rows.push(`
                     <div class="timeline-row">
