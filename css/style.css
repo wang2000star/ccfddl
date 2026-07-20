@@ -454,6 +454,17 @@ a:hover { text-decoration: underline; }
     gap: 6px;
 }
 
+.timeline-round-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    background: var(--color-primary-light);
+    padding: 2px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 4px;
+}
+
 .timeline-row {
     display: flex;
     align-items: center;

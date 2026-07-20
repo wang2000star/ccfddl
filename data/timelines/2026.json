@@ -75,7 +75,17 @@
   {"venue_id":"bibm","abbreviation":"BIBM","year":2026,"round":1,"submission_deadline":"2026-08-15","notification":"2026-10-01","conference_start":"2026-12-08","conference_end":"2026-12-11","location":"Chicago, IL, USA"},
 
   {"venue_id":"asiacrypt","abbreviation":"ASIACRYPT","year":2026,"round":1,"submission_deadline":"2026-05-15","notification":"2026-08-01","conference_start":"2026-12-06","conference_end":"2026-12-10","location":"Hong Kong, China"},
-  {"venue_id":"ches","abbreviation":"CHES","year":2026,"round":1,"submission_deadline":"2026-01-15","notification":"2026-03-15","conference_start":"2026-08-24","conference_end":"2026-08-27","location":"Prague, Czech Republic"},
+  {"venue_id":"ches","abbreviation":"CHES","year":2026,"round":1,"submission_deadline":"2025-07-15","notification":"2025-09-15","conference_start":"2026-08-24","conference_end":"2026-08-27","location":"Prague, Czech Republic"},
+  {"venue_id":"ches","abbreviation":"CHES","year":2026,"round":2,"submission_deadline":"2025-10-15","notification":"2025-12-15","conference_start":"2026-08-24","conference_end":"2026-08-27","location":"Prague, Czech Republic"},
+  {"venue_id":"ches","abbreviation":"CHES","year":2026,"round":3,"submission_deadline":"2026-01-15","notification":"2026-03-15","conference_start":"2026-08-24","conference_end":"2026-08-27","location":"Prague, Czech Republic"},
+  {"venue_id":"ches","abbreviation":"CHES","year":2026,"round":4,"submission_deadline":"2026-04-15","notification":"2026-06-15","conference_start":"2026-08-24","conference_end":"2026-08-27","location":"Prague, Czech Republic"},
+  {"venue_id":"fse-crypto","abbreviation":"FSE (ToSC)","year":2026,"round":1,"submission_deadline":"2025-08-15","notification":"2025-10-15","conference_start":"2026-03-15","conference_end":"2026-03-18","location":"Utrecht, Netherlands"},
+  {"venue_id":"fse-crypto","abbreviation":"FSE (ToSC)","year":2026,"round":2,"submission_deadline":"2025-11-15","notification":"2026-01-15","conference_start":"2026-03-15","conference_end":"2026-03-18","location":"Utrecht, Netherlands"},
+  {"venue_id":"fse-crypto","abbreviation":"FSE (ToSC)","year":2026,"round":3,"submission_deadline":"2026-02-15","notification":"2026-04-15","conference_start":"2026-03-15","conference_end":"2026-03-18","location":"Utrecht, Netherlands"},
+  {"venue_id":"tcc","abbreviation":"TCC","year":2026,"round":1,"submission_deadline":"2025-09-01","notification":"2025-12-01","conference_start":"2026-03-15","conference_end":"2026-03-18","location":"New York, NY, USA"},
+  {"venue_id":"tcc","abbreviation":"TCC","year":2026,"round":2,"submission_deadline":"2026-01-15","notification":"2026-04-01","conference_start":"2026-03-15","conference_end":"2026-03-18","location":"New York, NY, USA"},
+  {"venue_id":"asiacrypt","abbreviation":"ASIACRYPT","year":2026,"round":1,"submission_deadline":"2026-02-15","notification":"2026-05-01","conference_start":"2026-12-06","conference_end":"2026-12-10","location":"Hong Kong, China"},
+  {"venue_id":"asiacrypt","abbreviation":"ASIACRYPT","year":2026,"round":2,"submission_deadline":"2026-05-15","notification":"2026-08-01","conference_start":"2026-12-06","conference_end":"2026-12-10","location":"Hong Kong, China"},
   {"venue_id":"dsn","abbreviation":"DSN","year":2026,"round":1,"submission_deadline":"2025-12-05","notification":"2026-03-01","conference_start":"2026-06-22","conference_end":"2026-06-25","location":"Brisbane, Australia"},
 
   {"venue_id":"cikm","abbreviation":"CIKM","year":2026,"round":1,"submission_deadline":"2026-05-15","notification":"2026-08-01","conference_start":"2026-10-19","conference_end":"2026-10-23","location":"Taipei, Taiwan"},

@@ -93,17 +93,23 @@ const Renderer = {
         </div>`;
     },
 
-    buildTimeline(venue, tl) {
-        if (tl) {
-            let html = Timeline.buildTimelineHTML(tl);
-            // Add countdown badge
+    buildTimeline(venue, _tl) {
+        const timelines = DataLoader.getTimelines ? DataLoader.getTimelines(venue.id) : [];
+        if (timelines.length === 0) {
+            return `<div class="venue-timeline"><div class="timeline-no-data">${this.t('noTimeline')}</div></div>`;
+        }
+
+        let html = '';
+        for (let i = 0; i < timelines.length; i++) {
+            const tl = timelines[i];
+            const roundLabel = timelines.length > 1 ? `<div class="timeline-round-label">📋 Round ${tl.round || (i+1)}</div>` : '';
+            html += roundLabel + Timeline.buildTimelineHTML(tl);
             if (tl.submission_deadline) {
                 const cd = this.countdown(tl.submission_deadline);
                 if (cd) html += `<div class="countdown-badge ${cd.cls}">${cd.text}</div>`;
             }
-            return html;
         }
-        return `<div class="venue-timeline"><div class="timeline-no-data">${this.t('noTimeline')}</div></div>`;
+        return html;
     },
 
     countdown(dateStr) {
@@ -134,10 +140,18 @@ const Renderer = {
         if (this.ganttView) this.ganttView.style.display = 'block';
         if (this.emptyState) this.emptyState.style.display = 'none';
 
-        const withTimeline = venues.filter(v => {
-            const tl = DataLoader.getTimeline ? DataLoader.getTimeline(v.id) : null;
-            return tl && (tl.submission_deadline || tl.conference_start);
-        });
+        // Collect all venue-round combinations for Gantt
+        const ganttRows = [];
+        for (const v of venues) {
+            const timelines = DataLoader.getTimelines ? DataLoader.getTimelines(v.id) : [];
+            if (timelines.length === 0) continue;
+            for (const tl of timelines) {
+                if (tl.submission_deadline || tl.conference_start) {
+                    ganttRows.push({ venue: v, timeline: tl, round: tl.round || 1, totalRounds: timelines.length });
+                }
+            }
+        }
+        const withTimeline = ganttRows;
 
         if (withTimeline.length === 0) {
             if (this.ganttBody) this.ganttBody.innerHTML = `<div style="text-align:center;padding:60px;color:var(--color-text-muted);">📊 ${this.t('noTimeline')} — ${this.t('noResultsHint')}</div>`;
@@ -158,12 +172,10 @@ const Renderer = {
 
         // Build rows
         let bodyHTML = '';
-        const rankOrder = { A: 0, B: 1, C: 2 };
 
-        // Find overlapping conferences
+        // Check overlap between any two venue-round pairs
         const checkOverlap = (a, b) => {
-            const tla = DataLoader.getTimeline(a.id), tlb = DataLoader.getTimeline(b.id);
-            if (!tla || !tlb) return false;
+            const tla = a.timeline, tlb = b.timeline;
             const a1 = tla.submission_deadline ? new Date(tla.submission_deadline) : null;
             const a2 = tla.conference_end ? new Date(tla.conference_end) : (tla.conference_start ? new Date(tla.conference_start) : null);
             const b1 = tlb.submission_deadline ? new Date(tlb.submission_deadline) : null;
@@ -173,10 +185,10 @@ const Renderer = {
         };
 
         for (let i = 0; i < withTimeline.length; i++) {
-            const v = withTimeline[i];
-            const tl = DataLoader.getTimeline(v.id);
+            const row = withTimeline[i];
+            const v = row.venue, tl = row.timeline;
             const rankCls = `gantt-${v.ccf_rank.toLowerCase()}`;
-            const hasConflict = withTimeline.some((v2, j) => i !== j && checkOverlap(v, v2));
+            const hasConflict = withTimeline.some((row2, j) => i !== j && row.venue.id !== row2.venue.id && checkOverlap(row, row2));
 
             // Calculate positions as % of year
             const pos = (dateStr) => {
@@ -208,11 +220,13 @@ const Renderer = {
                 overlapWarning = `<span class="gantt-conflict-icon" title="${this.t('ganttConflict')}">⚠️</span>`;
             }
 
+            const roundLabel = row.totalRounds > 1 ? ` <span style="font-size:0.6rem;color:var(--color-primary);font-weight:700;">R${row.round}</span>` : '';
+
             bodyHTML += `
             <div class="gantt-row ${rankCls} ${hasConflict ? 'has-conflict' : ''}">
                 <div class="gantt-label">
                     <span class="badge badge-rank badge-${v.ccf_rank.toLowerCase()}">${v.ccf_rank}</span>
-                    <strong>${this.esc(v.abbreviation)}</strong>
+                    <strong>${this.esc(v.abbreviation)}${roundLabel}</strong>
                     ${overlapWarning}
                     <span style="font-size:0.65rem;color:var(--color-text-muted)">${this.esc(tl.location || '')}</span>
                 </div>

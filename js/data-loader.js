@@ -5,7 +5,7 @@ const DataLoader = {
     conferences: [],
     journals: [],
     metadata: null,
-    timelines: {}, // year -> venue_id -> timeline entry
+    timelines: {}, // year -> venue_id -> array of timeline entries (supports multi-round)
     websites: {},  // abbr -> website URL
     loaded: false,
 
@@ -25,12 +25,23 @@ const DataLoader = {
             const tlArray = await tlResp.json();
             this.websites = await webResp.json();
 
-            // Index timelines by venue_id (use string keys for consistency)
+            // Index timelines by venue_id, supporting multiple rounds per venue
             this.timelines = {};
             for (const tl of tlArray) {
                 const year = String(tl.year || '2026');
                 if (!this.timelines[year]) this.timelines[year] = {};
-                this.timelines[year][tl.venue_id] = tl;
+                if (!this.timelines[year][tl.venue_id]) this.timelines[year][tl.venue_id] = [];
+                this.timelines[year][tl.venue_id].push(tl);
+            }
+            // Sort each venue's rounds by submission deadline
+            for (const year of Object.keys(this.timelines)) {
+                for (const vid of Object.keys(this.timelines[year])) {
+                    this.timelines[year][vid].sort((a, b) => {
+                        const da = a.submission_deadline || '9999';
+                        const db = b.submission_deadline || '9999';
+                        return da.localeCompare(db);
+                    });
+                }
             }
 
             this.loaded = true;
@@ -43,7 +54,18 @@ const DataLoader = {
 
     getTimeline(venueId, year) {
         year = year || '2026';
-        return this.timelines[year]?.[venueId] || null;
+        const arr = this.timelines[year]?.[venueId];
+        return (arr && arr.length > 0) ? arr[0] : null;
+    },
+
+    getTimelines(venueId, year) {
+        year = year || '2026';
+        return this.timelines[year]?.[venueId] || [];
+    },
+
+    hasMultiRound(venueId, year) {
+        year = year || '2026';
+        return (this.timelines[year]?.[venueId]?.length || 0) > 1;
     },
 
     // Get all venues combined
