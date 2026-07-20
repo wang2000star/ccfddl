@@ -36,8 +36,22 @@ const Renderer = {
 
         if (this.emptyState) this.emptyState.style.display = 'none';
 
-        // Build cards
-        const html = venues.map(v => this.buildCard(v)).join('');
+        // Build cards with error protection
+        let html = '';
+        let errorCount = 0;
+        for (const v of venues) {
+            try {
+                html += this.buildCard(v);
+            } catch (e) {
+                errorCount++;
+                if (errorCount <= 3) {
+                    console.error('buildCard error for', v.abbreviation, e);
+                }
+            }
+        }
+        if (errorCount > 0) {
+            console.error(`buildCard failed for ${errorCount}/${venues.length} venues`);
+        }
         if (this.grid) this.grid.innerHTML = html;
 
         // Update stats
@@ -46,19 +60,19 @@ const Renderer = {
         // Attach click handlers
         this.grid?.querySelectorAll('.venue-card').forEach(card => {
             card.addEventListener('click', () => {
-                const id = card.getAttribute('data-id');
-                // Toggle expanded state
                 card.classList.toggle('expanded');
             });
         });
     },
 
     buildCard(venue) {
-        const rankClass = `badge-${venue.ccf_rank.toLowerCase()}`;
-        const rankLabel = I18N.t(`rank${venue.ccf_rank}`) || `CCF-${venue.ccf_rank}`;
-        const isJournalType = venue.sub_type === 'journal-type' || DataLoader.JOURNAL_TYPE_OVERRIDES.has(venue.abbreviation);
-        const website = DataLoader.getWebsite(venue.abbreviation);
-        const tl = DataLoader.getTimeline(venue.id);
+        if (!venue || !venue.ccf_rank) return '';
+        const rank = venue.ccf_rank;
+        const rankClass = `badge-${rank.toLowerCase()}`;
+        const rankLabel = (typeof I18N !== 'undefined' && I18N.t) ? (I18N.t(`rank${rank}`) || `CCF-${rank}`) : `CCF-${rank}`;
+        const isJournalType = venue.sub_type === 'journal-type' || (typeof DataLoader !== 'undefined' && DataLoader.JOURNAL_TYPE_OVERRIDES && DataLoader.JOURNAL_TYPE_OVERRIDES.has(venue.abbreviation));
+        const website = (typeof DataLoader !== 'undefined' && DataLoader.getWebsite) ? DataLoader.getWebsite(venue.abbreviation) : null;
+        const tl = (typeof DataLoader !== 'undefined' && DataLoader.getTimeline) ? DataLoader.getTimeline(venue.id) : null;
 
         return `
         <div class="venue-card" data-id="${venue.id}">
@@ -72,7 +86,7 @@ const Renderer = {
                 </div>
                 <div class="venue-badges">
                     <span class="badge badge-rank ${rankClass}">${rankLabel}</span>
-                    ${isJournalType ? `<span class="badge badge-journal-type">${I18n.t('journalType')}</span>` : ''}
+                    ${isJournalType ? `<span class="badge badge-journal-type">${this.t('journalType')}</span>` : ''}
                     <span class="badge badge-category">${this.escape(venue.category_zh)}</span>
                 </div>
             </div>
@@ -93,13 +107,13 @@ const Renderer = {
     },
 
     buildTimeline(venue) {
-        const tl = DataLoader.getTimeline(venue.id);
+        const tl = (typeof DataLoader !== 'undefined' && DataLoader.getTimeline) ? DataLoader.getTimeline(venue.id) : null;
         if (tl) {
             return Timeline.buildTimelineHTML(tl);
         }
         return `
         <div class="venue-timeline">
-            <div class="timeline-no-data">${I18n.t('noTimeline')}</div>
+            <div class="timeline-no-data">${this.t('noTimeline')}</div>
         </div>`;
     },
 
@@ -110,6 +124,11 @@ const Renderer = {
             ${I18n.t('showing')} <strong>${venues.length}</strong> ${I18n.t('results')}
             (A: ${counts.A}, B: ${counts.B}, C: ${counts.C})
         `;
+    },
+
+    t(key) {
+        try { return (typeof I18N !== 'undefined' && I18N.t) ? I18N.t(key) : key; }
+        catch(e) { return key; }
     },
 
     escape(str) {
