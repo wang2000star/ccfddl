@@ -92,12 +92,37 @@
         <p>Built with ❤️ for the CS research community</p>
     </footer>
 
-    <script src="js/i18n.js"></script>
-    <script src="js/data-loader.js"></script>
-    <script src="js/renderer.js"></script>
-    <script src="js/timeline.js"></script>
-    <script src="js/search.js"></script>
-    <script src="js/app.js"></script>
+    <script>
+    // Inline test - bypasses all caching
+    (function() {
+        var el = document.getElementById('loadingState');
+        if (!el) return;
+        el.innerHTML = '<div style="text-align:left;padding:20px;font-family:monospace;font-size:0.75rem;">' +
+            '<div>🔍 Testing fetch...</div>';
+
+        fetch('data/conferences.json')
+            .then(function(r) {
+                el.innerHTML += '<div>📡 Status: ' + r.status + '</div>';
+                return r.json();
+            })
+            .then(function(d) {
+                el.innerHTML += '<div>✅ SUCCESS! ' + d.length + ' conferences loaded</div>';
+                el.innerHTML += '<div style="color:#16a34a;font-size:1.2rem;margin-top:10px;">' +
+                    '🎉 数据加载成功！Data loaded OK!<br>' +
+                    '如果你看到这条消息但页面没变化，请报告：<br>' +
+                    '看到此消息 = JS能运行 = 问题在app.js</div>';
+            })
+            .catch(function(e) {
+                el.innerHTML += '<div style="color:#dc2626;">❌ FAILED: ' + e.message + '</div>';
+            });
+    })();
+    </script>
+    <script src="js/i18n.js?v=2"></script>
+    <script src="js/data-loader.js?v=2"></script>
+    <script src="js/renderer.js?v=2"></script>
+    <script src="js/timeline.js?v=2"></script>
+    <script src="js/search.js?v=2"></script>
+    <script src="js/app.js?v=2"></script>
     <noscript>
         <div style="text-align:center;padding:40px;color:#dc2626;">
             ⚠️ 请启用JavaScript以使用本网站 / Please enable JavaScript to use this site.
