@@ -342,6 +342,33 @@
     }
   },
   {
+    "venue_id": "euros-p",
+    "abbreviation": "EuroS&P",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-11-20",
+    "notification": "2026-02-15",
+    "conference_start": "2026-07-06",
+    "conference_end": "2026-07-10",
+    "location": "Lisbon, Portugal",
+    "source_url": "https://www.ieee-security.org/TC/EuroSP2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "fc",
+    "abbreviation": "FC",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-09-20",
+    "notification": "2025-11-24",
+    "camera_ready": "2026-01-12",
+    "conference_start": "2026-03-02",
+    "conference_end": "2026-03-06",
+    "location": "St. Kitts",
+    "source_url": "https://ifca.ai/fc26/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "fse",
     "abbreviation": "FSE",
     "year": 2026,
@@ -666,6 +693,20 @@
     "conference_end": "2026-06-19",
     "location": "Boulder, CO, USA",
     "source_url": "https://pldi26.sigplan.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "raid",
+    "abbreviation": "RAID",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-04-16",
+    "notification": "2026-07-10",
+    "camera_ready": "2026-08-13",
+    "conference_start": "2026-10-11",
+    "conference_end": "2026-10-14",
+    "location": "Lancaster, UK",
+    "source_url": "https://raid2026.org/",
     "timezone": "AoE"
   },
   {

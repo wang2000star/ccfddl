@@ -118,6 +118,11 @@ verified = [
     {"venue_id":"wisec","abbreviation":"WiSec","year":2026,"round":1,"submission_deadline":"2026-01-13","notification":"2026-03-01","conference_start":"2026-06-30","conference_end":"2026-07-03","location":"Saarbrucken, Germany","source_url":"https://www.sigmobile.org/wisec/2026/","timezone":"AoE"},
     {"venue_id":"wisec","abbreviation":"WiSec","year":2026,"round":2,"submission_deadline":"2026-04-14","notification":"2026-05-15","conference_start":"2026-06-30","conference_end":"2026-07-03","location":"Saarbrucken, Germany","source_url":"https://www.sigmobile.org/wisec/2026/","timezone":"AoE"},
 
+    # === SECURITY C-class ===
+    {"venue_id":"fc","abbreviation":"FC","year":2026,"round":1,"submission_deadline":"2025-09-20","notification":"2025-11-24","camera_ready":"2026-01-12","conference_start":"2026-03-02","conference_end":"2026-03-06","location":"St. Kitts","source_url":"https://ifca.ai/fc26/","timezone":"AoE"},
+    {"venue_id":"euros-p","abbreviation":"EuroS&P","year":2026,"round":1,"submission_deadline":"2025-11-20","notification":"2026-02-15","conference_start":"2026-07-06","conference_end":"2026-07-10","location":"Lisbon, Portugal","source_url":"https://www.ieee-security.org/TC/EuroSP2026/","timezone":"AoE"},
+    {"venue_id":"raid","abbreviation":"RAID","year":2026,"round":1,"submission_deadline":"2026-04-16","notification":"2026-07-10","camera_ready":"2026-08-13","conference_start":"2026-10-11","conference_end":"2026-10-14","location":"Lancaster, UK","source_url":"https://raid2026.org/","timezone":"AoE"},
+
     # CHES 2027 (ches.iacr.org/2027/papersubmission.php)
     {"venue_id":"ches","abbreviation":"CHES","year":2027,"round":1,"submission_deadline":"2026-07-15","rebuttal_start":"2026-08-23","rebuttal_end":"2026-08-28","notification":"2026-09-15","camera_ready":"2026-10-14","conference_start":"2027-09-06","conference_end":"2027-09-09","location":"Cancun, Mexico","source_url":"https://ches.iacr.org/2027/","timezone":"AoE"},
     {"venue_id":"ches","abbreviation":"CHES","year":2027,"round":2,"submission_deadline":"2026-10-15","rebuttal_start":"2026-11-23","rebuttal_end":"2026-11-28","notification":"2026-12-15","camera_ready":"2027-01-14","conference_start":"2027-09-06","conference_end":"2027-09-09","location":"Cancun, Mexico","source_url":"https://ches.iacr.org/2027/","timezone":"AoE"},
