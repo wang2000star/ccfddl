@@ -647,6 +647,65 @@ a:hover { text-decoration: underline; }
     }
 }
 
+/* --- Countdown Badge --- */
+.countdown-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 9999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-top: 4px;
+}
+.cd-urgent { background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; animation: pulse 2s infinite; }
+.cd-soon { background: #fff7ed; color: #ea580c; border: 1px solid #fed7aa; }
+.cd-ok { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
+.cd-overdue { background: #f1f5f9; color: #94a3b8; border: 1px solid #e2e8f0; }
+
+@keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.6; } }
+
+/* --- Gantt Timeline View --- */
+.gantt-view { max-width:1280px; margin:0 auto; padding:0 20px 40px; flex:1; overflow-x:auto; }
+.gantt-title { font-size:1rem; font-weight:700; margin-bottom:8px; color:var(--color-text); }
+.gantt-legend { font-size:0.72rem; color:var(--color-text-secondary); margin-bottom:8px; display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+.gleg { font-size:0.68rem; }
+.gleg.sub { color: #16a34a; }
+.gleg.review { color: #ea580c; }
+.gleg.conf { color: #7c3aed; }
+.gleg.conflict { color: #dc2626; font-weight:700; }
+
+.gantt-months { display:flex; border-bottom:1px solid var(--color-border); padding:4px 0 4px 260px; font-size:0.65rem; color:var(--color-text-muted); font-weight:600; position:sticky; top:0; background:var(--color-bg); z-index:5; }
+.gantt-months span { text-align:center; }
+
+.gantt-row { display:flex; align-items:center; border-bottom:1px solid var(--color-border); padding:6px 0; min-height:44px; transition:background var(--transition); }
+.gantt-row:hover { background:var(--color-primary-light); }
+.gantt-row.has-conflict { background:#fef2f2; }
+.gantt-row.gantt-a { border-left:3px solid var(--rank-a); }
+.gantt-row.gantt-b { border-left:3px solid var(--rank-b); }
+.gantt-row.gantt-c { border-left:3px solid var(--rank-c); }
+
+.gantt-label { width:250px; min-width:250px; padding:0 8px; display:flex; align-items:center; gap:6px; flex-shrink:0; font-size:0.8rem; }
+.gantt-bars { flex:1; padding:0 4px; position:relative; min-width:300px; }
+.gantt-dates { width:180px; min-width:180px; font-size:0.6rem; color:var(--color-text-muted); display:flex; flex-direction:column; gap:1px; flex-shrink:0; }
+
+.gantt-seg { position:absolute; height:100%; border-radius:2px; top:0; }
+.gantt-seg.submission { background:#86efac; opacity:0.7; z-index:1; }
+.gantt-seg.review { background:#fdba74; opacity:0.7; z-index:1; }
+.gantt-marker { position:absolute; font-size:10px; color:#7c3aed; transform:translateX(-50%); z-index:2; }
+.gantt-conflict-icon { font-size:0.9rem; cursor:help; }
+
+/* Dark mode Gantt */
+@media (prefers-color-scheme:dark) {
+    .gantt-row.has-conflict { background:#450a0a; }
+    .gantt-seg.submission { background:#166534; }
+    .gantt-seg.review { background:#7c2d12; }
+}
+
+@media (max-width:768px) {
+    .gantt-label { width:120px; min-width:120px; font-size:0.7rem; }
+    .gantt-dates { display:none; }
+    .gantt-months { padding-left:128px; }
+}
+
 /* --- Print --- */
 @media print {
     .header, .filter-bar, .footer { display: none; }

@@ -55,11 +55,18 @@
                 <option value="all" data-i18n="categoryAll">全部领域</option>
             </select>
 
-            <!-- Year Filter -->
-            <select id="yearFilter" class="select-filter">
-                <option value="2026">2026</option>
-                <option value="2025">2025</option>
+            <!-- Sort -->
+            <select id="sortFilter" class="select-filter">
+                <option value="default" data-i18n="sortDefault">默认排序</option>
+                <option value="deadline" data-i18n="sortDeadline">投稿截止倒计时</option>
+                <option value="conference" data-i18n="sortConference">会议召开时间</option>
             </select>
+
+            <!-- View Toggle -->
+            <div class="toggle-group" id="viewToggle">
+                <button class="toggle-btn active" data-view="cards" title="卡片视图">📇</button>
+                <button class="toggle-btn" data-view="timeline" title="时间轴视图">📊</button>
+            </div>
         </div>
     </section>
 
@@ -69,8 +76,12 @@
     </div>
 
     <!-- Card Grid -->
-    <main class="card-grid" id="cardGrid">
-        <!-- Cards rendered here -->
+    <main class="card-grid" id="cardGrid"></main>
+
+    <!-- Gantt Timeline View (hidden by default) -->
+    <main class="gantt-view" id="ganttView" style="display:none;">
+        <div class="gantt-header" id="ganttHeader"></div>
+        <div class="gantt-body" id="ganttBody"></div>
     </main>
 
     <!-- Empty State -->

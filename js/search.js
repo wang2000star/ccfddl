@@ -4,11 +4,13 @@
 const Search = {
     // Current filter state
     state: {
-        type: 'conference',     // 'conference' | 'journal' | 'all'
-        ranks: new Set(['A', 'B', 'C']),  // empty = all
+        type: 'conference',
+        ranks: new Set(['A', 'B', 'C']),
         category: 'all',
         year: '2026',
         query: '',
+        sort: 'default',    // 'default' | 'deadline' | 'conference'
+        view: 'cards',      // 'cards' | 'timeline'
     },
 
     // Get filtered venues based on current state
@@ -54,13 +56,39 @@ const Search = {
             });
         }
 
-        // 5. Sort: by rank priority (A>B>C), then alphabetically by abbreviation
+        // 5. Sort
         const rankOrder = { A: 0, B: 1, C: 2 };
-        venues.sort((a, b) => {
-            const rDiff = rankOrder[a.ccf_rank] - rankOrder[b.ccf_rank];
-            if (rDiff !== 0) return rDiff;
-            return a.abbreviation.localeCompare(b.abbreviation);
-        });
+        const now = new Date();
+
+        if (this.state.sort === 'deadline') {
+            venues.sort((a, b) => {
+                const tlA = DataLoader.getTimeline(a.id) || {};
+                const tlB = DataLoader.getTimeline(b.id) || {};
+                const dA = tlA.submission_deadline ? new Date(tlA.submission_deadline) : null;
+                const dB = tlB.submission_deadline ? new Date(tlB.submission_deadline) : null;
+                if (dA && !dB) return -1;
+                if (!dA && dB) return 1;
+                if (!dA && !dB) return rankOrder[a.ccf_rank] - rankOrder[b.ccf_rank];
+                return dA - dB;
+            });
+        } else if (this.state.sort === 'conference') {
+            venues.sort((a, b) => {
+                const tlA = DataLoader.getTimeline(a.id) || {};
+                const tlB = DataLoader.getTimeline(b.id) || {};
+                const dA = tlA.conference_start ? new Date(tlA.conference_start) : null;
+                const dB = tlB.conference_start ? new Date(tlB.conference_start) : null;
+                if (dA && !dB) return -1;
+                if (!dA && dB) return 1;
+                if (!dA && !dB) return rankOrder[a.ccf_rank] - rankOrder[b.ccf_rank];
+                return dA - dB;
+            });
+        } else {
+            venues.sort((a, b) => {
+                const rDiff = rankOrder[a.ccf_rank] - rankOrder[b.ccf_rank];
+                if (rDiff !== 0) return rDiff;
+                return a.abbreviation.localeCompare(b.abbreviation);
+            });
+        }
 
         return venues;
     },

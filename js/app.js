@@ -29,6 +29,8 @@ const App = {
         this.setupRankFilter();
         this.setupSearch();
         this.setupCategoryFilter();
+        this.setupSortFilter();
+        this.setupViewToggle();
         this.setupLanguageToggle();
 
         // Load data
@@ -117,6 +119,28 @@ const App = {
                 Search.updateFilter('query', input.value);
                 this.refresh();
             }, 250);
+        });
+    },
+
+    setupSortFilter() {
+        const select = document.getElementById('sortFilter');
+        if (!select) return;
+        select.addEventListener('change', () => {
+            Search.updateFilter('sort', select.value);
+            this.refresh();
+        });
+    },
+
+    setupViewToggle() {
+        const container = document.getElementById('viewToggle');
+        if (!container) return;
+        container.addEventListener('click', (e) => {
+            const btn = e.target.closest('.toggle-btn');
+            if (!btn) return;
+            container.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            Search.updateFilter('view', btn.getAttribute('data-view'));
+            this.refresh();
         });
     },
 
