@@ -754,22 +754,15 @@
     "abbreviation": "ASIACRYPT",
     "year": 2027,
     "round": 1,
-    "submission_deadline": "2027-02-15",
-    "notification": "2027-05-01",
-    "conference_start": "2027-12-06",
-    "conference_end": "2027-12-10",
-    "location": "Hong Kong, China"
-  },
-  {
-    "venue_id": "asiacrypt",
-    "abbreviation": "ASIACRYPT",
-    "year": 2027,
-    "round": 2,
-    "submission_deadline": "2027-05-15",
-    "notification": "2027-08-01",
-    "conference_start": "2027-12-06",
-    "conference_end": "2027-12-10",
-    "location": "Hong Kong, China"
+    "submission_deadline": "2027-05-21",
+    "rebuttal_start": "2027-07-17",
+    "rebuttal_end": "2027-07-22",
+    "notification": "2027-08-14",
+    "camera_ready": "2027-09-14",
+    "conference_start": "2027-12-07",
+    "conference_end": "2027-12-11",
+    "location": "Hong Kong, China",
+    "source_url": "https://asiacrypt.iacr.org/2026/"
   },
   {
     "venue_id": "ches",
@@ -777,10 +770,11 @@
     "year": 2027,
     "round": 1,
     "submission_deadline": "2026-07-15",
-    "notification": "2026-09-15",
-    "conference_start": "2027-08-24",
-    "conference_end": "2027-08-27",
-    "location": "Prague, Czech Republic"
+    "notification": "2026-09-01",
+    "conference_start": "2027-10-11",
+    "conference_end": "2027-10-15",
+    "location": "Antalya, Türkiye",
+    "source_url": "https://ches.iacr.org/2026/"
   },
   {
     "venue_id": "ches",
@@ -788,10 +782,11 @@
     "year": 2027,
     "round": 2,
     "submission_deadline": "2026-10-15",
-    "notification": "2026-12-15",
-    "conference_start": "2027-08-24",
-    "conference_end": "2027-08-27",
-    "location": "Prague, Czech Republic"
+    "notification": "2026-12-01",
+    "conference_start": "2027-10-11",
+    "conference_end": "2027-10-15",
+    "location": "Antalya, Türkiye",
+    "source_url": "https://ches.iacr.org/2026/"
   },
   {
     "venue_id": "ches",
@@ -799,10 +794,11 @@
     "year": 2027,
     "round": 3,
     "submission_deadline": "2027-01-15",
-    "notification": "2027-03-15",
-    "conference_start": "2027-08-24",
-    "conference_end": "2027-08-27",
-    "location": "Prague, Czech Republic"
+    "notification": "2027-03-01",
+    "conference_start": "2027-10-11",
+    "conference_end": "2027-10-15",
+    "location": "Antalya, Türkiye",
+    "source_url": "https://ches.iacr.org/2026/"
   },
   {
     "venue_id": "ches",
@@ -810,54 +806,59 @@
     "year": 2027,
     "round": 4,
     "submission_deadline": "2027-04-15",
-    "notification": "2027-06-15",
-    "conference_start": "2027-08-24",
-    "conference_end": "2027-08-27",
-    "location": "Prague, Czech Republic"
+    "notification": "2027-06-01",
+    "conference_start": "2027-10-11",
+    "conference_end": "2027-10-15",
+    "location": "Antalya, Türkiye",
+    "source_url": "https://ches.iacr.org/2026/"
   },
   {
     "venue_id": "fse",
     "abbreviation": "FSE",
     "year": 2027,
     "round": 1,
-    "submission_deadline": "2026-08-15",
-    "notification": "2026-10-15",
-    "conference_start": "2027-03-15",
-    "conference_end": "2027-03-18",
-    "location": "Utrecht, Netherlands"
+    "submission_deadline": "2026-03-01",
+    "notification": "2026-05-01",
+    "conference_start": "2027-03-23",
+    "conference_end": "2027-03-27",
+    "location": "Singapore",
+    "source_url": "https://fse.iacr.org/2026/"
   },
   {
     "venue_id": "fse",
     "abbreviation": "FSE",
     "year": 2027,
     "round": 2,
-    "submission_deadline": "2026-11-15",
-    "notification": "2027-01-15",
-    "conference_start": "2027-03-15",
-    "conference_end": "2027-03-18",
-    "location": "Utrecht, Netherlands"
+    "submission_deadline": "2026-06-01",
+    "notification": "2026-08-01",
+    "conference_start": "2027-03-23",
+    "conference_end": "2027-03-27",
+    "location": "Singapore",
+    "source_url": "https://fse.iacr.org/2026/"
   },
   {
     "venue_id": "fse",
     "abbreviation": "FSE",
     "year": 2027,
     "round": 3,
-    "submission_deadline": "2027-02-15",
-    "notification": "2027-04-15",
-    "conference_start": "2027-03-15",
-    "conference_end": "2027-03-18",
-    "location": "Utrecht, Netherlands"
+    "submission_deadline": "2026-09-01",
+    "notification": "2026-11-01",
+    "conference_start": "2027-03-23",
+    "conference_end": "2027-03-27",
+    "location": "Singapore",
+    "source_url": "https://fse.iacr.org/2026/"
   },
   {
     "venue_id": "fse",
     "abbreviation": "FSE",
     "year": 2027,
     "round": 4,
-    "submission_deadline": "2027-05-15",
-    "notification": "2027-07-15",
-    "conference_start": "2027-03-15",
-    "conference_end": "2027-03-18",
-    "location": "Utrecht, Netherlands"
+    "submission_deadline": "2026-11-23",
+    "notification": "2027-01-23",
+    "conference_start": "2027-03-23",
+    "conference_end": "2027-03-27",
+    "location": "Singapore",
+    "source_url": "https://fse.iacr.org/2026/"
   },
   {
     "venue_id": "tcc",
