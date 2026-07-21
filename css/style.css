@@ -750,6 +750,11 @@ a:hover { text-decoration: underline; }
 .vt-entry.vt-left .vt-date { text-align:right; }
 .vt-entry.vt-right .vt-date { text-align:left; }
 
+/* Now marker */
+.vt-now-marker { position:absolute; left:0; right:0; z-index:3; display:flex; align-items:center; pointer-events:none; }
+.vt-now-marker span { font-size:0.6rem; color:var(--rank-a); font-weight:700; background:var(--rank-a-bg); padding:1px 6px; border-radius:4px; white-space:nowrap; }
+.vt-now-line { flex:1; height:2px; background:var(--rank-a); margin-left:8px; opacity:0.6; }
+
 /* Connection lines */
 .vt-entry::after { content:''; position:absolute; top:50%; height:1px; background:var(--color-border); z-index:0; }
 .vt-entry.vt-left::after { right:50%; left:auto; width:calc(50% - 40px); }

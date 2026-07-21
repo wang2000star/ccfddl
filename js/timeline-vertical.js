@@ -40,8 +40,13 @@ const VerticalTimeline = {
 
         const years = Object.keys(byYear).sort();
 
-        // Build header
-        header.innerHTML = `<div style="font-size:1rem;font-weight:700;padding:10px 20px;color:var(--color-text);">📅 投稿截止时间轴</div>`;
+        // Build header with current time marker
+        const now = new Date();
+        const nowStr = `${now.getFullYear()}年${now.getMonth()+1}月${now.getDate()}日`;
+        header.innerHTML = `<div style="font-size:1rem;font-weight:700;padding:10px 20px;color:var(--color-text);display:flex;align-items:center;gap:12px;">
+            <span>📅 投稿截止时间轴</span>
+            <span style="font-size:0.7rem;color:var(--rank-a);background:var(--rank-a-bg);padding:2px 10px;border-radius:9999px;animation:pulse 2s infinite;">📍 今日: ${nowStr}</span>
+        </div>`;
 
         // Build body
         let html = '<div class="vt-container">';
@@ -49,11 +54,24 @@ const VerticalTimeline = {
         // Month labels
         const months = ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
 
+        const now = new Date();
+        const nowYear = now.getFullYear();
+        const nowMonth = now.getMonth() + 1;
+        const nowDay = now.getDate();
+        const nowPos = nowMonth * 24 + (nowDay / 31) * 24; // approximate pixel position
+
         for (const year of years) {
             const entries = byYear[year];
+            const showNow = parseInt(year) === nowYear;
             html += `<div class="vt-column">
                 <div class="vt-year-title">${year} 年投稿 (${entries.length}个)</div>
-                <div class="vt-timeline">`;
+                <div class="vt-timeline" style="position:relative;">`;
+
+            if (showNow) {
+                html += `<div class="vt-now-marker" style="top:${nowPos}px" title="今日 ${nowStr}">
+                    <span>📍 今日</span><span class="vt-now-line"></span>
+                </div>`;
+            }
 
             let prevMonth = 0;
             for (const e of entries) {
