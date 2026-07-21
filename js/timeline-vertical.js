@@ -14,7 +14,7 @@ const VerticalTimeline = {
         for (const v of venues) {
             const tl = v._timeline;
             if (!tl) continue;
-            const label = `${v.abbreviation}${v._totalRounds > 1 ? '_' + (v._roundIndex + 1) : ''} ${v._timelineYear || tl.year}`;
+            const label = `${v.abbreviation}${v._totalRounds > 1 ? '_' + (tl.round || 1) : ''} ${v._timelineYear || tl.year}`;
             if (!pairs[label]) pairs[label] = {};
             if (tl.submission_deadline) {
                 const d = new Date(tl.submission_deadline + 'T00:00:00');
