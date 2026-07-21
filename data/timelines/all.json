@@ -1002,6 +1002,19 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "ifip-wg119",
+    "abbreviation": "IFIP WG 11.9",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-09-30",
+    "notification": "2025-10-30",
+    "conference_start": "2026-01-05",
+    "conference_end": "2026-01-06",
+    "location": "New Delhi, India",
+    "source_url": "http://www.ifip119.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ihmmsec",
     "abbreviation": "IH&MMSec",
     "year": 2026,
