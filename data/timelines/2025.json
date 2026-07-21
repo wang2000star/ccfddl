@@ -1,5 +1,18 @@
 [
   {
+    "venue_id": "asiacrypt",
+    "abbreviation": "ASIACRYPT",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-05-16",
+    "notification": "2025-07-01",
+    "conference_start": "2025-12-07",
+    "conference_end": "2025-12-11",
+    "location": "Melbourne, Australia",
+    "source_url": "https://asiacrypt.iacr.org/2025/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ches",
     "abbreviation": "CHES",
     "year": 2025,

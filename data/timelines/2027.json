@@ -159,6 +159,36 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "ndss",
+    "abbreviation": "NDSS",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-05-06",
+    "rebuttal_start": "2026-07-15",
+    "rebuttal_end": "2026-07-17",
+    "notification": "2026-07-29",
+    "camera_ready": "2026-09-30",
+    "conference_start": "2027-03-22",
+    "conference_end": "2027-03-26",
+    "location": "Seoul, South Korea",
+    "source_url": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "ndss",
+    "abbreviation": "NDSS",
+    "year": 2027,
+    "round": 2,
+    "submission_deadline": "2026-08-19",
+    "notification": "2026-11-04",
+    "camera_ready": "2027-01-06",
+    "conference_start": "2027-03-22",
+    "conference_end": "2027-03-26",
+    "location": "Seoul, South Korea",
+    "source_url": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "s-p",
     "abbreviation": "S&P",
     "year": 2027,
@@ -209,6 +239,22 @@
     "venue_id": "usenix-security",
     "abbreviation": "USENIX Security",
     "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-08-25",
+    "rebuttal_start": "2026-11-05",
+    "rebuttal_end": "2026-11-12",
+    "notification": "2026-12-03",
+    "camera_ready": "2027-01-14",
+    "conference_start": "2027-08-11",
+    "conference_end": "2027-08-13",
+    "location": "Denver, CO, USA",
+    "source_url": "https://www.usenix.org/conference/usenixsecurity27/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "usenix-security",
+    "abbreviation": "USENIX Security",
+    "year": 2027,
     "round": 2,
     "submission_deadline": "2027-01-26",
     "rebuttal_end": "2027-04-08",
@@ -219,5 +265,21 @@
     "location": "2027-08-13",
     "source_url": "Denver, CO, USA",
     "timezone": "https://www.usenix.org/conference/usenixsecurity27/"
+  },
+  {
+    "venue_id": "usenix-security",
+    "abbreviation": "USENIX Security",
+    "year": 2027,
+    "round": 2,
+    "submission_deadline": "2027-01-26",
+    "rebuttal_start": "2027-04-08",
+    "rebuttal_end": "2027-04-15",
+    "notification": "2027-05-06",
+    "camera_ready": "2027-06-03",
+    "conference_start": "2027-08-11",
+    "conference_end": "2027-08-13",
+    "location": "Denver, CO, USA",
+    "source_url": "https://www.usenix.org/conference/usenixsecurity27/",
+    "timezone": "AoE"
   }
 ]
