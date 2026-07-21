@@ -1,5 +1,18 @@
 [
   {
+    "venue_id": "acl",
+    "abbreviation": "ACL",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-02-15",
+    "notification": "2025-05-15",
+    "conference_start": "2025-07-27",
+    "conference_end": "2025-08-01",
+    "location": "Vienna, Austria",
+    "source_url": "https://2025.aclweb.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ccs",
     "abbreviation": "CCS",
     "year": 2025,
@@ -26,6 +39,32 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "iclr",
+    "abbreviation": "ICLR",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2024-10-01",
+    "notification": "2025-01-22",
+    "conference_start": "2025-04-28",
+    "conference_end": "2025-05-02",
+    "location": "Singapore",
+    "source_url": "https://iclr.cc/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "icml",
+    "abbreviation": "ICML",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-01-27",
+    "notification": "2025-04-25",
+    "conference_start": "2025-07-14",
+    "conference_end": "2025-07-20",
+    "location": "Vancouver, Canada",
+    "source_url": "https://icml.cc/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ndss",
     "abbreviation": "NDSS",
     "year": 2025,
@@ -36,6 +75,19 @@
     "conference_end": "2026-02-26",
     "location": "San Diego, CA, USA",
     "source_url": "https://www.ndss-symposium.org/ndss2025/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "neurips",
+    "abbreviation": "NeurIPS",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-05-22",
+    "notification": "2025-09-18",
+    "conference_start": "2025-12-08",
+    "conference_end": "2025-12-14",
+    "location": "San Diego, CA, USA",
+    "source_url": "https://neurips.cc/",
     "timezone": "AoE"
   },
   {
