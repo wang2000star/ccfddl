@@ -157,6 +157,18 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "apweb",
+    "abbreviation": "APWeb-WAIM",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-05-24",
+    "notification": "2026-06-22",
+    "conference_start": "2026-09-07",
+    "conference_end": "2026-09-09",
+    "location": "Danang, Vietnam",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ase",
     "abbreviation": "ASE",
     "year": 2025,
