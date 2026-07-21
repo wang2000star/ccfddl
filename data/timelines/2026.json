@@ -363,6 +363,19 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "conext",
+    "abbreviation": "CoNEXT",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-06-05",
+    "notification": "2026-09-11",
+    "conference_start": "2026-12-07",
+    "conference_end": "2026-12-10",
+    "location": "Utrecht, Netherlands",
+    "source_url": "https://conferences.sigcomm.org/co-next/2026/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "crypto",
     "abbreviation": "CRYPTO",
     "year": 2026,
@@ -1017,6 +1030,19 @@
     }
   },
   {
+    "venue_id": "imc",
+    "abbreviation": "IMC",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-04-22",
+    "notification": "2026-08-04",
+    "conference_start": "2026-11-03",
+    "conference_end": "2026-11-05",
+    "location": "TBD",
+    "source_url": "https://conferences.sigcomm.org/imc/2026/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "infocom",
     "abbreviation": "INFOCOM",
     "year": 2026,
@@ -1038,6 +1064,18 @@
     "notification": "2026-08-15",
     "conference_start": "2026-11-07",
     "conference_end": "2026-11-09",
+    "location": "TBD",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "ipsn",
+    "abbreviation": "IPSN",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-10-16",
+    "notification": "2026-01-15",
+    "conference_start": "2026-05-11",
+    "conference_end": "2026-05-13",
     "location": "TBD",
     "timezone": "AoE"
   },
@@ -1134,6 +1172,18 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "mobihoc",
+    "abbreviation": "MobiHoc",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-04-13",
+    "notification": "2026-08-23",
+    "conference_start": "2026-11-23",
+    "conference_end": "2026-11-25",
+    "location": "TBD",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "mobisys",
     "abbreviation": "MobiSys",
     "year": 2026,
@@ -1188,6 +1238,18 @@
       "accepted": 4020,
       "acceptance_rate": 25.7
     }
+  },
+  {
+    "venue_id": "nossdav",
+    "abbreviation": "NOSSDAV",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-01-17",
+    "notification": "2026-04-04",
+    "conference_start": "2026-06-01",
+    "conference_end": "2026-06-03",
+    "location": "TBD",
+    "timezone": "AoE"
   },
   {
     "venue_id": "nsdi",
@@ -1507,6 +1569,18 @@
     "notification": "2026-06-15",
     "conference_start": "2026-11-19",
     "conference_end": "2026-11-21",
+    "location": "TBD",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "secon",
+    "abbreviation": "SECON",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-12-05",
+    "notification": "2026-03-01",
+    "conference_start": "2026-06-01",
+    "conference_end": "2026-06-15",
     "location": "TBD",
     "timezone": "AoE"
   },
