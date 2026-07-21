@@ -18,19 +18,6 @@
     }
   },
   {
-    "venue_id": "aaai",
-    "abbreviation": "AAAI",
-    "year": 2026,
-    "round": 1,
-    "submission_deadline": "2025-07-07",
-    "notification": "2025-10-15",
-    "conference_start": "2026-01-20",
-    "conference_end": "2026-01-27",
-    "location": "Singapore",
-    "source_url": "https://aaai.org/conference/aaai/aaai-26/",
-    "timezone": "AoE"
-  },
-  {
     "venue_id": "acisp",
     "abbreviation": "ACISP",
     "year": 2026,
