@@ -91,6 +91,20 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "chi",
+    "abbreviation": "CHI",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-09-10",
+    "notification": "2026-12-17",
+    "camera_ready": "2027-02-18",
+    "conference_start": "2027-04-29",
+    "conference_end": "2027-05-04",
+    "location": "TBD",
+    "source_url": "https://chi2027.acm.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "eurocrypt",
     "abbreviation": "EUROCRYPT",
     "year": 2027,

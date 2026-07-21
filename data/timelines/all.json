@@ -554,6 +554,20 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "chi",
+    "abbreviation": "CHI",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-09-10",
+    "notification": "2026-12-17",
+    "camera_ready": "2027-02-18",
+    "conference_start": "2027-04-29",
+    "conference_end": "2027-05-04",
+    "location": "TBD",
+    "source_url": "https://chi2027.acm.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "codaspy",
     "abbreviation": "CODASPY",
     "year": 2026,
@@ -811,6 +825,34 @@
     "conference_end": "2026-10-29",
     "location": "Budapest, Hungary",
     "source_url": "https://2026.emnlp.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "esorics",
+    "abbreviation": "ESORICS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-01-09",
+    "notification": "2026-03-10",
+    "camera_ready": "2026-03-24",
+    "conference_start": "2026-09-14",
+    "conference_end": "2026-09-18",
+    "location": "Rome, Italy",
+    "source_url": "https://esorics2026.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "esorics",
+    "abbreviation": "ESORICS",
+    "year": 2026,
+    "round": 2,
+    "submission_deadline": "2026-04-21",
+    "notification": "2026-06-12",
+    "camera_ready": "2026-06-26",
+    "conference_start": "2026-09-14",
+    "conference_end": "2026-09-18",
+    "location": "Rome, Italy",
+    "source_url": "https://esorics2026.org/",
     "timezone": "AoE"
   },
   {

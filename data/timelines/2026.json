@@ -517,6 +517,34 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "esorics",
+    "abbreviation": "ESORICS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-01-09",
+    "notification": "2026-03-10",
+    "camera_ready": "2026-03-24",
+    "conference_start": "2026-09-14",
+    "conference_end": "2026-09-18",
+    "location": "Rome, Italy",
+    "source_url": "https://esorics2026.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "esorics",
+    "abbreviation": "ESORICS",
+    "year": 2026,
+    "round": 2,
+    "submission_deadline": "2026-04-21",
+    "notification": "2026-06-12",
+    "camera_ready": "2026-06-26",
+    "conference_start": "2026-09-14",
+    "conference_end": "2026-09-18",
+    "location": "Rome, Italy",
+    "source_url": "https://esorics2026.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "eurocrypt",
     "abbreviation": "EUROCRYPT",
     "year": 2026,
