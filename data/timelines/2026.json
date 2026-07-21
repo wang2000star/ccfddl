@@ -997,6 +997,22 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "ieee-vis",
+    "abbreviation": "IEEE VIS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-03-31",
+    "rebuttal_start": "2026-06-06",
+    "rebuttal_end": "2026-06-06",
+    "notification": "2026-06-06",
+    "camera_ready": "2026-08-08",
+    "conference_start": "2026-11-09",
+    "conference_end": "2026-11-13",
+    "location": "Boston, MA, USA",
+    "source_url": "https://ieeevis.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ifip-sec",
     "abbreviation": "IFIP SEC",
     "year": 2026,
