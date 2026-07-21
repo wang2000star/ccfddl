@@ -2091,6 +2091,20 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "pakdd",
+    "abbreviation": "PAKDD",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-11-25",
+    "notification": "2026-02-08",
+    "camera_ready": "2026-03-01",
+    "conference_start": "2026-06-09",
+    "conference_end": "2026-06-12",
+    "location": "Hong Kong SAR, China",
+    "source_url": "https://www.pakdd2026.org/",
+    "timezone": "US PST"
+  },
+  {
     "venue_id": "pam",
     "abbreviation": "PAM",
     "year": 2026,
