@@ -999,6 +999,22 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "pam",
+    "abbreviation": "PAM",
+    "year": 2026,
+    "round": 1,
+    "conference_start": "2026-03-23",
+    "conference_end": "2026-03-25",
+    "location": "Virtual",
+    "source_url": "https://dblp.org/db/conf/pam/pam2026.html",
+    "timezone": "AoE",
+    "stats": {
+      "submissions": 15,
+      "accepted": 9,
+      "acceptance_rate": 60
+    }
+  },
+  {
     "venue_id": "pets",
     "abbreviation": "PETS",
     "year": 2026,
