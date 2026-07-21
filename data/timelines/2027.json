@@ -14,19 +14,6 @@
     "timezone": "AoE"
   },
   {
-    "venue_id": "ccs",
-    "abbreviation": "CCS",
-    "year": 2027,
-    "round": 1,
-    "submission_deadline": "2027-01-15",
-    "notification": "2027-04-01",
-    "conference_start": "2027-11-15",
-    "conference_end": "2027-11-19",
-    "location": "TBD",
-    "source_url": "https://www.sigsac.org/ccs/",
-    "timezone": "AoE"
-  },
-  {
     "venue_id": "ches",
     "abbreviation": "CHES",
     "year": 2027,
@@ -448,7 +435,7 @@
     "abbreviation": "USENIX Security",
     "year": 2027,
     "round": 2,
-    "submission_deadline": "2027-02-05",
+    "submission_deadline": "2027-01-26",
     "notification": "2027-05-01",
     "conference_start": "2027-08-12",
     "conference_end": "2027-08-14",
