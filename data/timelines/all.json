@@ -2052,6 +2052,22 @@
     }
   },
   {
+    "venue_id": "percom",
+    "abbreviation": "PERCOM",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-09-19",
+    "rebuttal_start": "2025-12-05",
+    "rebuttal_end": "2025-12-05",
+    "notification": "2025-12-22",
+    "camera_ready": "2026-02-02",
+    "conference_start": "2026-03-23",
+    "conference_end": "2026-03-27",
+    "location": "Pisa, Italy",
+    "source_url": "https://percom.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "pets",
     "abbreviation": "PETS",
     "year": 2026,
