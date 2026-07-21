@@ -570,6 +570,39 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "dimva",
+    "abbreviation": "DIMVA",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-12-10",
+    "notification": "2026-01-27",
+    "camera_ready": "2026-05-28",
+    "conference_start": "2026-07-01",
+    "conference_end": "2026-07-03",
+    "location": "Chania, Greece",
+    "source_url": "https://www.dimva.org/dimva2026/",
+    "timezone": "AoE",
+    "stats": {
+      "submissions": 103,
+      "accepted": 36,
+      "acceptance_rate": 34.9
+    }
+  },
+  {
+    "venue_id": "dimva",
+    "abbreviation": "DIMVA",
+    "year": 2026,
+    "round": 2,
+    "submission_deadline": "2026-02-18",
+    "notification": "2026-04-03",
+    "camera_ready": "2026-05-28",
+    "conference_start": "2026-07-01",
+    "conference_end": "2026-07-03",
+    "location": "Chania, Greece",
+    "source_url": "https://www.dimva.org/dimva2026/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "dsn",
     "abbreviation": "DSN",
     "year": 2026,
@@ -997,6 +1030,36 @@
     "conference_start": "2026-11-07",
     "conference_end": "2026-11-09",
     "location": "TBD",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "isc",
+    "abbreviation": "ISC",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-06-11",
+    "rebuttal_start": "2025-07-13",
+    "rebuttal_end": "2025-07-16",
+    "notification": "2025-07-29",
+    "camera_ready": "2025-08-13",
+    "conference_start": "2025-10-20",
+    "conference_end": "2025-10-22",
+    "location": "Seoul, South Korea",
+    "source_url": "https://isc25.skku.edu/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "isc",
+    "abbreviation": "ISC",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-06-22",
+    "notification": "2026-08-31",
+    "camera_ready": "2026-09-14",
+    "conference_start": "2026-10-28",
+    "conference_end": "2026-10-30",
+    "location": "Rennes, France",
+    "source_url": "https://isc2026.github.io/",
     "timezone": "AoE"
   },
   {
@@ -1615,6 +1678,19 @@
     "conference_start": "2026-03-15",
     "conference_end": "2026-03-18",
     "location": "New York, NY, USA",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "trustcom",
+    "abbreviation": "TrustCom",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-05-01",
+    "notification": "2026-06-01",
+    "camera_ready": "2026-07-05",
+    "conference_start": "2026-11-14",
+    "conference_end": "2026-11-15",
+    "location": "Hong Kong, China",
     "timezone": "AoE"
   },
   {
