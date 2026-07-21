@@ -2860,6 +2860,22 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "spaa",
+    "abbreviation": "SPAA",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-02-27",
+    "rebuttal_start": "2026-04-27",
+    "rebuttal_end": "2026-05-01",
+    "notification": "2026-05-15",
+    "camera_ready": "2026-06-05",
+    "conference_start": "2026-07-06",
+    "conference_end": "2026-07-10",
+    "location": "London, UK",
+    "source_url": "https://spaa.acm.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "srds",
     "abbreviation": "SRDS",
     "year": 2025,
