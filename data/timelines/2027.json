@@ -230,6 +230,38 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "icde",
+    "abbreviation": "ICDE",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-06-11",
+    "rebuttal_start": "2026-08-08",
+    "rebuttal_end": "2026-08-15",
+    "notification": "2026-09-10",
+    "camera_ready": "2026-10-10",
+    "conference_start": "2027-05-17",
+    "conference_end": "2027-05-21",
+    "location": "Copenhagen, Denmark",
+    "source_url": "https://icde2027.github.io/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "icde",
+    "abbreviation": "ICDE",
+    "year": 2027,
+    "round": 2,
+    "submission_deadline": "2026-11-11",
+    "rebuttal_start": "2027-01-08",
+    "rebuttal_end": "2027-01-15",
+    "notification": "2027-02-10",
+    "camera_ready": "2027-03-10",
+    "conference_start": "2027-05-17",
+    "conference_end": "2027-05-21",
+    "location": "Copenhagen, Denmark",
+    "source_url": "https://icde2027.github.io/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "icra",
     "abbreviation": "ICRA",
     "year": 2027,

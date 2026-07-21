@@ -294,6 +294,18 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "ccc",
+    "abbreviation": "CCC",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-02-06",
+    "notification": "2026-04-01",
+    "conference_start": "2026-06-01",
+    "conference_end": "2026-06-04",
+    "location": "TBD",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ccs",
     "abbreviation": "CCS",
     "year": 2025,
@@ -565,6 +577,18 @@
     "conference_end": "2027-05-04",
     "location": "TBD",
     "source_url": "https://chi2027.acm.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "cikm",
+    "abbreviation": "CIKM",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-05-23",
+    "notification": "2026-08-01",
+    "conference_start": "2026-11-07",
+    "conference_end": "2026-11-11",
+    "location": "Rome, Italy",
     "timezone": "AoE"
   },
   {
@@ -1222,6 +1246,38 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "icde",
+    "abbreviation": "ICDE",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-06-11",
+    "rebuttal_start": "2026-08-08",
+    "rebuttal_end": "2026-08-15",
+    "notification": "2026-09-10",
+    "camera_ready": "2026-10-10",
+    "conference_start": "2027-05-17",
+    "conference_end": "2027-05-21",
+    "location": "Copenhagen, Denmark",
+    "source_url": "https://icde2027.github.io/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "icde",
+    "abbreviation": "ICDE",
+    "year": 2027,
+    "round": 2,
+    "submission_deadline": "2026-11-11",
+    "rebuttal_start": "2027-01-08",
+    "rebuttal_end": "2027-01-15",
+    "notification": "2027-02-10",
+    "camera_ready": "2027-03-10",
+    "conference_start": "2027-05-17",
+    "conference_end": "2027-05-21",
+    "location": "Copenhagen, Denmark",
+    "source_url": "https://icde2027.github.io/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "icdf2c",
     "abbreviation": "ICDF2C",
     "year": 2026,
@@ -1243,6 +1299,18 @@
     "conference_start": "2025-12-07",
     "conference_end": "2025-12-10",
     "location": "TBD",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "icdm",
+    "abbreviation": "ICDM",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-06-05",
+    "notification": "2026-08-15",
+    "conference_start": "2026-11-12",
+    "conference_end": "2026-11-15",
+    "location": "Shenyang, China",
     "timezone": "AoE"
   },
   {
@@ -1645,6 +1713,22 @@
     "conference_end": "2025-11-08",
     "location": "Hong Kong, China",
     "source_url": "https://www.sigmobile.org/mobicom/2025/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "mobisys",
+    "abbreviation": "MobiSys",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-12-05",
+    "rebuttal_start": "2026-02-09",
+    "rebuttal_end": "2026-02-13",
+    "notification": "2026-03-02",
+    "camera_ready": "2026-04-13",
+    "conference_start": "2026-06-22",
+    "conference_end": "2026-06-24",
+    "location": "Cambridge, UK",
+    "source_url": "https://www.sigmobile.org/mobisys/2026/",
     "timezone": "AoE"
   },
   {
@@ -2105,6 +2189,18 @@
     "conference_end": "2026-07-10",
     "location": "Waterloo, Canada",
     "source_url": "https://www.sacmat.org/2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "sdm",
+    "abbreviation": "SDM",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-04-10",
+    "notification": "2026-06-15",
+    "conference_start": "2026-11-19",
+    "conference_end": "2026-11-21",
+    "location": "TBD",
     "timezone": "AoE"
   },
   {
