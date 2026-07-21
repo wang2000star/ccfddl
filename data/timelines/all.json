@@ -92,6 +92,20 @@
   {
     "venue_id": "acns",
     "abbreviation": "ACNS",
+    "year": 2025,
+    "round": 2,
+    "submission_deadline": "2025-01-13",
+    "notification": "2025-03-17",
+    "camera_ready": "2025-04-07",
+    "conference_start": "2025-06-23",
+    "conference_end": "2025-06-26",
+    "location": "Munich, Germany",
+    "source_url": "https://acns2025.fordaysec.de/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "acns",
+    "abbreviation": "ACNS",
     "year": 2026,
     "round": 1,
     "submission_deadline": "2026-01-23",
@@ -105,6 +119,19 @@
   {
     "venue_id": "acsac",
     "abbreviation": "ACSAC",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-05-30",
+    "notification": "2025-09-03",
+    "conference_start": "2025-12-08",
+    "conference_end": "2025-12-12",
+    "location": "Honolulu, HI, USA",
+    "source_url": "https://www.acsac.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "acsac",
+    "abbreviation": "ACSAC",
     "year": 2026,
     "round": 1,
     "submission_deadline": "2026-05-26",
@@ -113,6 +140,18 @@
     "conference_end": "2026-12-11",
     "location": "Los Angeles, CA, USA",
     "source_url": "https://www.acsac.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "ase",
+    "abbreviation": "ASE",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-05-30",
+    "notification": "2025-08-15",
+    "conference_start": "2025-11-16",
+    "conference_end": "2025-11-20",
+    "location": "Seoul, South Korea",
     "timezone": "AoE"
   },
   {
@@ -145,6 +184,19 @@
       "accepted": 114,
       "acceptance_rate": 20.4
     }
+  },
+  {
+    "venue_id": "asiacrypt",
+    "abbreviation": "ASIACRYPT",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-05-16",
+    "notification": "2025-07-01",
+    "conference_start": "2025-12-07",
+    "conference_end": "2025-12-11",
+    "location": "Melbourne, Australia",
+    "source_url": "https://asiacrypt.iacr.org/2025/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "asiacrypt",
@@ -187,6 +239,19 @@
     "location": "San Diego, CA, USA",
     "source_url": "https://www.asplos-conference.org/asplos2026/",
     "timezone": "US Eastern"
+  },
+  {
+    "venue_id": "atc",
+    "abbreviation": "ATC",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-01-14",
+    "notification": "2025-03-15",
+    "conference_start": "2025-07-07",
+    "conference_end": "2025-07-09",
+    "location": "Boston, MA, USA",
+    "source_url": "https://www.usenix.org/conference/atc25/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "blocksys",
@@ -283,6 +348,54 @@
     "conference_end": "2027-11-19",
     "location": "TBD",
     "source_url": "https://www.sigsac.org/ccs/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "ches",
+    "abbreviation": "CHES",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-01-15",
+    "rebuttal_start": "2025-02-17",
+    "rebuttal_end": "2025-02-21",
+    "notification": "2025-03-15",
+    "camera_ready": "2025-04-14",
+    "conference_start": "2025-09-14",
+    "conference_end": "2025-09-18",
+    "location": "Kuala Lumpur, Malaysia",
+    "source_url": "https://ches.iacr.org/2025/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "ches",
+    "abbreviation": "CHES",
+    "year": 2025,
+    "round": 3,
+    "submission_deadline": "2025-01-15",
+    "rebuttal_start": "2025-02-17",
+    "rebuttal_end": "2025-02-21",
+    "notification": "2025-03-15",
+    "camera_ready": "2025-04-14",
+    "conference_start": "2025-09-14",
+    "conference_end": "2025-09-18",
+    "location": "Kuala Lumpur, Malaysia",
+    "source_url": "https://ches.iacr.org/2025/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "ches",
+    "abbreviation": "CHES",
+    "year": 2025,
+    "round": 4,
+    "submission_deadline": "2025-04-15",
+    "rebuttal_start": "2025-05-19",
+    "rebuttal_end": "2025-05-23",
+    "notification": "2025-06-15",
+    "camera_ready": "2025-07-14",
+    "conference_start": "2025-09-14",
+    "conference_end": "2025-09-18",
+    "location": "Kuala Lumpur, Malaysia",
+    "source_url": "https://ches.iacr.org/2025/",
     "timezone": "AoE"
   },
   {
@@ -440,6 +553,34 @@
     "conference_end": "2026-06-25",
     "location": "Frankfurt, Germany",
     "source_url": "https://www.codaspy.org/2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "colt",
+    "abbreviation": "COLT",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-02-06",
+    "notification": "2025-04-15",
+    "conference_start": "2025-06-25",
+    "conference_end": "2025-06-28",
+    "location": "TBD",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "crypto",
+    "abbreviation": "CRYPTO",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-02-13",
+    "rebuttal_start": "2025-04-07",
+    "rebuttal_end": "2025-04-12",
+    "notification": "2025-05-03",
+    "camera_ready": "2025-06-05",
+    "conference_start": "2025-08-17",
+    "conference_end": "2025-08-21",
+    "location": "Santa Barbara, CA, USA",
+    "source_url": "https://crypto.iacr.org/2025/",
     "timezone": "AoE"
   },
   {
@@ -619,6 +760,32 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "ecai",
+    "abbreviation": "ECAI",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-05-06",
+    "notification": "2025-06-15",
+    "conference_start": "2025-10-25",
+    "conference_end": "2025-10-30",
+    "location": "TBD",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "emnlp",
+    "abbreviation": "EMNLP",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-05-19",
+    "notification": "2025-08-20",
+    "camera_ready": "2025-09-19",
+    "conference_start": "2025-11-05",
+    "conference_end": "2025-11-09",
+    "location": "Suzhou, China",
+    "source_url": "https://2025.emnlp.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "emnlp",
     "abbreviation": "EMNLP",
     "year": 2026,
@@ -651,6 +818,20 @@
       "accepted": 98,
       "acceptance_rate": 23.1
     }
+  },
+  {
+    "venue_id": "eurocrypt",
+    "abbreviation": "EUROCRYPT",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-09-17",
+    "notification": "2027-01-18",
+    "camera_ready": "2027-02-08",
+    "conference_start": "2027-04-11",
+    "conference_end": "2027-04-15",
+    "location": "Eindhoven, Netherlands",
+    "source_url": "https://eurocrypt.iacr.org/2027/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "euros-p",
@@ -748,6 +929,19 @@
   {
     "venue_id": "fse",
     "abbreviation": "FSE",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-09-11",
+    "notification": "2025-12-15",
+    "conference_start": "2025-11-16",
+    "conference_end": "2025-11-20",
+    "location": "Trondheim, Norway",
+    "source_url": "https://conf.researchr.org/series/fse",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "fse",
+    "abbreviation": "FSE",
     "year": 2026,
     "round": 1,
     "submission_deadline": "2025-03-01",
@@ -826,6 +1020,19 @@
   {
     "venue_id": "iccv",
     "abbreviation": "ICCV",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-03-07",
+    "notification": "2025-06-25",
+    "conference_start": "2025-10-19",
+    "conference_end": "2025-10-25",
+    "location": "Honolulu, HI, USA",
+    "source_url": "https://iccv.thecvf.com/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "iccv",
+    "abbreviation": "ICCV",
     "year": 2026,
     "round": 1,
     "submission_deadline": "2026-03-18",
@@ -879,6 +1086,18 @@
     "notification": "2026-04-30",
     "conference_start": "2026-09-08",
     "conference_end": "2026-09-10",
+    "location": "TBD",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "icdm",
+    "abbreviation": "ICDM",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-06-06",
+    "notification": "2025-08-15",
+    "conference_start": "2025-12-07",
+    "conference_end": "2025-12-10",
     "location": "TBD",
     "timezone": "AoE"
   },
@@ -985,6 +1204,45 @@
     "conference_end": "2026-04-18",
     "location": "Rio de Janeiro, Brazil",
     "source_url": "https://conf.researchr.org/series/icse",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "icwsm",
+    "abbreviation": "ICWSM",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-01-15",
+    "notification": "2025-03-15",
+    "conference_start": "2025-06-23",
+    "conference_end": "2025-06-26",
+    "location": "Copenhagen, Denmark",
+    "source_url": "https://www.icwsm.org/2025/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "icwsm",
+    "abbreviation": "ICWSM",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-05-15",
+    "notification": "2025-07-15",
+    "conference_start": "2026-05-27",
+    "conference_end": "2026-05-29",
+    "location": "Los Angeles, CA, USA",
+    "source_url": "https://www.icwsm.org/2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "icwsm",
+    "abbreviation": "ICWSM",
+    "year": 2026,
+    "round": 2,
+    "submission_deadline": "2025-09-15",
+    "notification": "2025-11-15",
+    "conference_start": "2026-05-27",
+    "conference_end": "2026-05-29",
+    "location": "Los Angeles, CA, USA",
+    "source_url": "https://www.icwsm.org/2026/",
     "timezone": "AoE"
   },
   {
@@ -1102,6 +1360,31 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "kdd",
+    "abbreviation": "KDD",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-02-08",
+    "notification": "2025-05-16",
+    "conference_start": "2025-08-03",
+    "conference_end": "2025-08-07",
+    "location": "Toronto, Canada",
+    "source_url": "https://www.kdd.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "kr",
+    "abbreviation": "KR",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-05-01",
+    "notification": "2025-07-01",
+    "conference_start": "2025-11-02",
+    "conference_end": "2025-11-07",
+    "location": "TBD",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "lics",
     "abbreviation": "LICS",
     "year": 2026,
@@ -1201,6 +1484,19 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "ndss",
+    "abbreviation": "NDSS",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-08-19",
+    "notification": "2026-11-04",
+    "conference_start": "2027-03-22",
+    "conference_end": "2027-03-26",
+    "location": "Seoul, South Korea",
+    "source_url": "https://www.ndss-symposium.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "neurips",
     "abbreviation": "NeurIPS",
     "year": 2025,
@@ -1259,6 +1555,19 @@
     "location": "Renton, WA, USA",
     "source_url": "https://www.usenix.org/conference/nsdi26/",
     "timezone": "US PDT"
+  },
+  {
+    "venue_id": "nspw",
+    "abbreviation": "NSPW",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-04-25",
+    "notification": "2025-05-30",
+    "conference_start": "2025-08-24",
+    "conference_end": "2025-08-24",
+    "location": "Aerzen, Germany",
+    "source_url": "https://www.nspw.org/2025/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "nspw",
@@ -1386,6 +1695,32 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "popl",
+    "abbreviation": "POPL",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-07-11",
+    "notification": "2025-10-01",
+    "conference_start": "2026-01-20",
+    "conference_end": "2026-01-22",
+    "location": "Philadelphia, PA, USA",
+    "source_url": "https://popl.sigplan.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "raid",
+    "abbreviation": "RAID",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-04-17",
+    "notification": "2025-07-09",
+    "camera_ready": "2025-08-14",
+    "conference_start": "2025-10-19",
+    "conference_end": "2025-10-22",
+    "location": "Gold Coast, Australia",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "raid",
     "abbreviation": "RAID",
     "year": 2026,
@@ -1447,6 +1782,19 @@
     "venue_id": "s-p",
     "abbreviation": "S&P",
     "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-06-11",
+    "notification": "2026-09-01",
+    "conference_start": "2027-05-01",
+    "conference_end": "2027-05-04",
+    "location": "San Francisco, CA, USA",
+    "source_url": "https://www.ieee-security.org/TC/SP2027/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "s-p",
+    "abbreviation": "S&P",
+    "year": 2027,
     "round": 2,
     "submission_deadline": "2026-11-13",
     "notification": "2027-02-01",
@@ -1454,6 +1802,45 @@
     "conference_end": "2027-05-21",
     "location": "San Francisco, CA, USA",
     "source_url": "https://www.ieee-security.org/TC/SP2027/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "s-p",
+    "abbreviation": "S&P",
+    "year": 2027,
+    "round": 2,
+    "submission_deadline": "2026-11-17",
+    "notification": "2027-03-05",
+    "conference_start": "2027-05-01",
+    "conference_end": "2027-05-04",
+    "location": "San Francisco, CA, USA",
+    "source_url": "https://www.ieee-security.org/TC/SP2027/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "sac",
+    "abbreviation": "SAC",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-01-27",
+    "notification": "2025-03-13",
+    "conference_start": "2025-08-13",
+    "conference_end": "2025-08-15",
+    "location": "Toronto, Canada",
+    "source_url": "https://sacworkshop.org/SAC25/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "sac",
+    "abbreviation": "SAC",
+    "year": 2025,
+    "round": 2,
+    "submission_deadline": "2025-05-07",
+    "notification": "2025-06-20",
+    "conference_start": "2025-08-13",
+    "conference_end": "2025-08-15",
+    "location": "Toronto, Canada",
+    "source_url": "https://sacworkshop.org/SAC25/",
     "timezone": "AoE"
   },
   {
@@ -1480,6 +1867,19 @@
     "conference_end": "2026-08-28",
     "location": "Ottawa, Canada",
     "source_url": "https://www.sacworkshop.org/SAC26/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "sacmat",
+    "abbreviation": "SACMAT",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-03-31",
+    "notification": "2025-05-01",
+    "conference_start": "2025-07-08",
+    "conference_end": "2025-07-10",
+    "location": "Stony Brook, NY, USA",
+    "source_url": "https://www.sacmat.org/",
     "timezone": "AoE"
   },
   {
@@ -1540,6 +1940,20 @@
   {
     "venue_id": "sigcomm",
     "abbreviation": "SIGCOMM",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-01-31",
+    "notification": "2025-04-29",
+    "camera_ready": "2025-07-31",
+    "conference_start": "2025-09-08",
+    "conference_end": "2025-09-11",
+    "location": "Coimbra, Portugal",
+    "source_url": "https://conferences.sigcomm.org/sigcomm/2025/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "sigcomm",
+    "abbreviation": "SIGCOMM",
     "year": 2026,
     "round": 1,
     "submission_deadline": "2026-02-06",
@@ -1563,6 +1977,32 @@
     "conference_end": "2025-08-14",
     "location": "Vancouver, Canada",
     "source_url": "https://siggraph2026.nnja.co/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "siggraph",
+    "abbreviation": "SIGGRAPH",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-02-18",
+    "notification": "2025-05-01",
+    "conference_start": "2025-08-10",
+    "conference_end": "2025-08-14",
+    "location": "Vancouver, Canada",
+    "source_url": "https://s2025.siggraph.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "sigir",
+    "abbreviation": "SIGIR",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-01-23",
+    "notification": "2025-04-04",
+    "conference_start": "2025-07-13",
+    "conference_end": "2025-07-18",
+    "location": "Padua, Italy",
+    "source_url": "https://sigir2025.dei.unipd.it/",
     "timezone": "AoE"
   },
   {
@@ -1635,6 +2075,20 @@
   {
     "venue_id": "sosp",
     "abbreviation": "SOSP",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-04-17",
+    "notification": "2025-07-15",
+    "camera_ready": "2025-09-01",
+    "conference_start": "2025-10-13",
+    "conference_end": "2025-10-16",
+    "location": "Seoul, South Korea",
+    "source_url": "https://sigops.org/s/conferences/sosp/2025/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "sosp",
+    "abbreviation": "SOSP",
     "year": 2026,
     "round": 1,
     "submission_deadline": "2026-04-01",
@@ -1656,6 +2110,20 @@
     "conference_end": "2026-08-26",
     "location": "Hannover, Germany",
     "source_url": "https://www.usenix.org/conference/soups2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "srds",
+    "abbreviation": "SRDS",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-05-02",
+    "notification": "2025-06-27",
+    "camera_ready": "2025-07-07",
+    "conference_start": "2025-09-29",
+    "conference_end": "2025-10-02",
+    "location": "Porto, Portugal",
+    "source_url": "https://srds-conference.org/",
     "timezone": "AoE"
   },
   {
@@ -1723,6 +2191,18 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "uai",
+    "abbreviation": "UAI",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-02-10",
+    "notification": "2025-04-15",
+    "conference_start": "2025-07-21",
+    "conference_end": "2025-07-25",
+    "location": "TBD",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ubicomp",
     "abbreviation": "UbiComp",
     "year": 2026,
@@ -1733,6 +2213,19 @@
     "conference_end": "2026-09-17",
     "location": "Helsinki, Finland",
     "source_url": "https://www.ubicomp.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "uist",
+    "abbreviation": "UIST",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-04-09",
+    "notification": "2025-07-05",
+    "conference_start": "2025-09-28",
+    "conference_end": "2025-10-01",
+    "location": "Busan, Korea",
+    "source_url": "https://uist.acm.org/2025/",
     "timezone": "AoE"
   },
   {
@@ -1809,6 +2302,19 @@
     "venue_id": "usenix-security",
     "abbreviation": "USENIX Security",
     "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-08-25",
+    "notification": "2026-12-01",
+    "conference_start": "2027-08-11",
+    "conference_end": "2027-08-13",
+    "location": "Denver, CO, USA",
+    "source_url": "https://www.usenix.org/conference/usenixsecurity27/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "usenix-security",
+    "abbreviation": "USENIX Security",
+    "year": 2027,
     "round": 2,
     "submission_deadline": "2027-02-05",
     "notification": "2027-05-01",
@@ -1816,6 +2322,46 @@
     "conference_end": "2027-08-14",
     "location": "TBD",
     "source_url": "https://www.usenix.org/conference/usenixsecurity27/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "usenix-security",
+    "abbreviation": "USENIX Security",
+    "year": 2027,
+    "round": 2,
+    "submission_deadline": "2027-01-26",
+    "notification": "2027-04-30",
+    "conference_start": "2027-08-11",
+    "conference_end": "2027-08-13",
+    "location": "Denver, CO, USA",
+    "source_url": "https://www.usenix.org/conference/usenixsecurity27/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "vldb",
+    "abbreviation": "VLDB",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-03-01",
+    "notification": "2025-05-15",
+    "conference_start": "2025-09-01",
+    "conference_end": "2025-09-05",
+    "location": "London, UK",
+    "source_url": "https://vldb.org/2025/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "wisec",
+    "abbreviation": "WiSec",
+    "year": 2025,
+    "round": 2,
+    "submission_deadline": "2025-03-12",
+    "notification": "2025-04-23",
+    "camera_ready": "2025-05-12",
+    "conference_start": "2025-06-30",
+    "conference_end": "2025-07-03",
+    "location": "Arlington, VA, USA",
+    "source_url": "https://www.sigmobile.org/wisec/2025/",
     "timezone": "AoE"
   },
   {

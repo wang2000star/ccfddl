@@ -263,7 +263,8 @@ const Renderer = {
     updateStats(venues) {
         if (!this.statsBar) return;
         const counts = DataLoader.countByRank(venues);
-        const withTL = venues.filter(v => DataLoader.getTimeline && DataLoader.getTimeline(v.id, year)).length;
+        const y = (typeof Search !== 'undefined' && Search.state.year !== 'all') ? Search.state.year : '2026';
+        const withTL = venues.filter(v => DataLoader.getTimeline && DataLoader.getTimeline(v.id, y)).length;
         this.statsBar.innerHTML = `${this.t('showing')} <strong>${venues.length}</strong> ${this.t('results')} (A:${counts.A} B:${counts.B} C:${counts.C}) | 📅 ${withTL} ${this.t('ganttTitle').replace('📊 ','')}`;
     },
 

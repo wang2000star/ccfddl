@@ -768,6 +768,32 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "icwsm",
+    "abbreviation": "ICWSM",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-05-15",
+    "notification": "2025-07-15",
+    "conference_start": "2026-05-27",
+    "conference_end": "2026-05-29",
+    "location": "Los Angeles, CA, USA",
+    "source_url": "https://www.icwsm.org/2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "icwsm",
+    "abbreviation": "ICWSM",
+    "year": 2026,
+    "round": 2,
+    "submission_deadline": "2025-09-15",
+    "notification": "2025-11-15",
+    "conference_start": "2026-05-27",
+    "conference_end": "2026-05-29",
+    "location": "Los Angeles, CA, USA",
+    "source_url": "https://www.icwsm.org/2026/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ifip-sec",
     "abbreviation": "IFIP SEC",
     "year": 2026,
@@ -1095,6 +1121,19 @@
     "conference_end": "2026-06-19",
     "location": "Boulder, CO, USA",
     "source_url": "https://pldi26.sigplan.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "popl",
+    "abbreviation": "POPL",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-07-11",
+    "notification": "2025-10-01",
+    "conference_start": "2026-01-20",
+    "conference_end": "2026-01-22",
+    "location": "Philadelphia, PA, USA",
+    "source_url": "https://popl.sigplan.org/",
     "timezone": "AoE"
   },
   {
