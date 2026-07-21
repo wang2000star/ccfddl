@@ -18,6 +18,19 @@
     }
   },
   {
+    "venue_id": "acisp",
+    "abbreviation": "ACISP",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-02-26",
+    "notification": "2026-04-16",
+    "conference_start": "2026-07-06",
+    "conference_end": "2026-07-08",
+    "location": "TBD",
+    "source_url": "https://acisp2026.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "acl",
     "abbreviation": "ACL",
     "year": 2026,
@@ -35,6 +48,19 @@
       "accepted": 1152,
       "acceptance_rate": 23.3
     }
+  },
+  {
+    "venue_id": "acns",
+    "abbreviation": "ACNS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-01-23",
+    "notification": "2026-03-19",
+    "conference_start": "2026-06-22",
+    "conference_end": "2026-06-25",
+    "location": "TBD",
+    "source_url": "https://acns2026.org/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "acsac",
@@ -103,6 +129,19 @@
     "location": "San Diego, CA, USA",
     "source_url": "https://www.asplos-conference.org/asplos2026/",
     "timezone": "US Eastern"
+  },
+  {
+    "venue_id": "blocksys",
+    "abbreviation": "BlockSys",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-03-30",
+    "notification": "2026-05-15",
+    "conference_start": "2026-07-29",
+    "conference_end": "2026-07-31",
+    "location": "Chengdu, China",
+    "source_url": "https://blocksys2026.org/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "cav",
@@ -227,6 +266,22 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "codaspy",
+    "abbreviation": "CODASPY",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-01-02",
+    "rebuttal_start": "2026-02-18",
+    "rebuttal_end": "2026-02-20",
+    "notification": "2026-02-27",
+    "camera_ready": "2026-04-12",
+    "conference_start": "2026-06-23",
+    "conference_end": "2026-06-25",
+    "location": "Frankfurt, Germany",
+    "source_url": "https://www.codaspy.org/2026/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "crypto",
     "abbreviation": "CRYPTO",
     "year": 2026,
@@ -246,6 +301,18 @@
       "accepted": 98,
       "acceptance_rate": 24.3
     }
+  },
+  {
+    "venue_id": "cscloud",
+    "abbreviation": "CSCloud",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-08-02",
+    "notification": "2026-10-01",
+    "conference_start": "2026-12-19",
+    "conference_end": "2026-12-21",
+    "location": "Shanghai, China",
+    "timezone": "AoE"
   },
   {
     "venue_id": "csfw",
@@ -287,6 +354,24 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "ct-rsa",
+    "abbreviation": "CT-RSA",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-10-24",
+    "notification": "2025-12-07",
+    "conference_start": "2026-03-23",
+    "conference_end": "2026-03-26",
+    "location": "San Francisco, CA, USA",
+    "source_url": "https://www.rsaconference.com/",
+    "timezone": "AoE",
+    "stats": {
+      "submissions": 37,
+      "accepted": 12,
+      "acceptance_rate": 32.4
+    }
+  },
+  {
     "venue_id": "cvpr",
     "abbreviation": "CVPR",
     "year": 2026,
@@ -306,6 +391,38 @@
       "accepted": 3210,
       "acceptance_rate": 24.7
     }
+  },
+  {
+    "venue_id": "dfrws",
+    "abbreviation": "DFRWS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-02-06",
+    "rebuttal_start": "2026-03-19",
+    "rebuttal_end": "2026-03-25",
+    "notification": "2026-04-03",
+    "camera_ready": "2026-04-20",
+    "conference_start": "2026-07-27",
+    "conference_end": "2026-07-30",
+    "location": "Arlington, VA, USA",
+    "source_url": "https://dfrws.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "dsn",
+    "abbreviation": "DSN",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-12-04",
+    "rebuttal_start": "2026-02-13",
+    "rebuttal_end": "2026-02-27",
+    "notification": "2026-03-19",
+    "camera_ready": "2026-04-28",
+    "conference_start": "2026-06-22",
+    "conference_end": "2026-06-25",
+    "location": "Charlotte, NC, USA",
+    "source_url": "https://dsn2026.github.io/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "emnlp",
@@ -468,6 +585,18 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "icics",
+    "abbreviation": "ICICS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-05-22",
+    "notification": "2026-07-21",
+    "conference_start": "2026-10-27",
+    "conference_end": "2026-10-29",
+    "location": "TBD",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "iclr",
     "abbreviation": "ICLR",
     "year": 2026,
@@ -535,6 +664,18 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "inscrypt",
+    "abbreviation": "Inscrypt",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-07-01",
+    "notification": "2026-08-15",
+    "conference_start": "2026-11-07",
+    "conference_end": "2026-11-09",
+    "location": "TBD",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "isca",
     "abbreviation": "ISCA",
     "year": 2026,
@@ -565,8 +706,8 @@
     "abbreviation": "LICS",
     "year": 2026,
     "round": 1,
-    "abstract_deadline": "2026-01-15",
     "submission_deadline": "2026-01-22",
+    "abstract_deadline": "2026-01-15",
     "notification": "2026-04-01",
     "conference_start": "2026-06-29",
     "conference_end": "2026-07-03",
@@ -668,6 +809,19 @@
     "timezone": "US PDT"
   },
   {
+    "venue_id": "nspw",
+    "abbreviation": "NSPW",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-05-01",
+    "notification": "2026-07-01",
+    "conference_start": "2026-09-27",
+    "conference_end": "2026-09-30",
+    "location": "Victoria, BC, Canada",
+    "source_url": "https://www.nspw.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "osdi",
     "abbreviation": "OSDI",
     "year": 2026,
@@ -678,6 +832,74 @@
     "conference_end": "2026-07-15",
     "location": "Seattle, WA, USA",
     "source_url": "https://www.usenix.org/conference/osdi26/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "pets",
+    "abbreviation": "PETS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-05-31",
+    "notification": "2025-08-01",
+    "conference_start": "2026-07-20",
+    "conference_end": "2026-07-25",
+    "location": "Calgary, Canada",
+    "source_url": "https://petsymposium.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "pets",
+    "abbreviation": "PETS",
+    "year": 2026,
+    "round": 2,
+    "submission_deadline": "2025-08-31",
+    "notification": "2025-11-01",
+    "conference_start": "2026-07-20",
+    "conference_end": "2026-07-25",
+    "location": "Calgary, Canada",
+    "source_url": "https://petsymposium.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "pets",
+    "abbreviation": "PETS",
+    "year": 2026,
+    "round": 3,
+    "submission_deadline": "2025-11-30",
+    "notification": "2026-02-01",
+    "conference_start": "2026-07-20",
+    "conference_end": "2026-07-25",
+    "location": "Calgary, Canada",
+    "source_url": "https://petsymposium.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "pets",
+    "abbreviation": "PETS",
+    "year": 2026,
+    "round": 4,
+    "submission_deadline": "2026-02-28",
+    "notification": "2026-05-01",
+    "conference_start": "2026-07-20",
+    "conference_end": "2026-07-25",
+    "location": "Calgary, Canada",
+    "source_url": "https://petsymposium.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "pkc",
+    "abbreviation": "PKC",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-10-24",
+    "rebuttal_start": "2025-12-16",
+    "rebuttal_end": "2025-12-23",
+    "notification": "2026-02-13",
+    "camera_ready": "2026-03-06",
+    "conference_start": "2026-05-25",
+    "conference_end": "2026-05-28",
+    "location": "West Palm Beach, FL, USA",
+    "source_url": "https://pkc.iacr.org/2026/",
     "timezone": "AoE"
   },
   {
@@ -738,6 +960,46 @@
     "conference_end": "2026-05-21",
     "location": "San Francisco, CA, USA",
     "source_url": "https://www.ieee-security.org/TC/SP2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "sac",
+    "abbreviation": "SAC",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-02-02",
+    "notification": "2026-03-19",
+    "conference_start": "2026-08-26",
+    "conference_end": "2026-08-28",
+    "location": "Ottawa, Canada",
+    "source_url": "https://www.sacworkshop.org/SAC26/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "sac",
+    "abbreviation": "SAC",
+    "year": 2026,
+    "round": 2,
+    "submission_deadline": "2026-05-11",
+    "notification": "2026-06-25",
+    "conference_start": "2026-08-26",
+    "conference_end": "2026-08-28",
+    "location": "Ottawa, Canada",
+    "source_url": "https://www.sacworkshop.org/SAC26/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "sacmat",
+    "abbreviation": "SACMAT",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-03-02",
+    "notification": "2026-04-06",
+    "camera_ready": "2026-05-07",
+    "conference_start": "2026-07-08",
+    "conference_end": "2026-07-10",
+    "location": "Waterloo, Canada",
+    "source_url": "https://www.sacmat.org/2026/",
     "timezone": "AoE"
   },
   {
@@ -820,6 +1082,19 @@
     "conference_end": "2026-10-28",
     "location": "Koblenz, Germany",
     "source_url": "https://sosp2026.mpi-sws.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "soups",
+    "abbreviation": "SOUPS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-02-19",
+    "notification": "2026-04-15",
+    "conference_start": "2026-08-23",
+    "conference_end": "2026-08-26",
+    "location": "Hannover, Germany",
+    "source_url": "https://www.usenix.org/conference/soups2026/",
     "timezone": "AoE"
   },
   {
