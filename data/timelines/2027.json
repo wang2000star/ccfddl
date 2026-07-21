@@ -504,5 +504,18 @@
     "location": "TBD",
     "source_url": "https://vldb.org/2027/",
     "timezone": "AoE"
+  },
+  {
+    "venue_id": "wsdm",
+    "abbreviation": "WSDM",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-08-25",
+    "notification": "2026-11-01",
+    "conference_start": "2027-02-15",
+    "conference_end": "2027-02-19",
+    "location": "Hong Kong, China",
+    "source_url": "https://wsdm-conference.org/",
+    "timezone": "AoE"
   }
 ]
