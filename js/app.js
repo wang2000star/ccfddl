@@ -31,7 +31,6 @@ const App = {
         this.setupCategoryFilter();
         this.setupSortFilter();
         this.setupViewToggle();
-        this.setupYearFilter();
         this.setupLanguageToggle();
 
         // Load data
@@ -128,15 +127,6 @@ const App = {
         if (!select) return;
         select.addEventListener('change', () => {
             Search.updateFilter('sort', select.value);
-            this.refresh();
-        });
-    },
-
-    setupYearFilter() {
-        const select = document.getElementById('yearFilter');
-        if (!select) return;
-        select.addEventListener('change', () => {
-            Search.updateFilter('year', select.value);
             this.refresh();
         });
     },
