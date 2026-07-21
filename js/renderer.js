@@ -90,7 +90,7 @@ const Renderer = {
         <div class="venue-card" data-id="${venue.id}">
             <div class="venue-card-header">
                 <div class="venue-card-title">
-                    <div class="venue-abbr">${this.esc(venue.abbreviation)} ${venue._timelineYear || year}${venue._totalRounds > 1 ? '_' + ((venue._roundIndex||0)+1) : ''}</div>
+                    <div class="venue-abbr">${this.esc(venue.abbreviation)} ${venue._timelineYear || year}${venue._totalRounds > 1 ? '_' + ((venue._timeline && venue._timeline.round) || (venue._roundIndex||0)+1) : ''}</div>
                     <div class="venue-full-name">${this.esc(venue.full_name)}</div>
                 </div>
                 <div class="venue-badges">
@@ -119,7 +119,8 @@ const Renderer = {
         if (!tl) return `<div class="venue-timeline"><div class="timeline-no-data">${this.t('noTimeline')}</div></div>`;
 
         const total = venue._totalRounds || timelines.length;
-        const label = total > 1 ? `📋 ${venue.abbreviation} ${tl.year}_${idx + 1}` : '';
+        const actualRound = tl.round || (idx + 1);
+        const label = total > 1 ? `📋 ${venue.abbreviation} ${tl.year}_${actualRound}` : '';
         let html = label ? `<div class="timeline-round-label">${label}</div>` : '';
         html += Timeline.buildTimelineHTML(tl);
         if (tl.submission_deadline) {
