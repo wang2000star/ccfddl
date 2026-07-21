@@ -89,6 +89,24 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "asiaccs",
+    "abbreviation": "AsiaCCS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-12-12",
+    "notification": "2026-03-10",
+    "conference_start": "2026-06-01",
+    "conference_end": "2026-06-05",
+    "location": "Bangalore, India",
+    "source_url": "https://asiaccs2026.cse.iitkgp.ac.in/",
+    "timezone": "AoE",
+    "stats": {
+      "submissions": 558,
+      "accepted": 114,
+      "acceptance_rate": 20.4
+    }
+  },
+  {
     "venue_id": "asiacrypt",
     "abbreviation": "ASIACRYPT",
     "year": 2026,
@@ -585,6 +603,18 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "icdf2c",
+    "abbreviation": "ICDF2C",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-03-27",
+    "notification": "2026-04-30",
+    "conference_start": "2026-09-08",
+    "conference_end": "2026-09-10",
+    "location": "TBD",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "icics",
     "abbreviation": "ICICS",
     "year": 2026,
@@ -662,6 +692,39 @@
     "location": "Rio de Janeiro, Brazil",
     "source_url": "https://conf.researchr.org/series/icse",
     "timezone": "AoE"
+  },
+  {
+    "venue_id": "ifip-sec",
+    "abbreviation": "IFIP SEC",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-12-19",
+    "notification": "2026-02-13",
+    "camera_ready": "2026-03-13",
+    "conference_start": "2026-06-09",
+    "conference_end": "2026-06-11",
+    "location": "Perth, Australia",
+    "source_url": "https://ifipsec.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "ihmmsec",
+    "abbreviation": "IH&MMSec",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-02-16",
+    "notification": "2026-04-13",
+    "camera_ready": "2026-05-04",
+    "conference_start": "2026-06-17",
+    "conference_end": "2026-06-19",
+    "location": "Florence, Italy",
+    "source_url": "https://www.ihmmsec.org/",
+    "timezone": "AoE",
+    "stats": {
+      "submissions": 68,
+      "accepted": 29,
+      "acceptance_rate": 42.6
+    }
   },
   {
     "venue_id": "inscrypt",
@@ -1000,6 +1063,34 @@
     "conference_end": "2026-07-10",
     "location": "Waterloo, Canada",
     "source_url": "https://www.sacmat.org/2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "securecomm",
+    "abbreviation": "SecureComm",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-01-15",
+    "notification": "2026-03-01",
+    "camera_ready": "2026-04-20",
+    "conference_start": "2026-07-21",
+    "conference_end": "2026-07-24",
+    "location": "Lancaster, UK",
+    "source_url": "https://securecomm.eai-conferences.org/2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "securecomm",
+    "abbreviation": "SecureComm",
+    "year": 2026,
+    "round": 2,
+    "submission_deadline": "2026-02-15",
+    "notification": "2026-04-01",
+    "camera_ready": "2026-04-20",
+    "conference_start": "2026-07-21",
+    "conference_end": "2026-07-24",
+    "location": "Lancaster, UK",
+    "source_url": "https://securecomm.eai-conferences.org/2026/",
     "timezone": "AoE"
   },
   {
