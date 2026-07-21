@@ -901,6 +901,38 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "fast",
+    "abbreviation": "FAST",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-03-17",
+    "rebuttal_start": "2026-05-18",
+    "rebuttal_end": "2026-05-20",
+    "notification": "2026-06-04",
+    "camera_ready": "2026-07-28",
+    "conference_start": "2027-02-23",
+    "conference_end": "2027-02-25",
+    "location": "Renton, WA, USA",
+    "source_url": "https://www.usenix.org/conference/fast27/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "fast",
+    "abbreviation": "FAST",
+    "year": 2027,
+    "round": 2,
+    "submission_deadline": "2026-09-15",
+    "rebuttal_start": "2026-11-17",
+    "rebuttal_end": "2026-11-19",
+    "notification": "2026-12-08",
+    "camera_ready": "2027-01-26",
+    "conference_start": "2027-02-23",
+    "conference_end": "2027-02-25",
+    "location": "Renton, WA, USA",
+    "source_url": "https://www.usenix.org/conference/fast27/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "fc",
     "abbreviation": "FC",
     "year": 2026,
