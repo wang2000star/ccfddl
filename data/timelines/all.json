@@ -1815,6 +1815,19 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "iwqos",
+    "abbreviation": "IWQoS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-02-16",
+    "notification": "2026-04-30",
+    "conference_start": "2026-06-29",
+    "conference_end": "2026-07-02",
+    "location": "Istanbul, Turkey",
+    "source_url": "https://iwqos2026.github.io/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "kdd",
     "abbreviation": "KDD",
     "year": 2025,
