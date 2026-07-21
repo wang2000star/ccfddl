@@ -177,6 +177,32 @@
   {
     "venue_id": "ccs",
     "abbreviation": "CCS",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-01-09",
+    "notification": "2025-03-28",
+    "conference_start": "2025-10-13",
+    "conference_end": "2025-10-17",
+    "location": "Taipei, Taiwan",
+    "source_url": "https://www.sigsac.org/ccs/CCS2025/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "ccs",
+    "abbreviation": "CCS",
+    "year": 2025,
+    "round": 2,
+    "submission_deadline": "2025-04-14",
+    "notification": "2025-07-01",
+    "conference_start": "2025-10-13",
+    "conference_end": "2025-10-17",
+    "location": "Taipei, Taiwan",
+    "source_url": "https://www.sigsac.org/ccs/CCS2025/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "ccs",
+    "abbreviation": "CCS",
     "year": 2026,
     "round": 1,
     "submission_deadline": "2026-01-14",
@@ -204,6 +230,19 @@
     "conference_end": "2026-11-19",
     "location": "The Hague, Netherlands",
     "source_url": "https://www.sigsac.org/ccs/CCS2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "ccs",
+    "abbreviation": "CCS",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2027-01-15",
+    "notification": "2027-04-01",
+    "conference_start": "2027-11-15",
+    "conference_end": "2027-11-19",
+    "location": "TBD",
+    "source_url": "https://www.sigsac.org/ccs/",
     "timezone": "AoE"
   },
   {
@@ -896,6 +935,19 @@
   {
     "venue_id": "ndss",
     "abbreviation": "NDSS",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-08-06",
+    "notification": "2025-10-15",
+    "conference_start": "2026-02-23",
+    "conference_end": "2026-02-26",
+    "location": "San Diego, CA, USA",
+    "source_url": "https://www.ndss-symposium.org/ndss2025/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "ndss",
+    "abbreviation": "NDSS",
     "year": 2026,
     "round": 1,
     "submission_deadline": "2025-07-10",
@@ -913,6 +965,19 @@
       "accepted": 140,
       "acceptance_rate": 20.2
     }
+  },
+  {
+    "venue_id": "ndss",
+    "abbreviation": "NDSS",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-07-10",
+    "notification": "2026-10-15",
+    "conference_start": "2027-02-23",
+    "conference_end": "2027-02-26",
+    "location": "San Diego, CA, USA",
+    "source_url": "https://www.ndss-symposium.org/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "neurips",
@@ -1113,6 +1178,32 @@
     "conference_end": "2026-05-21",
     "location": "San Francisco, CA, USA",
     "source_url": "https://www.ieee-security.org/TC/SP2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "s-p",
+    "abbreviation": "S&P",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-06-05",
+    "notification": "2026-09-01",
+    "conference_start": "2027-05-18",
+    "conference_end": "2027-05-21",
+    "location": "San Francisco, CA, USA",
+    "source_url": "https://www.ieee-security.org/TC/SP2027/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "s-p",
+    "abbreviation": "S&P",
+    "year": 2027,
+    "round": 2,
+    "submission_deadline": "2026-11-13",
+    "notification": "2027-02-01",
+    "conference_start": "2027-05-18",
+    "conference_end": "2027-05-21",
+    "location": "San Francisco, CA, USA",
+    "source_url": "https://www.ieee-security.org/TC/SP2027/",
     "timezone": "AoE"
   },
   {
@@ -1345,6 +1436,20 @@
   {
     "venue_id": "usenix-security",
     "abbreviation": "USENIX Security",
+    "year": 2025,
+    "round": 2,
+    "submission_deadline": "2025-01-22",
+    "notification": "2025-04-30",
+    "camera_ready": "2025-06-12",
+    "conference_start": "2025-08-13",
+    "conference_end": "2025-08-15",
+    "location": "Seattle, WA, USA",
+    "source_url": "https://www.usenix.org/conference/usenixsecurity25/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "usenix-security",
+    "abbreviation": "USENIX Security",
     "year": 2026,
     "round": 1,
     "submission_deadline": "2025-08-26",
@@ -1370,6 +1475,32 @@
     "conference_end": "2026-08-14",
     "location": "Baltimore, MD, USA",
     "source_url": "https://www.usenix.org/conference/usenixsecurity26/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "usenix-security",
+    "abbreviation": "USENIX Security",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-08-26",
+    "notification": "2026-12-01",
+    "conference_start": "2027-08-12",
+    "conference_end": "2027-08-14",
+    "location": "TBD",
+    "source_url": "https://www.usenix.org/conference/usenixsecurity27/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "usenix-security",
+    "abbreviation": "USENIX Security",
+    "year": 2027,
+    "round": 2,
+    "submission_deadline": "2027-02-05",
+    "notification": "2027-05-01",
+    "conference_start": "2027-08-12",
+    "conference_end": "2027-08-14",
+    "location": "TBD",
+    "source_url": "https://www.usenix.org/conference/usenixsecurity27/",
     "timezone": "AoE"
   },
   {

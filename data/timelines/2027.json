@@ -1,5 +1,18 @@
 [
   {
+    "venue_id": "ccs",
+    "abbreviation": "CCS",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2027-01-15",
+    "notification": "2027-04-01",
+    "conference_start": "2027-11-15",
+    "conference_end": "2027-11-19",
+    "location": "TBD",
+    "source_url": "https://www.sigsac.org/ccs/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ches",
     "abbreviation": "CHES",
     "year": 2027,
@@ -87,6 +100,71 @@
     "conference_end": "2027-05-28",
     "location": "Maastricht, Netherlands",
     "source_url": "https://fse.iacr.org/2027/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "ndss",
+    "abbreviation": "NDSS",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-07-10",
+    "notification": "2026-10-15",
+    "conference_start": "2027-02-23",
+    "conference_end": "2027-02-26",
+    "location": "San Diego, CA, USA",
+    "source_url": "https://www.ndss-symposium.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "s-p",
+    "abbreviation": "S&P",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-06-05",
+    "notification": "2026-09-01",
+    "conference_start": "2027-05-18",
+    "conference_end": "2027-05-21",
+    "location": "San Francisco, CA, USA",
+    "source_url": "https://www.ieee-security.org/TC/SP2027/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "s-p",
+    "abbreviation": "S&P",
+    "year": 2027,
+    "round": 2,
+    "submission_deadline": "2026-11-13",
+    "notification": "2027-02-01",
+    "conference_start": "2027-05-18",
+    "conference_end": "2027-05-21",
+    "location": "San Francisco, CA, USA",
+    "source_url": "https://www.ieee-security.org/TC/SP2027/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "usenix-security",
+    "abbreviation": "USENIX Security",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-08-26",
+    "notification": "2026-12-01",
+    "conference_start": "2027-08-12",
+    "conference_end": "2027-08-14",
+    "location": "TBD",
+    "source_url": "https://www.usenix.org/conference/usenixsecurity27/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "usenix-security",
+    "abbreviation": "USENIX Security",
+    "year": 2027,
+    "round": 2,
+    "submission_deadline": "2027-02-05",
+    "notification": "2027-05-01",
+    "conference_start": "2027-08-12",
+    "conference_end": "2027-08-14",
+    "location": "TBD",
+    "source_url": "https://www.usenix.org/conference/usenixsecurity27/",
     "timezone": "AoE"
   }
 ]
