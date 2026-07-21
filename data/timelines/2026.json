@@ -878,6 +878,20 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "icip",
+    "abbreviation": "ICIP",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-02-04",
+    "notification": "2026-04-29",
+    "camera_ready": "2026-05-13",
+    "conference_start": "2026-09-13",
+    "conference_end": "2026-09-17",
+    "location": "Tampere, Finland",
+    "source_url": "https://2026.ieeeicip.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "iclr",
     "abbreviation": "ICLR",
     "year": 2026,
