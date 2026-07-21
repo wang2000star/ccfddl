@@ -947,11 +947,38 @@
     "venue_id": "eurosys",
     "abbreviation": "EuroSys",
     "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-05-14",
+    "notification": "2026-08-21",
+    "conference_start": "2027-04-19",
+    "conference_end": "2027-04-23",
+    "location": "Rabat, Morocco",
+    "source_url": "https://2027.eurosys.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "eurosys",
+    "abbreviation": "EuroSys",
+    "year": 2027,
     "round": 2,
     "submission_deadline": "2026-09-24",
     "notification": "2027-01-29",
     "conference_start": "2027-04-19",
     "conference_end": "2027-04-24",
+    "location": "Rabat, Morocco",
+    "source_url": "https://2027.eurosys.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "eurosys",
+    "abbreviation": "EuroSys",
+    "year": 2027,
+    "round": 2,
+    "submission_deadline": "2026-09-24",
+    "notification": "2027-01-29",
+    "camera_ready": "2027-03-05",
+    "conference_start": "2027-04-19",
+    "conference_end": "2027-04-23",
     "location": "Rabat, Morocco",
     "source_url": "https://2027.eurosys.org/",
     "timezone": "AoE"
@@ -2556,6 +2583,19 @@
     "conference_end": "2025-09-05",
     "location": "London, UK",
     "source_url": "https://vldb.org/2025/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "vldb",
+    "abbreviation": "VLDB",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-03-01",
+    "notification": "2026-04-15",
+    "conference_start": "2027-08-23",
+    "conference_end": "2027-08-27",
+    "location": "TBD",
+    "source_url": "https://vldb.org/2027/",
     "timezone": "AoE"
   },
   {
