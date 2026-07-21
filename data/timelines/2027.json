@@ -91,6 +91,32 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "eurosys",
+    "abbreviation": "EuroSys",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-05-14",
+    "notification": "2026-08-21",
+    "conference_start": "2027-04-19",
+    "conference_end": "2027-04-24",
+    "location": "Rabat, Morocco",
+    "source_url": "https://2027.eurosys.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "eurosys",
+    "abbreviation": "EuroSys",
+    "year": 2027,
+    "round": 2,
+    "submission_deadline": "2026-09-24",
+    "notification": "2027-01-29",
+    "conference_start": "2027-04-19",
+    "conference_end": "2027-04-24",
+    "location": "Rabat, Morocco",
+    "source_url": "https://2027.eurosys.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "fse",
     "abbreviation": "FSE",
     "year": 2027,

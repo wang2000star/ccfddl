@@ -503,6 +503,34 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "eurosys",
+    "abbreviation": "EuroSys",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-05-15",
+    "notification": "2025-08-22",
+    "camera_ready": "2025-09-26",
+    "conference_start": "2026-04-13",
+    "conference_end": "2026-04-16",
+    "location": "Edinburgh, Scotland, UK",
+    "source_url": "https://2026.eurosys.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "eurosys",
+    "abbreviation": "EuroSys",
+    "year": 2026,
+    "round": 2,
+    "submission_deadline": "2025-09-25",
+    "notification": "2026-01-30",
+    "camera_ready": "2026-03-06",
+    "conference_start": "2026-04-13",
+    "conference_end": "2026-04-16",
+    "location": "Edinburgh, Scotland, UK",
+    "source_url": "https://2026.eurosys.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "fc",
     "abbreviation": "FC",
     "year": 2026,
