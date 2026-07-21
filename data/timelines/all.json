@@ -906,6 +906,19 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "emsoft",
+    "abbreviation": "EMSOFT",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-03-30",
+    "notification": "2026-07-17",
+    "conference_start": "2026-10-04",
+    "conference_end": "2026-10-09",
+    "location": "Barcelona, Spain",
+    "source_url": "https://esweek.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "esorics",
     "abbreviation": "ESORICS",
     "year": 2026,
