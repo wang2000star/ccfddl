@@ -782,6 +782,19 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "icaps",
+    "abbreviation": "ICAPS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-12-08",
+    "notification": "2026-02-20",
+    "conference_start": "2026-06-27",
+    "conference_end": "2026-07-02",
+    "location": "Dublin, Ireland",
+    "source_url": "https://icaps26.icaps-conference.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "iccv",
     "abbreviation": "ICCV",
     "year": 2026,
@@ -1028,6 +1041,19 @@
       "accepted": 29,
       "acceptance_rate": 42.6
     }
+  },
+  {
+    "venue_id": "ijcai",
+    "abbreviation": "IJCAI",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-01-21",
+    "notification": "2026-04-15",
+    "conference_start": "2026-08-15",
+    "conference_end": "2026-08-21",
+    "location": "TBD",
+    "source_url": "https://ijcai-26.org/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "imc",
@@ -1415,6 +1441,20 @@
     "conference_end": "2026-01-22",
     "location": "Philadelphia, PA, USA",
     "source_url": "https://popl.sigplan.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "ppsn",
+    "abbreviation": "PPSN",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-03-28",
+    "notification": "2026-05-22",
+    "camera_ready": "2026-06-12",
+    "conference_start": "2026-08-29",
+    "conference_end": "2026-09-02",
+    "location": "Trento, Italy",
+    "source_url": "https://ppsn2026.science.unitn.it/",
     "timezone": "AoE"
   },
   {
