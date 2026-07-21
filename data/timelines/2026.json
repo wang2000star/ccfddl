@@ -1216,6 +1216,19 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "stoc",
+    "abbreviation": "STOC",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-11-04",
+    "notification": "2026-02-01",
+    "conference_start": "2026-06-22",
+    "conference_end": "2026-06-27",
+    "location": "Salt Lake City, UT, USA",
+    "source_url": "https://acm-stoc.org/stoc2026/",
+    "timezone": "US EST"
+  },
+  {
     "venue_id": "tcc",
     "abbreviation": "TCC",
     "year": 2026,

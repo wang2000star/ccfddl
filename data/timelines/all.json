@@ -647,6 +647,18 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "focs",
+    "abbreviation": "FOCS",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-04-03",
+    "notification": "2025-07-01",
+    "conference_start": "2025-10-01",
+    "conference_end": "2025-10-04",
+    "location": "Sydney, Australia",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "fse",
     "abbreviation": "FSE",
     "year": 2026,
@@ -996,6 +1008,19 @@
     "conference_end": "2026-11-04",
     "location": "Athens, Greece",
     "source_url": "https://www.microarch.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "mobicom",
+    "abbreviation": "MobiCom",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-03-11",
+    "notification": "2025-06-01",
+    "conference_start": "2025-11-04",
+    "conference_end": "2025-11-08",
+    "location": "Hong Kong, China",
+    "source_url": "https://www.sigmobile.org/mobicom/2025/",
     "timezone": "AoE"
   },
   {
@@ -1356,6 +1381,19 @@
   {
     "venue_id": "sigcomm",
     "abbreviation": "SIGCOMM",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-01-24",
+    "notification": "2025-04-15",
+    "conference_start": "2025-09-08",
+    "conference_end": "2025-09-12",
+    "location": "Coimbra, Portugal",
+    "source_url": "https://conferences.sigcomm.org/sigcomm/2025/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "sigcomm",
+    "abbreviation": "SIGCOMM",
     "year": 2026,
     "round": 1,
     "submission_deadline": "2026-02-06",
@@ -1366,6 +1404,32 @@
     "conference_end": "2026-08-21",
     "location": "Denver, CO, USA",
     "source_url": "https://conferences.sigcomm.org/sigcomm/2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "siggraph",
+    "abbreviation": "SIGGRAPH",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-02-18",
+    "notification": "2025-05-01",
+    "conference_start": "2025-08-10",
+    "conference_end": "2025-08-14",
+    "location": "Vancouver, Canada",
+    "source_url": "https://siggraph2026.nnja.co/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "sigir",
+    "abbreviation": "SIGIR",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-01-23",
+    "notification": "2025-04-04",
+    "conference_start": "2025-07-13",
+    "conference_end": "2025-07-18",
+    "location": "Padua, Italy",
+    "source_url": "https://sigir2025.dei.unipd.it/",
     "timezone": "AoE"
   },
   {
@@ -1461,6 +1525,19 @@
     "location": "TBD",
     "source_url": "https://srds-conference.org/",
     "timezone": "AoE"
+  },
+  {
+    "venue_id": "stoc",
+    "abbreviation": "STOC",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-11-04",
+    "notification": "2026-02-01",
+    "conference_start": "2026-06-22",
+    "conference_end": "2026-06-27",
+    "location": "Salt Lake City, UT, USA",
+    "source_url": "https://acm-stoc.org/stoc2026/",
+    "timezone": "US EST"
   },
   {
     "venue_id": "tcc",
