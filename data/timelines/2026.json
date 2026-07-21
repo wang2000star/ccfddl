@@ -351,6 +351,18 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "cogsci",
+    "abbreviation": "CogSci",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-02-01",
+    "notification": "2026-04-01",
+    "conference_start": "2026-07-22",
+    "conference_end": "2026-07-25",
+    "location": "TBD",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "crypto",
     "abbreviation": "CRYPTO",
     "year": 2026,
@@ -537,6 +549,22 @@
     "conference_end": "2026-06-25",
     "location": "Charlotte, NC, USA",
     "source_url": "https://dsn2026.github.io/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "ecoop",
+    "abbreviation": "ECOOP",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-01-16",
+    "rebuttal_start": "2026-03-10",
+    "rebuttal_end": "2026-03-12",
+    "notification": "2026-04-06",
+    "camera_ready": "2026-05-15",
+    "conference_start": "2026-07-13",
+    "conference_end": "2026-07-17",
+    "location": "TBD",
+    "source_url": "https://2026.ecoop.org/",
     "timezone": "AoE"
   },
   {
@@ -1041,6 +1069,19 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "ismb",
+    "abbreviation": "ISMB",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-12-02",
+    "notification": "2026-02-01",
+    "conference_start": "2026-07-12",
+    "conference_end": "2026-07-16",
+    "location": "TBD",
+    "source_url": "https://www.iscb.org/ismb2026",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "issta",
     "abbreviation": "ISSTA",
     "year": 2026,
@@ -1329,6 +1370,20 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "recomb",
+    "abbreviation": "RECOMB",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-11-20",
+    "notification": "2026-01-16",
+    "camera_ready": "2026-02-25",
+    "conference_start": "2026-05-26",
+    "conference_end": "2026-05-29",
+    "location": "Thessaloniki, Greece",
+    "source_url": "http://recomb.org/recomb2026/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "recsys",
     "abbreviation": "RecSys",
     "year": 2026,
@@ -1342,6 +1397,18 @@
     "conference_end": "2026-10-02",
     "location": "Minneapolis, MN, USA",
     "source_url": "https://recsys.acm.org/recsys26/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "rtss",
+    "abbreviation": "RTSS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-05-25",
+    "notification": "2026-08-15",
+    "conference_start": "2026-12-01",
+    "conference_end": "2026-12-04",
+    "location": "TBD",
     "timezone": "AoE"
   },
   {
