@@ -732,6 +732,35 @@ a:hover { text-decoration: underline; }
     .gantt-months-sticky { width:110px; min-width:110px; }
 }
 
+/* --- Vertical Timeline View --- */
+.vertical-view { max-width:1100px; margin:0 auto; padding:0 20px 40px; flex:1; overflow-y:auto; }
+.vertical-header { flex-shrink:0; }
+.vt-container { display:flex; gap:40px; }
+.vt-column { flex:1; min-width:300px; }
+.vt-year-title { font-size:0.95rem; font-weight:700; color:var(--color-text); padding:16px 0 8px; border-bottom:2px solid var(--color-primary); margin-bottom:8px; text-align:center; position:sticky; top:0; background:var(--color-bg); z-index:2; }
+.vt-timeline { position:relative; padding-left:50%; }
+.vt-timeline::before { content:''; position:absolute; left:50%; top:0; bottom:0; width:2px; background:var(--color-border); }
+.vt-entry { display:flex; align-items:center; margin:10px 0; position:relative; min-height:28px; }
+.vt-entry.vt-left { flex-direction:row; padding-right:52%; }
+.vt-entry.vt-right { flex-direction:row-reverse; padding-left:52%; }
+.vt-label { font-size:0.75rem; font-weight:600; color:var(--color-text); white-space:nowrap; max-width:45%; overflow:hidden; text-overflow:ellipsis; }
+.vt-brace { position:absolute; left:50%; transform:translateX(-50%); display:flex; align-items:center; gap:6px; }
+.vt-dot { width:8px; height:8px; border-radius:50%; background:var(--color-primary); border:2px solid var(--color-bg); z-index:1; flex-shrink:0; }
+.vt-date { font-size:0.6rem; color:var(--color-text-muted); white-space:nowrap; }
+.vt-entry.vt-left .vt-date { text-align:right; }
+.vt-entry.vt-right .vt-date { text-align:left; }
+
+/* Connection lines */
+.vt-entry::after { content:''; position:absolute; top:50%; height:1px; background:var(--color-border); z-index:0; }
+.vt-entry.vt-left::after { right:50%; left:auto; width:calc(50% - 40px); }
+.vt-entry.vt-right::after { left:50%; right:auto; width:calc(50% - 40px); }
+
+@media (max-width:768px) {
+    .vt-container { flex-direction:column; gap:20px; }
+    .vt-column { min-width:auto; }
+    .vt-label { font-size:0.7rem; }
+}
+
 /* --- Print --- */
 @media print {
     .header, .filter-bar, .footer { display: none; }

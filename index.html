@@ -64,7 +64,8 @@
             <!-- View Toggle -->
             <div class="toggle-group" id="viewToggle">
                 <button class="toggle-btn active" data-view="cards" title="卡片视图">📇</button>
-                <button class="toggle-btn" data-view="timeline" title="时间轴视图">📊</button>
+                <button class="toggle-btn" data-view="gantt" title="甘特图">📊</button>
+                <button class="toggle-btn" data-view="vertical" title="时间轴">📅</button>
             </div>
         </div>
     </section>
@@ -84,6 +85,12 @@
             <div class="gantt-months" id="ganttMonths"></div>
             <div class="gantt-body-scroll" id="ganttBodyScroll"></div>
         </div>
+    </main>
+
+    <!-- Vertical Timeline View -->
+    <main class="vertical-view" id="verticalView" style="display:none;">
+        <div class="vertical-header" id="verticalHeader"></div>
+        <div class="vertical-body" id="verticalBody"></div>
     </main>
 
     <!-- Empty State -->
@@ -109,6 +116,7 @@
     <script src="js/data-loader.js?v=2"></script>
     <script src="js/renderer.js?v=2"></script>
     <script src="js/timeline.js?v=2"></script>
+    <script src="js/timeline-vertical.js?v=1"></script>
     <script src="js/search.js?v=2"></script>
     <script src="js/app.js?v=2"></script>
     <noscript>

@@ -3,6 +3,7 @@
  */
 const Renderer = {
     grid: null, ganttView: null, ganttHeader: null, ganttMonths: null, ganttBodyScroll: null,
+    verticalView: null, verticalHeader: null, verticalBody: null,
     emptyState: null, loadingState: null, statsBar: null,
 
     init() {
@@ -11,6 +12,9 @@ const Renderer = {
         this.ganttHeader = document.getElementById('ganttHeader');
         this.ganttMonths = document.getElementById('ganttMonths');
         this.ganttBodyScroll = document.getElementById('ganttBodyScroll');
+        this.verticalView = document.getElementById('verticalView');
+        this.verticalHeader = document.getElementById('verticalHeader');
+        this.verticalBody = document.getElementById('verticalBody');
         this.emptyState = document.getElementById('emptyState');
         this.loadingState = document.getElementById('loadingState');
         this.statsBar = document.getElementById('statsBar');
@@ -19,6 +23,7 @@ const Renderer = {
     showLoading() {
         if (this.grid) this.grid.style.display = '';
         if (this.ganttView) this.ganttView.style.display = 'none';
+        if (this.verticalView) this.verticalView.style.display = 'none';
         if (this.emptyState) this.emptyState.style.display = 'none';
         if (this.loadingState) this.loadingState.style.display = 'flex';
     },
@@ -31,14 +36,19 @@ const Renderer = {
         this.hideLoading();
         const view = (typeof Search !== 'undefined') ? Search.state.view : 'cards';
 
-        if (view === 'timeline') {
+        if (view === 'gantt') {
             this.renderGantt(venues);
+            return;
+        }
+        if (view === 'vertical') {
+            this.renderVertical(venues);
             return;
         }
 
         // Card view
         if (this.grid) this.grid.style.display = '';
         if (this.ganttView) this.ganttView.style.display = 'none';
+        if (this.verticalView) this.verticalView.style.display = 'none';
 
         if (!venues || venues.length === 0) {
             if (this.grid) this.grid.innerHTML = '';
@@ -255,6 +265,14 @@ const Renderer = {
         const counts = DataLoader.countByRank(venues);
         const withTL = venues.filter(v => DataLoader.getTimeline && DataLoader.getTimeline(v.id, year)).length;
         this.statsBar.innerHTML = `${this.t('showing')} <strong>${venues.length}</strong> ${this.t('results')} (A:${counts.A} B:${counts.B} C:${counts.C}) | 📅 ${withTL} ${this.t('ganttTitle').replace('📊 ','')}`;
+    },
+
+    renderVertical(venues) {
+        if (this.grid) this.grid.style.display = 'none';
+        if (this.ganttView) this.ganttView.style.display = 'none';
+        if (this.verticalView) this.verticalView.style.display = 'block';
+        if (this.emptyState) this.emptyState.style.display = 'none';
+        VerticalTimeline.render(venues);
     },
 
     t(key) { try { return (typeof I18N !== 'undefined' && I18N.t) ? I18N.t(key) : key; } catch(e) { return key; } },
