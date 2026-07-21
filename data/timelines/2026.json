@@ -1490,6 +1490,21 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "pods",
+    "abbreviation": "PODS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-12-10",
+    "rebuttal_start": "2026-01-26",
+    "rebuttal_end": "2026-01-29",
+    "notification": "2026-02-08",
+    "conference_start": "2026-05-31",
+    "conference_end": "2026-06-05",
+    "location": "Bengaluru, India",
+    "source_url": "https://2026.sigmod.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "popl",
     "abbreviation": "POPL",
     "year": 2026,
