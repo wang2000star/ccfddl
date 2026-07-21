@@ -438,6 +438,19 @@
     }
   },
   {
+    "venue_id": "dac",
+    "abbreviation": "DAC",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-11-11",
+    "notification": "2026-02-01",
+    "conference_start": "2026-07-01",
+    "conference_end": "2026-07-05",
+    "location": "Long Beach, CA, USA",
+    "source_url": "https://dac.com/2026",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "dfrws",
     "abbreviation": "DFRWS",
     "year": 2026,
@@ -799,6 +812,32 @@
     }
   },
   {
+    "venue_id": "icmr",
+    "abbreviation": "ICMR",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-02-06",
+    "notification": "2026-04-15",
+    "camera_ready": "2026-04-25",
+    "conference_start": "2026-06-16",
+    "conference_end": "2026-06-19",
+    "location": "Amsterdam, Netherlands",
+    "source_url": "https://www.acmicmr.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "icnp",
+    "abbreviation": "ICNP",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-05-15",
+    "notification": "2026-07-21",
+    "conference_start": "2026-10-05",
+    "conference_end": "2026-10-08",
+    "location": "TBD",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "icra",
     "abbreviation": "ICRA",
     "year": 2026,
@@ -896,6 +935,19 @@
       "accepted": 29,
       "acceptance_rate": 42.6
     }
+  },
+  {
+    "venue_id": "infocom",
+    "abbreviation": "INFOCOM",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-07-24",
+    "notification": "2025-12-08",
+    "conference_start": "2026-05-18",
+    "conference_end": "2026-05-21",
+    "location": "TBD",
+    "source_url": "https://infocom2026.ieee-infocom.org/",
+    "timezone": "AoE"
   },
   {
     "venue_id": "inscrypt",
@@ -1305,6 +1357,18 @@
     "conference_end": "2026-07-24",
     "location": "Lancaster, UK",
     "source_url": "https://securecomm.eai-conferences.org/2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "sensys",
+    "abbreviation": "SenSys",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-11-06",
+    "notification": "2026-01-29",
+    "conference_start": "2026-05-11",
+    "conference_end": "2026-05-13",
+    "location": "TBD",
     "timezone": "AoE"
   },
   {
