@@ -189,6 +189,34 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "icra",
+    "abbreviation": "ICRA",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-09-15",
+    "notification": "2027-01-31",
+    "conference_start": "2027-05-24",
+    "conference_end": "2027-05-28",
+    "location": "TBD",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "icse",
+    "abbreviation": "ICSE",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-06-30",
+    "rebuttal_start": "2026-09-23",
+    "rebuttal_end": "2026-09-25",
+    "notification": "2026-10-20",
+    "camera_ready": "2026-11-24",
+    "conference_start": "2027-04-25",
+    "conference_end": "2027-05-01",
+    "location": "Dublin, Ireland",
+    "source_url": "https://conf.researchr.org/home/icse-2027",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ndss",
     "abbreviation": "NDSS",
     "year": 2027,
@@ -264,6 +292,19 @@
     "conference_end": "2027-05-04",
     "location": "San Francisco, CA, USA",
     "source_url": "https://www.ieee-security.org/TC/SP2027/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "soda",
+    "abbreviation": "SODA",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-07-09",
+    "notification": "2026-10-01",
+    "conference_start": "2027-01-24",
+    "conference_end": "2027-01-27",
+    "location": "Philadelphia, PA, USA",
+    "source_url": "https://www.siam.org/conferences-events/siam-conferences/soda27/",
     "timezone": "AoE"
   },
   {

@@ -63,6 +63,20 @@
     }
   },
   {
+    "venue_id": "acm-mm",
+    "abbreviation": "ACM MM",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-04-01",
+    "notification": "2026-07-09",
+    "camera_ready": "2026-08-06",
+    "conference_start": "2026-11-10",
+    "conference_end": "2026-11-14",
+    "location": "Rio de Janeiro, Brazil",
+    "source_url": "https://acmmm.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "acns",
     "abbreviation": "ACNS",
     "year": 2026,
@@ -1319,6 +1333,19 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "soda",
+    "abbreviation": "SODA",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-07-14",
+    "notification": "2025-10-01",
+    "conference_start": "2026-01-11",
+    "conference_end": "2026-01-14",
+    "location": "Vancouver, Canada",
+    "source_url": "https://www.siam.org/conferences-events/siam-conferences/soda26/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "sosp",
     "abbreviation": "SOSP",
     "year": 2026,
@@ -1478,6 +1505,19 @@
     "conference_end": "2026-07-03",
     "location": "Saarbrucken, Germany",
     "source_url": "https://www.sigmobile.org/wisec/2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "wsdm",
+    "abbreviation": "WSDM",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-09-25",
+    "notification": "2025-11-27",
+    "conference_start": "2026-02-22",
+    "conference_end": "2026-02-26",
+    "location": "Boise, ID, USA",
+    "source_url": "https://wsdm-conference.org/2026/",
     "timezone": "AoE"
   },
   {
