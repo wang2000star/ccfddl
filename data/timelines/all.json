@@ -152,6 +152,20 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "iclr",
+    "abbreviation": "ICLR",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-09-24",
+    "abstract_deadline": "2025-09-19",
+    "notification": "2026-01-25",
+    "conference_start": "2026-04-23",
+    "conference_end": "2026-04-25",
+    "location": "TBD",
+    "source_url": "https://iclr.cc/Conferences/2026/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "eurocrypt",
     "abbreviation": "EUROCRYPT",
     "year": 2026,
@@ -287,6 +301,20 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "acl",
+    "abbreviation": "ACL",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-01-05",
+    "notification": "2026-04-04",
+    "camera_ready": "2026-04-19",
+    "conference_start": "2026-07-02",
+    "conference_end": "2026-07-07",
+    "location": "San Diego, CA, USA",
+    "source_url": "https://2026.aclweb.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ccs",
     "abbreviation": "CCS",
     "year": 2026,
@@ -317,6 +345,21 @@
     "conference_end": "2026-10-15",
     "location": "Antalya, Turkiye",
     "source_url": "https://ches.iacr.org/2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "icml",
+    "abbreviation": "ICML",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-01-28",
+    "abstract_deadline": "2026-01-23",
+    "notification": "2026-04-30",
+    "camera_ready": "2026-05-28",
+    "conference_start": "2026-07-07",
+    "conference_end": "2026-07-09",
+    "location": "Seoul, South Korea",
+    "source_url": "https://icml.cc/Conferences/2026/",
     "timezone": "AoE"
   },
   {
@@ -442,6 +485,20 @@
     "conference_end": "2027-03-26",
     "location": "Seoul, South Korea",
     "source_url": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "neurips",
+    "abbreviation": "NeurIPS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-05-06",
+    "abstract_deadline": "2026-05-04",
+    "notification": "2026-09-24",
+    "conference_start": "2026-12-11",
+    "conference_end": "2026-12-13",
+    "location": "Sydney, Australia",
+    "source_url": "https://neurips.cc/Conferences/2026/",
     "timezone": "AoE"
   },
   {
