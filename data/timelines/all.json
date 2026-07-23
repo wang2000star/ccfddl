@@ -776,6 +776,21 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "sosp",
+    "abbreviation": "SOSP",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-04-01",
+    "abstract_deadline": "2026-03-26",
+    "notification": "2026-07-03",
+    "camera_ready": "2026-08-28",
+    "conference_start": "2026-09-29",
+    "conference_end": "2026-10-02",
+    "location": "Prague, Czech Republic",
+    "source_url": "https://sigops.org/s/conferences/sosp/2026/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "vldb",
     "abbreviation": "VLDB",
     "year": 2026,
