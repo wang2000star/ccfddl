@@ -29,6 +29,19 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "popl",
+    "abbreviation": "POPL",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-07-11",
+    "notification": "2025-10-01",
+    "conference_start": "2026-01-20",
+    "conference_end": "2026-01-22",
+    "location": "Philadelphia, PA, USA",
+    "source_url": "https://popl.sigplan.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ches",
     "abbreviation": "CHES",
     "year": 2026,
@@ -235,6 +248,19 @@
     "conference_end": "2026-06-15",
     "location": "Nashville, TN, USA",
     "source_url": "https://cvpr.thecvf.com/Conferences/2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "pldi",
+    "abbreviation": "PLDI",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-11-13",
+    "notification": "2026-03-05",
+    "conference_start": "2026-06-15",
+    "conference_end": "2026-06-19",
+    "location": "Boulder, CO, USA",
+    "source_url": "https://pldi26.sigplan.org/",
     "timezone": "AoE"
   },
   {
