@@ -576,6 +576,21 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "miccai",
+    "abbreviation": "MICCAI",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-02-26",
+    "abstract_deadline": "2026-02-12",
+    "notification": "2026-05-01",
+    "camera_ready": "2026-06-26",
+    "conference_start": "2026-10-04",
+    "conference_end": "2026-10-08",
+    "location": "Abu Dhabi, UAE",
+    "source_url": "https://conferences.miccai.org/2026/",
+    "timezone": "US Pacific"
+  },
+  {
     "venue_id": "uist",
     "abbreviation": "UIST",
     "year": 2026,
