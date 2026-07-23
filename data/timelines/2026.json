@@ -316,6 +316,19 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "ijcai",
+    "abbreviation": "IJCAI",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-01-19",
+    "notification": "2026-04-15",
+    "conference_start": "2026-08-15",
+    "conference_end": "2026-08-21",
+    "location": "Bremen, Germany",
+    "source_url": "https://ijcai-26.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "icml",
     "abbreviation": "ICML",
     "year": 2026,
@@ -465,6 +478,19 @@
     "conference_end": "2026-12-11",
     "location": "Hong Kong, China",
     "source_url": "https://asiacrypt.iacr.org/2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "emnlp",
+    "abbreviation": "EMNLP",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-05-25",
+    "notification": "2026-08-20",
+    "conference_start": "2026-10-24",
+    "conference_end": "2026-10-29",
+    "location": "Budapest, Hungary",
+    "source_url": "https://2026.emnlp.org/",
     "timezone": "AoE"
   }
 ]
