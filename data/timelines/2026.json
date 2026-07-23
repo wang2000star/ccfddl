@@ -576,6 +576,20 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "uist",
+    "abbreviation": "UIST",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-03-31",
+    "abstract_deadline": "2026-03-24",
+    "notification": "2026-08-07",
+    "conference_start": "2026-11-02",
+    "conference_end": "2026-11-05",
+    "location": "Detroit, MI, USA",
+    "source_url": "https://uist.acm.org/2026/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "focs",
     "abbreviation": "FOCS",
     "year": 2026,
