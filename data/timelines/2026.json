@@ -1,5 +1,33 @@
 [
   {
+    "venue_id": "sigmod",
+    "abbreviation": "SIGMOD",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-01-17",
+    "abstract_deadline": "2025-01-10",
+    "notification": "2025-05-02",
+    "conference_start": "2026-05-31",
+    "conference_end": "2026-06-05",
+    "location": "Bengaluru, India",
+    "source_url": "https://2026.sigmod.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "sigmod",
+    "abbreviation": "SIGMOD",
+    "year": 2026,
+    "round": 2,
+    "submission_deadline": "2025-04-17",
+    "abstract_deadline": "2025-04-10",
+    "notification": "2025-08-01",
+    "conference_start": "2026-05-31",
+    "conference_end": "2026-06-05",
+    "location": "Bengaluru, India",
+    "source_url": "https://2026.sigmod.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "s-p",
     "abbreviation": "S&P",
     "year": 2026,
@@ -55,6 +83,20 @@
     "conference_end": "2026-10-15",
     "location": "Antalya, Turkiye",
     "source_url": "https://ches.iacr.org/2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "sigmod",
+    "abbreviation": "SIGMOD",
+    "year": 2026,
+    "round": 3,
+    "submission_deadline": "2025-07-17",
+    "abstract_deadline": "2025-07-10",
+    "notification": "2025-11-01",
+    "conference_start": "2026-05-31",
+    "conference_end": "2026-06-05",
+    "location": "Bengaluru, India",
+    "source_url": "https://2026.sigmod.org/",
     "timezone": "AoE"
   },
   {
@@ -189,6 +231,22 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "sigmod",
+    "abbreviation": "SIGMOD",
+    "year": 2026,
+    "round": 4,
+    "submission_deadline": "2025-10-17",
+    "abstract_deadline": "2025-10-10",
+    "rebuttal_start": "2025-12-01",
+    "rebuttal_end": "2025-12-08",
+    "notification": "2026-01-30",
+    "conference_start": "2026-05-31",
+    "conference_end": "2026-06-05",
+    "location": "Bengaluru, India",
+    "source_url": "https://2026.sigmod.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "pkc",
     "abbreviation": "PKC",
     "year": 2026,
@@ -274,6 +332,22 @@
     "conference_end": "2026-05-21",
     "location": "San Francisco, CA, USA",
     "source_url": "https://www.ieee-security.org/TC/SP2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "isca",
+    "abbreviation": "ISCA",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-11-17",
+    "abstract_deadline": "2025-11-10",
+    "rebuttal_start": "2026-02-16",
+    "rebuttal_end": "2026-03-06",
+    "notification": "2026-03-27",
+    "conference_start": "2026-06-27",
+    "conference_end": "2026-07-01",
+    "location": "Raleigh, NC, USA",
+    "source_url": "https://www.iscaconf.org/isca2026/",
     "timezone": "AoE"
   },
   {
