@@ -388,6 +388,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "kdd",
+    "abbreviation": "KDD",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-02-08",
+    "abstract_deadline": "2026-02-01",
+    "rebuttal_start": "2026-04-04",
+    "rebuttal_end": "2026-04-17",
+    "notification": "2026-05-16",
+    "camera_ready": "2026-06-01",
+    "conference_start": "2026-08-09",
+    "conference_end": "2026-08-13",
+    "location": "Jeju, South Korea",
+    "source_url": "https://kdd2026.kdd.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "crypto",
     "abbreviation": "CRYPTO",
     "year": 2026,
