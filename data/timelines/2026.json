@@ -14,6 +14,22 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "fast",
+    "abbreviation": "FAST",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-03-18",
+    "rebuttal_start": "2025-05-20",
+    "rebuttal_end": "2025-05-22",
+    "notification": "2025-06-05",
+    "camera_ready": "2025-07-29",
+    "conference_start": "2026-02-24",
+    "conference_end": "2026-02-26",
+    "location": "Santa Clara, CA, USA",
+    "source_url": "https://www.usenix.org/conference/fast26/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "sigmod",
     "abbreviation": "SIGMOD",
     "year": 2026,
@@ -26,6 +42,21 @@
     "location": "Bengaluru, India",
     "source_url": "https://2026.sigmod.org/",
     "timezone": "AoE"
+  },
+  {
+    "venue_id": "nsdi",
+    "abbreviation": "NSDI",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-04-25",
+    "abstract_deadline": "2025-04-18",
+    "notification": "2025-07-24",
+    "camera_ready": "2025-10-21",
+    "conference_start": "2026-05-04",
+    "conference_end": "2026-05-06",
+    "location": "Renton, WA, USA",
+    "source_url": "https://www.usenix.org/conference/nsdi26/",
+    "timezone": "US PDT"
   },
   {
     "venue_id": "s-p",
@@ -156,6 +187,37 @@
     "location": "TBD",
     "source_url": "https://2026.ieee-icra.org/",
     "timezone": "AoE"
+  },
+  {
+    "venue_id": "fast",
+    "abbreviation": "FAST",
+    "year": 2026,
+    "round": 2,
+    "submission_deadline": "2025-09-16",
+    "rebuttal_start": "2025-11-18",
+    "rebuttal_end": "2025-11-20",
+    "notification": "2025-12-08",
+    "camera_ready": "2026-01-27",
+    "conference_start": "2026-02-24",
+    "conference_end": "2026-02-26",
+    "location": "Santa Clara, CA, USA",
+    "source_url": "https://www.usenix.org/conference/fast26/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "nsdi",
+    "abbreviation": "NSDI",
+    "year": 2026,
+    "round": 2,
+    "submission_deadline": "2025-09-18",
+    "abstract_deadline": "2025-09-11",
+    "notification": "2025-12-09",
+    "camera_ready": "2026-03-05",
+    "conference_start": "2026-05-04",
+    "conference_end": "2026-05-06",
+    "location": "Renton, WA, USA",
+    "source_url": "https://www.usenix.org/conference/nsdi26/",
+    "timezone": "US PDT"
   },
   {
     "venue_id": "fc",
