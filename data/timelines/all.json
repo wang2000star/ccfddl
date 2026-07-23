@@ -553,6 +553,19 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "focs",
+    "abbreviation": "FOCS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-04-01",
+    "notification": "2026-07-03",
+    "conference_start": "2026-11-08",
+    "conference_end": "2026-11-11",
+    "location": "New York, NY, USA",
+    "source_url": "https://focs.computer.org/2026/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ches",
     "abbreviation": "CHES",
     "year": 2026,
