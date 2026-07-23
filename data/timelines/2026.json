@@ -195,6 +195,22 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "cvpr",
+    "abbreviation": "CVPR",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-11-13",
+    "abstract_deadline": "2025-11-07",
+    "rebuttal_start": "2026-01-22",
+    "rebuttal_end": "2026-01-29",
+    "notification": "2026-02-20",
+    "conference_start": "2026-06-01",
+    "conference_end": "2026-06-30",
+    "location": "TBD",
+    "source_url": "https://cvpr.thecvf.com/Conferences/2026/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "s-p",
     "abbreviation": "S&P",
     "year": 2026,

@@ -32,6 +32,21 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "iccv",
+    "abbreviation": "ICCV",
+    "year": 2025,
+    "round": 1,
+    "submission_deadline": "2025-03-07",
+    "rebuttal_start": "2025-05-09",
+    "rebuttal_end": "2025-05-16",
+    "notification": "2025-06-25",
+    "conference_start": "2025-10-19",
+    "conference_end": "2025-10-23",
+    "location": "Honolulu, HI, USA",
+    "source_url": "https://iccv.thecvf.com/Conferences/2025/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ches",
     "abbreviation": "CHES",
     "year": 2025,
@@ -240,6 +255,22 @@
     "conference_end": "2026-04-24",
     "location": "Perth, Australia",
     "source_url": "https://www2026.thewebconf.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "cvpr",
+    "abbreviation": "CVPR",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-11-13",
+    "abstract_deadline": "2025-11-07",
+    "rebuttal_start": "2026-01-22",
+    "rebuttal_end": "2026-01-29",
+    "notification": "2026-02-20",
+    "conference_start": "2026-06-01",
+    "conference_end": "2026-06-30",
+    "location": "TBD",
+    "source_url": "https://cvpr.thecvf.com/Conferences/2026/",
     "timezone": "AoE"
   },
   {
