@@ -37,7 +37,8 @@ GROUPS = {
 ['stoc','STOC',2026,1,'2025-11-04','','','','2026-02-01','2026-03-31','2026-06-22','2026-06-27','Salt Lake City, UT, USA','https://acm-stoc.org/stoc2026/','US EST'],
 ['icra','ICRA',2026,1,'2025-09-15','','','','2026-01-15','','2026-05-18','2026-05-22','TBD','https://2026.ieee-icra.org/','AoE'],
 ['pldi','PLDI',2026,1,'2025-11-13','','','','2026-03-05','','2026-06-15','2026-06-19','Boulder, CO, USA','https://pldi26.sigplan.org/','AoE'],
-['popl','POPL',2026,1,'2025-07-11','','','','2025-10-01','','2026-01-20','2026-01-22','Philadelphia, PA, USA','https://popl.sigplan.org/','AoE']],
+['popl','POPL',2026,1,'2025-07-11','','','','2025-10-01','','2026-01-20','2026-01-22','Philadelphia, PA, USA','https://popl.sigplan.org/','AoE'],
+['osdi','OSDI',2026,1,'2025-12-11','2025-12-04','','','2026-03-26','2026-06-09','2026-07-13','2026-07-15','Seattle, WA, USA','https://www.usenix.org/conference/osdi26/','US EST']],
 
 '2026submit-2026conf': [
 ['ches','CHES',2026,3,'2026-01-15','','2026-02-26','2026-03-01','2026-03-15','2026-04-14','2026-10-11','2026-10-15','Antalya, Turkiye','https://ches.iacr.org/2026/','AoE'],
@@ -72,7 +73,8 @@ GROUPS = {
 ['usenix-security','USENIX Security',2027,1,'2026-08-25','','2026-11-05','2026-11-12','2026-12-03','2027-01-14','2027-08-11','2027-08-13','Denver, CO, USA','https://www.usenix.org/conference/usenixsecurity27/','AoE'],
 ['usenix-security','USENIX Security',2027,2,'2027-01-26','','2027-04-08','2027-04-15','2027-05-06','2027-06-03','2027-08-11','2027-08-13','Denver, CO, USA','https://www.usenix.org/conference/usenixsecurity27/','AoE'],
 ['ndss','NDSS',2027,1,'2026-05-06','','2026-07-15','2026-07-17','2026-07-29','2026-09-30','2027-03-22','2027-03-26','Seoul, South Korea','https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/','AoE'],
-['ndss','NDSS',2027,2,'2026-08-19','','','','2026-11-04','2027-01-06','2027-03-22','2027-03-26','Seoul, South Korea','https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/','AoE']]}
+['ndss','NDSS',2027,2,'2026-08-19','','','','2026-11-04','2027-01-06','2027-03-22','2027-03-26','Seoul, South Korea','https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/','AoE'],
+['chi','CHI',2027,1,'2026-09-01','','','','2026-12-01','','2027-05-10','2027-05-14','Pittsburgh, PA, USA','https://chi2027.acm.org/','AoE']]}
 
 def write_excel():
     wb = openpyxl.Workbook()
