@@ -458,6 +458,19 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "siggraph",
+    "abbreviation": "SIGGRAPH",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-01-15",
+    "notification": "2026-03-01",
+    "conference_start": "2026-07-19",
+    "conference_end": "2026-07-23",
+    "location": "Los Angeles, CA, USA",
+    "source_url": "https://siggraph2026.nnja.co/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ijcai",
     "abbreviation": "IJCAI",
     "year": 2026,
