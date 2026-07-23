@@ -153,6 +153,19 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "icra",
+    "abbreviation": "ICRA",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-09-15",
+    "notification": "2026-01-15",
+    "conference_start": "2026-05-18",
+    "conference_end": "2026-05-22",
+    "location": "TBD",
+    "source_url": "https://2026.ieee-icra.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "fc",
     "abbreviation": "FC",
     "year": 2026,
@@ -258,6 +271,20 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "stoc",
+    "abbreviation": "STOC",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-11-04",
+    "notification": "2026-02-01",
+    "camera_ready": "2026-03-31",
+    "conference_start": "2026-06-22",
+    "conference_end": "2026-06-27",
+    "location": "Salt Lake City, UT, USA",
+    "source_url": "https://acm-stoc.org/stoc2026/",
+    "timezone": "US EST"
+  },
+  {
     "venue_id": "cvpr",
     "abbreviation": "CVPR",
     "year": 2026,
@@ -267,9 +294,9 @@
     "rebuttal_start": "2026-01-22",
     "rebuttal_end": "2026-01-29",
     "notification": "2026-02-20",
-    "conference_start": "2026-06-01",
-    "conference_end": "2026-06-30",
-    "location": "TBD",
+    "conference_start": "2026-06-11",
+    "conference_end": "2026-06-15",
+    "location": "Nashville, TN, USA",
     "source_url": "https://cvpr.thecvf.com/Conferences/2026/",
     "timezone": "AoE"
   },
