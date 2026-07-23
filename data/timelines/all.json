@@ -759,6 +759,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "sc",
+    "abbreviation": "SC",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-04-08",
+    "abstract_deadline": "2026-04-01",
+    "rebuttal_start": "2026-06-08",
+    "rebuttal_end": "2026-06-11",
+    "notification": "2026-07-01",
+    "camera_ready": "2026-08-28",
+    "conference_start": "2026-11-15",
+    "conference_end": "2026-11-20",
+    "location": "Chicago, IL, USA",
+    "source_url": "https://sc26.supercomputing.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ches",
     "abbreviation": "CHES",
     "year": 2026,
