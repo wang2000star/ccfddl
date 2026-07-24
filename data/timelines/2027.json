@@ -238,6 +238,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "aamas",
+    "abbreviation": "AAMAS",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-10-09",
+    "abstract_deadline": "2026-10-02",
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2027-02-01",
+    "camera_ready": null,
+    "conference_start": "2027-05-03",
+    "conference_end": "2027-05-07",
+    "location": "Hanoi, Vietnam",
+    "source_url": "https://warwick.ac.uk/fac/sci/dcs/aamas2027/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ches",
     "abbreviation": "CHES",
     "year": 2027,

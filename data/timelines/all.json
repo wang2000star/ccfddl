@@ -442,6 +442,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "aamas",
+    "abbreviation": "AAMAS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-10-08",
+    "abstract_deadline": "2025-10-01",
+    "rebuttal_start": "2025-11-21",
+    "rebuttal_end": "2025-11-25",
+    "notification": "2025-12-22",
+    "camera_ready": "2026-02-11",
+    "conference_start": "2026-05-25",
+    "conference_end": "2026-05-29",
+    "location": "Paphos, Cyprus",
+    "source_url": "https://cyprusconferences.org/aamas2026/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "csf",
     "abbreviation": "CSF",
     "year": 2026,
@@ -1595,6 +1612,23 @@
     "conference_end": "2027-04-15",
     "location": "Eindhoven, Netherlands",
     "source_url": "https://eurocrypt.iacr.org/2027/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "aamas",
+    "abbreviation": "AAMAS",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-10-09",
+    "abstract_deadline": "2026-10-02",
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2027-02-01",
+    "camera_ready": null,
+    "conference_start": "2027-05-03",
+    "conference_end": "2027-05-07",
+    "location": "Hanoi, Vietnam",
+    "source_url": "https://warwick.ac.uk/fac/sci/dcs/aamas2027/",
     "timezone": "AoE"
   },
   {
