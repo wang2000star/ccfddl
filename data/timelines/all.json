@@ -1802,6 +1802,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "eurographics",
+    "abbreviation": "Eurographics",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-10-01",
+    "abstract_deadline": "2026-09-25",
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-12-18",
+    "camera_ready": "2027-02-23",
+    "conference_start": "2027-05-10",
+    "conference_end": "2027-05-14",
+    "location": "Pisa, Italy",
+    "source_url": "https://www.eg.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "aamas",
     "abbreviation": "AAMAS",
     "year": 2027,
