@@ -85,6 +85,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "cgo",
+    "abbreviation": "CGO",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-06-11",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-08-03",
+    "camera_ready": null,
+    "conference_start": null,
+    "conference_end": null,
+    "location": "TBD",
+    "source_url": "https://conf.researchr.org/home/cgo-2027",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "s-p",
     "abbreviation": "S&P",
     "year": 2027,
@@ -218,6 +235,23 @@
     "conference_end": "2027-05-28",
     "location": "Maastricht, Netherlands",
     "source_url": "https://fse.iacr.org/2027/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "cgo",
+    "abbreviation": "CGO",
+    "year": 2027,
+    "round": 2,
+    "submission_deadline": "2026-09-10",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-11-09",
+    "camera_ready": null,
+    "conference_start": null,
+    "conference_end": null,
+    "location": "TBD",
+    "source_url": "https://conf.researchr.org/home/cgo-2027",
     "timezone": "AoE"
   },
   {

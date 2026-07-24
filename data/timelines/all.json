@@ -340,6 +340,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "cgo",
+    "abbreviation": "CGO",
+    "year": 2026,
+    "round": 2,
+    "submission_deadline": "2025-09-11",
+    "abstract_deadline": null,
+    "rebuttal_start": "2025-10-21",
+    "rebuttal_end": "2025-10-23",
+    "notification": "2025-11-03",
+    "camera_ready": null,
+    "conference_start": "2026-01-31",
+    "conference_end": "2026-02-04",
+    "location": "Sydney, Australia",
+    "source_url": "https://2026.cgo.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "icra",
     "abbreviation": "ICRA",
     "year": 2026,
@@ -1530,6 +1547,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "cgo",
+    "abbreviation": "CGO",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-06-11",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-08-03",
+    "camera_ready": null,
+    "conference_start": null,
+    "conference_end": null,
+    "location": "TBD",
+    "source_url": "https://conf.researchr.org/home/cgo-2027",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "s-p",
     "abbreviation": "S&P",
     "year": 2027,
@@ -1663,6 +1697,23 @@
     "conference_end": "2027-05-28",
     "location": "Maastricht, Netherlands",
     "source_url": "https://fse.iacr.org/2027/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "cgo",
+    "abbreviation": "CGO",
+    "year": 2027,
+    "round": 2,
+    "submission_deadline": "2026-09-10",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-11-09",
+    "camera_ready": null,
+    "conference_start": null,
+    "conference_end": null,
+    "location": "TBD",
+    "source_url": "https://conf.researchr.org/home/cgo-2027",
     "timezone": "AoE"
   },
   {
