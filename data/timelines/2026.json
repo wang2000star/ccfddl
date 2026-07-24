@@ -1139,6 +1139,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "issre",
+    "abbreviation": "ISSRE",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-04-24",
+    "abstract_deadline": null,
+    "rebuttal_start": "2026-06-05",
+    "rebuttal_end": "2026-06-08",
+    "notification": "2026-07-08",
+    "camera_ready": "2026-08-19",
+    "conference_start": "2026-10-20",
+    "conference_end": "2026-10-23",
+    "location": "Limassol, Cyprus",
+    "source_url": "https://easychair.org/conferences?conf=issre2026",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ccs",
     "abbreviation": "CCS",
     "year": 2026,
