@@ -102,6 +102,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "icde",
+    "abbreviation": "ICDE",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-06-18",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2025-10-20",
+    "camera_ready": null,
+    "conference_start": "2026-05-04",
+    "conference_end": "2026-05-08",
+    "location": "Montreal, Canada",
+    "source_url": "https://icde2026.github.io/",
+    "timezone": "US Pacific"
+  },
+  {
     "venue_id": "ndss",
     "abbreviation": "NDSS",
     "year": 2026,
@@ -440,6 +457,23 @@
     "location": "Perth, Australia",
     "source_url": "https://www2026.thewebconf.org/",
     "timezone": "AoE"
+  },
+  {
+    "venue_id": "icde",
+    "abbreviation": "ICDE",
+    "year": 2026,
+    "round": 2,
+    "submission_deadline": "2025-10-27",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-02-23",
+    "camera_ready": null,
+    "conference_start": "2026-05-04",
+    "conference_end": "2026-05-08",
+    "location": "Montreal, Canada",
+    "source_url": "https://icde2026.github.io/",
+    "timezone": "US Pacific"
   },
   {
     "venue_id": "stoc",
