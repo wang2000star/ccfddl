@@ -1156,6 +1156,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "ppsn",
+    "abbreviation": "PPSN",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-03-28",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-05-15",
+    "camera_ready": null,
+    "conference_start": "2026-08-29",
+    "conference_end": "2026-09-02",
+    "location": "Trento, Italy",
+    "source_url": "https://ppsn2026.science.unitn.it/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "uist",
     "abbreviation": "UIST",
     "year": 2026,
