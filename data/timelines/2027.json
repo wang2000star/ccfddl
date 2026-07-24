@@ -119,6 +119,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "wsdm",
+    "abbreviation": "WSDM",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-08-24",
+    "abstract_deadline": "2026-08-17",
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-11-02",
+    "camera_ready": null,
+    "conference_start": "2027-02-15",
+    "conference_end": "2027-02-19",
+    "location": "Hong Kong, China",
+    "source_url": "https://wsdm-conference.org/2027/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "usenix-security",
     "abbreviation": "USENIX Security",
     "year": 2027,
