@@ -901,6 +901,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "gecco",
+    "abbreviation": "GECCO",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-01-26",
+    "abstract_deadline": "2026-01-19",
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-03-20",
+    "camera_ready": "2026-04-10",
+    "conference_start": "2026-07-13",
+    "conference_end": "2026-07-17",
+    "location": "San Jose, Costa Rica",
+    "source_url": "http://gecco-2026.sigevo.org/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "icml",
     "abbreviation": "ICML",
     "year": 2026,
