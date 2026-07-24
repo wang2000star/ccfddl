@@ -272,6 +272,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "sigmetrics",
+    "abbreviation": "SIGMETRICS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-07-29",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2025-09-26",
+    "camera_ready": null,
+    "conference_start": "2026-06-08",
+    "conference_end": "2026-06-12",
+    "location": "Ann Arbor, MI, USA",
+    "source_url": "https://www.sigmetrics.org/sigmetrics2026/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "hpca",
     "abbreviation": "HPCA",
     "year": 2026,
@@ -456,6 +473,23 @@
     "conference_end": "2026-10-09",
     "location": "Oakland, CA, USA",
     "source_url": "https://2026.splashcon.org/track/splash-2026/oopsla-2026",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "sigmetrics",
+    "abbreviation": "SIGMETRICS",
+    "year": 2026,
+    "round": 2,
+    "submission_deadline": "2025-10-14",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2025-12-12",
+    "camera_ready": null,
+    "conference_start": "2026-06-08",
+    "conference_end": "2026-06-12",
+    "location": "Ann Arbor, MI, USA",
+    "source_url": "https://www.sigmetrics.org/sigmetrics2026/",
     "timezone": "AoE"
   },
   {
@@ -745,6 +779,23 @@
     "conference_end": "2026-07-07",
     "location": "San Diego, CA, USA",
     "source_url": "https://2026.aclweb.org/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "sigmetrics",
+    "abbreviation": "SIGMETRICS",
+    "year": 2026,
+    "round": 3,
+    "submission_deadline": "2026-01-13",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-03-13",
+    "camera_ready": null,
+    "conference_start": "2026-06-08",
+    "conference_end": "2026-06-12",
+    "location": "Ann Arbor, MI, USA",
+    "source_url": "https://www.sigmetrics.org/sigmetrics2026/",
     "timezone": "AoE"
   },
   {
