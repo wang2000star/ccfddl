@@ -294,6 +294,19 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "oopsla",
+    "abbreviation": "OOPSLA",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-10-10",
+    "notification": "2026-02-17",
+    "conference_start": "2026-10-03",
+    "conference_end": "2026-10-09",
+    "location": "Oakland, CA, USA",
+    "source_url": "https://2026.splashcon.org/track/splash-2026/oopsla-2026",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ches",
     "abbreviation": "CHES",
     "year": 2026,
@@ -591,6 +604,19 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "issta",
+    "abbreviation": "ISSTA",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-01-29",
+    "notification": "2026-04-15",
+    "conference_start": "2026-09-21",
+    "conference_end": "2026-09-25",
+    "location": "Nanjing, China",
+    "source_url": "https://conf.researchr.org/home/issta-2026",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "usenix-security",
     "abbreviation": "USENIX Security",
     "year": 2026,
@@ -668,6 +694,20 @@
     "location": "Abu Dhabi, UAE",
     "source_url": "https://conferences.miccai.org/2026/",
     "timezone": "US Pacific"
+  },
+  {
+    "venue_id": "oopsla",
+    "abbreviation": "OOPSLA",
+    "year": 2026,
+    "round": 2,
+    "submission_deadline": "2026-03-17",
+    "notification": "2026-06-10",
+    "camera_ready": "2026-08-14",
+    "conference_start": "2026-10-03",
+    "conference_end": "2026-10-09",
+    "location": "Oakland, CA, USA",
+    "source_url": "https://2026.splashcon.org/track/splash-2026/oopsla-2026",
+    "timezone": "AoE"
   },
   {
     "venue_id": "uist",
