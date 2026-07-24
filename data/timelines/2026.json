@@ -1392,5 +1392,22 @@
     "location": "Budapest, Hungary",
     "source_url": "https://2026.emnlp.org/",
     "timezone": "AoE"
+  },
+  {
+    "venue_id": "slt",
+    "abbreviation": "SLT",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-06-24",
+    "abstract_deadline": "2026-01-09",
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-09-01",
+    "camera_ready": "2026-09-16",
+    "conference_start": "2026-12-13",
+    "conference_end": "2026-12-16",
+    "location": "TBD",
+    "source_url": "https://attend.ieee.org/slt-2026/",
+    "timezone": "AoE"
   }
 ]
