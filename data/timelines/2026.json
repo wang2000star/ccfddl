@@ -59,19 +59,6 @@
     "timezone": "US PDT"
   },
   {
-    "venue_id": "cscw",
-    "abbreviation": "CSCW",
-    "year": 2026,
-    "round": 1,
-    "submission_deadline": "2025-05-14",
-    "notification": "2025-08-19",
-    "conference_start": "2026-10-10",
-    "conference_end": "2026-10-14",
-    "location": "Salt Lake City, UT, USA",
-    "source_url": "https://cscw.acm.org/2026/",
-    "timezone": "AoE"
-  },
-  {
     "venue_id": "s-p",
     "abbreviation": "S&P",
     "year": 2026,
@@ -722,23 +709,6 @@
     "timezone": "US Pacific"
   },
   {
-    "venue_id": "eccv",
-    "abbreviation": "ECCV",
-    "year": 2026,
-    "round": 1,
-    "submission_deadline": "2026-03-05",
-    "abstract_deadline": "2026-02-26",
-    "rebuttal_start": "2026-05-02",
-    "rebuttal_end": "2026-05-11",
-    "notification": "2026-06-17",
-    "camera_ready": "2026-06-30",
-    "conference_start": "2026-09-08",
-    "conference_end": "2026-09-11",
-    "location": "Glasgow, UK",
-    "source_url": "https://eccv.ecva.net/Conferences/2026/",
-    "timezone": "CET"
-  },
-  {
     "venue_id": "oopsla",
     "abbreviation": "OOPSLA",
     "year": 2026,
@@ -764,6 +734,21 @@
     "conference_end": "2026-11-05",
     "location": "Detroit, MI, USA",
     "source_url": "https://uist.acm.org/2026/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "acm-mm",
+    "abbreviation": "ACM MM",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-04-01",
+    "abstract_deadline": "2026-03-26",
+    "notification": "2026-07-09",
+    "camera_ready": "2026-08-06",
+    "conference_start": "2026-11-10",
+    "conference_end": "2026-11-14",
+    "location": "Rio de Janeiro, Brazil",
+    "source_url": "https://2026.acmmm.org/",
     "timezone": "AoE"
   },
   {
@@ -822,21 +807,6 @@
     "conference_end": "2026-11-20",
     "location": "Chicago, IL, USA",
     "source_url": "https://sc26.supercomputing.org/",
-    "timezone": "AoE"
-  },
-  {
-    "venue_id": "iccad",
-    "abbreviation": "ICCAD",
-    "year": 2026,
-    "round": 1,
-    "submission_deadline": "2026-04-14",
-    "abstract_deadline": "2026-04-07",
-    "notification": "2026-07-11",
-    "camera_ready": "2026-08-24",
-    "conference_start": "2026-11-08",
-    "conference_end": "2026-11-12",
-    "location": "San Jose, CA, USA",
-    "source_url": "https://iccad.com/2026",
     "timezone": "AoE"
   },
   {
