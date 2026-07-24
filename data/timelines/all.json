@@ -1734,6 +1734,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "iclr",
+    "abbreviation": "ICLR",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-09-24",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2027-01-25",
+    "camera_ready": null,
+    "conference_start": "2027-04-24",
+    "conference_end": "2027-04-28",
+    "location": "West Coast, USA",
+    "source_url": "https://iclr.cc/Conferences/2027/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "aamas",
     "abbreviation": "AAMAS",
     "year": 2027,
