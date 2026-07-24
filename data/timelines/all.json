@@ -122,6 +122,19 @@
     "timezone": "US PDT"
   },
   {
+    "venue_id": "cscw",
+    "abbreviation": "CSCW",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-05-14",
+    "notification": "2025-08-19",
+    "conference_start": "2026-10-10",
+    "conference_end": "2026-10-14",
+    "location": "Salt Lake City, UT, USA",
+    "source_url": "https://cscw.acm.org/2026/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "s-p",
     "abbreviation": "S&P",
     "year": 2026,
