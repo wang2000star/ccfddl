@@ -17,6 +17,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "fast",
+    "abbreviation": "FAST",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-03-17",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-06-05",
+    "camera_ready": null,
+    "conference_start": "2027-02-23",
+    "conference_end": "2027-02-25",
+    "location": "Renton, WA, USA",
+    "source_url": "https://www.usenix.org/conference/fast27/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ndss",
     "abbreviation": "NDSS",
     "year": 2027,
@@ -221,6 +238,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "fast",
+    "abbreviation": "FAST",
+    "year": 2027,
+    "round": 2,
+    "submission_deadline": "2026-09-16",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-12-08",
+    "camera_ready": null,
+    "conference_start": "2027-02-23",
+    "conference_end": "2027-02-25",
+    "location": "Renton, WA, USA",
+    "source_url": "https://www.usenix.org/conference/fast27/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "eurocrypt",
     "abbreviation": "EUROCRYPT",
     "year": 2027,
@@ -235,6 +269,23 @@
     "conference_end": "2027-04-15",
     "location": "Eindhoven, Netherlands",
     "source_url": "https://eurocrypt.iacr.org/2027/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "nsdi",
+    "abbreviation": "NSDI",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-09-17",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-12-08",
+    "camera_ready": null,
+    "conference_start": "2027-05-11",
+    "conference_end": "2027-05-13",
+    "location": "Providence, RI, USA",
+    "source_url": "https://www.usenix.org/conference/nsdi27/",
     "timezone": "AoE"
   },
   {
