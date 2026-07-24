@@ -1088,6 +1088,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "ubicomp",
+    "abbreviation": "UbiComp",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-05-01",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-07-01",
+    "camera_ready": null,
+    "conference_start": "2026-10-13",
+    "conference_end": "2026-10-15",
+    "location": "Shanghai, China",
+    "source_url": "https://www.ubicomp.org/ubicomp-iswc-2026/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "neurips",
     "abbreviation": "NeurIPS",
     "year": 2026,
