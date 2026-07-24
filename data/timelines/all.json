@@ -1241,6 +1241,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "icpp",
+    "abbreviation": "ICPP",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-05-01",
+    "abstract_deadline": "2026-04-24",
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-06-30",
+    "camera_ready": "2026-07-30",
+    "conference_start": "2026-09-28",
+    "conference_end": "2026-10-01",
+    "location": "Singapore",
+    "source_url": "https://icpp2026.github.io/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ubicomp",
     "abbreviation": "UbiComp",
     "year": 2026,
