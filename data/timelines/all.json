@@ -1156,6 +1156,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "recsys",
+    "abbreviation": "RecSys",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-04-21",
+    "abstract_deadline": "2026-04-14",
+    "rebuttal_start": "2026-06-04",
+    "rebuttal_end": "2026-06-09",
+    "notification": "2026-07-09",
+    "camera_ready": "2026-07-27",
+    "conference_start": "2026-09-28",
+    "conference_end": "2026-10-02",
+    "location": "Minneapolis, MN, USA",
+    "source_url": "https://recsys.acm.org/recsys26/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ccs",
     "abbreviation": "CCS",
     "year": 2026,
