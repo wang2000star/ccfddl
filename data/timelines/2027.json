@@ -34,6 +34,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "asplos",
+    "abbreviation": "ASPLOS",
+    "year": 2027,
+    "round": 1,
+    "submission_deadline": "2026-04-15",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-07-27",
+    "camera_ready": null,
+    "conference_start": "2027-04-11",
+    "conference_end": "2027-04-15",
+    "location": "Heraklion, Crete, Greece",
+    "source_url": "https://www.asplos-conference.org/asplos2027/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ndss",
     "abbreviation": "NDSS",
     "year": 2027,
@@ -252,6 +269,23 @@
     "conference_end": "2027-05-28",
     "location": "Maastricht, Netherlands",
     "source_url": "https://fse.iacr.org/2027/",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "asplos",
+    "abbreviation": "ASPLOS",
+    "year": 2027,
+    "round": 2,
+    "submission_deadline": "2026-09-09",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-12-21",
+    "camera_ready": null,
+    "conference_start": "2027-04-11",
+    "conference_end": "2027-04-15",
+    "location": "Heraklion, Crete, Greece",
+    "source_url": "https://www.asplos-conference.org/asplos2027/",
     "timezone": "AoE"
   },
   {
