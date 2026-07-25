@@ -782,6 +782,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "icpr",
+    "abbreviation": "ICPR",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-12-21",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-03-01",
+    "camera_ready": null,
+    "conference_start": "2026-08-17",
+    "conference_end": "2026-08-22",
+    "location": "Lyon, France",
+    "source_url": null,
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "acl",
     "abbreviation": "ACL",
     "year": 2026,
@@ -797,6 +814,23 @@
     "location": "San Diego, CA, USA",
     "source_url": "https://2026.aclweb.org/",
     "timezone": "AoE"
+  },
+  {
+    "venue_id": "fg",
+    "abbreviation": "FG",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-01-09",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": null,
+    "camera_ready": null,
+    "conference_start": null,
+    "conference_end": "2026-05-25",
+    "location": "2026-05-29",
+    "source_url": "Kyoto, Japan",
+    "timezone": null
   },
   {
     "venue_id": "sigmetrics",
@@ -1139,6 +1173,23 @@
     "timezone": "US Pacific"
   },
   {
+    "venue_id": "icdar",
+    "abbreviation": "ICDAR",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-02-27",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": null,
+    "camera_ready": null,
+    "conference_start": null,
+    "conference_end": "2026-08-30",
+    "location": "2026-09-04",
+    "source_url": "Vienna, Austria",
+    "timezone": null
+  },
+  {
     "venue_id": "eccv",
     "abbreviation": "ECCV",
     "year": 2026,
@@ -1477,6 +1528,23 @@
     "location": "Hong Kong, China",
     "source_url": "https://asiacrypt.iacr.org/2026/",
     "timezone": "AoE"
+  },
+  {
+    "venue_id": "bmvc",
+    "abbreviation": "BMVC",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-05-22",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": null,
+    "camera_ready": null,
+    "conference_start": null,
+    "conference_end": "2026-11-23",
+    "location": "2026-11-26",
+    "source_url": "TBD",
+    "timezone": null
   },
   {
     "venue_id": "emnlp",
