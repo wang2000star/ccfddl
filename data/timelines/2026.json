@@ -748,6 +748,23 @@
     "timezone": "US EST"
   },
   {
+    "venue_id": "icme",
+    "abbreviation": "ICME",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-12-15",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-03-01",
+    "camera_ready": null,
+    "conference_start": "2026-07-05",
+    "conference_end": "2026-07-09",
+    "location": "Bangkok, Thailand",
+    "source_url": null,
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "acl",
     "abbreviation": "ACL",
     "year": 2026,
