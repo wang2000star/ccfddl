@@ -765,6 +765,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "caise",
+    "abbreviation": "CAiSE",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-11-28",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-02-01",
+    "camera_ready": null,
+    "conference_start": "2026-06-08",
+    "conference_end": "2026-06-12",
+    "location": "Verona, Italy",
+    "source_url": null,
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "fm",
     "abbreviation": "FM",
     "year": 2026,
