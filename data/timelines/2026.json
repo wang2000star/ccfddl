@@ -697,6 +697,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "fm",
+    "abbreviation": "FM",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2025-12-02",
+    "abstract_deadline": "2025-11-25",
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-01-30",
+    "camera_ready": "2026-02-23",
+    "conference_start": "2026-05-20",
+    "conference_end": "2026-05-22",
+    "location": "Tokyo, Japan",
+    "source_url": "https://conf.researchr.org/home/fm-2026",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "dsn",
     "abbreviation": "DSN",
     "year": 2026,
