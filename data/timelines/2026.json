@@ -1579,5 +1579,22 @@
     "location": "TBD",
     "source_url": "https://attend.ieee.org/slt-2026/",
     "timezone": "AoE"
+  },
+  {
+    "venue_id": "iceccs",
+    "abbreviation": "ICECCS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-07-06",
+    "abstract_deadline": "2026-06-29",
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-08-17",
+    "camera_ready": "2026-08-31",
+    "conference_start": "2026-11-23",
+    "conference_end": "2026-11-24",
+    "location": "Brisbane, Australia",
+    "source_url": "https://easychair.org/conferences?conf=iceccs2026",
+    "timezone": "AoE"
   }
 ]
