@@ -1613,5 +1613,22 @@
     "location": "Brisbane, Australia",
     "source_url": "https://easychair.org/conferences?conf=iceccs2026",
     "timezone": "AoE"
+  },
+  {
+    "venue_id": "mobihoc",
+    "abbreviation": "MobiHoc",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-07-20",
+    "abstract_deadline": null,
+    "rebuttal_start": "2026-07-26",
+    "rebuttal_end": "2026-08-23",
+    "notification": "2026-09-30",
+    "camera_ready": "2026-09-30",
+    "conference_start": "2026-11-23",
+    "conference_end": "2026-11-26",
+    "location": "Tokyo, Japan",
+    "source_url": "https://sigmobile.org/mobihoc/2026/",
+    "timezone": "AoE"
   }
 ]
