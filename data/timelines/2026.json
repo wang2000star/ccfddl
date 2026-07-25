@@ -1071,6 +1071,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "soups",
+    "abbreviation": "SOUPS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-02-19",
+    "abstract_deadline": "2026-02-12",
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-05-19",
+    "camera_ready": null,
+    "conference_start": "2026-08-23",
+    "conference_end": "2026-08-26",
+    "location": "Hannover, Germany",
+    "source_url": "https://www.usenix.org/conference/soups2026/",
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "miccai",
     "abbreviation": "MICCAI",
     "year": 2026,
