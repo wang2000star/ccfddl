@@ -1768,6 +1768,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "icdm",
+    "abbreviation": "ICDM",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-06-06",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-08-16",
+    "camera_ready": "2026-09-09",
+    "conference_start": "2026-11-12",
+    "conference_end": "2026-11-15",
+    "location": "Shenyang, China",
+    "source_url": null,
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "cgo",
     "abbreviation": "CGO",
     "year": 2027,
