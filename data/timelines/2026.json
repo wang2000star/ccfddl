@@ -1241,6 +1241,23 @@
     "timezone": "AoE"
   },
   {
+    "venue_id": "icws",
+    "abbreviation": "ICWS",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-03-22",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-05-10",
+    "camera_ready": null,
+    "conference_start": "2026-07-13",
+    "conference_end": "2026-07-18",
+    "location": "Sydney, Australia",
+    "source_url": null,
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "ppsn",
     "abbreviation": "PPSN",
     "year": 2026,
@@ -1646,6 +1663,23 @@
     "conference_end": "2026-11-24",
     "location": "Brisbane, Australia",
     "source_url": "https://easychair.org/conferences?conf=iceccs2026",
+    "timezone": "AoE"
+  },
+  {
+    "venue_id": "icsoc",
+    "abbreviation": "ICSOC",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-07-19",
+    "abstract_deadline": null,
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-09-13",
+    "camera_ready": null,
+    "conference_start": "2026-12-01",
+    "conference_end": "2026-12-04",
+    "location": "Lodz, Poland",
+    "source_url": null,
     "timezone": "AoE"
   },
   {
