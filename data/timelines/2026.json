@@ -1564,6 +1564,23 @@
     "timezone": null
   },
   {
+    "venue_id": "cikm",
+    "abbreviation": "CIKM",
+    "year": 2026,
+    "round": 1,
+    "submission_deadline": "2026-05-23",
+    "abstract_deadline": "2026-05-16",
+    "rebuttal_start": null,
+    "rebuttal_end": null,
+    "notification": "2026-08-07",
+    "camera_ready": null,
+    "conference_start": "2026-11-07",
+    "conference_end": "2026-11-11",
+    "location": "Rome, Italy",
+    "source_url": null,
+    "timezone": "AoE"
+  },
+  {
     "venue_id": "emnlp",
     "abbreviation": "EMNLP",
     "year": 2026,
