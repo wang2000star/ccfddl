@@ -50,6 +50,13 @@ def excel_to_json():
                 entries.append(entry)
 
     wb.close()
+    unique_entries = {}
+    for entry in entries:
+        key = (entry['venue_id'], entry['year'], entry.get('round', 1))
+        if key in unique_entries and unique_entries[key] != entry:
+            raise ValueError(f"Conflicting timeline rows for {key}; resolve them in timeline_data.xlsx")
+        unique_entries[key] = entry
+    entries = list(unique_entries.values())
     entries.sort(key=lambda e: (e.get('submission_deadline',''), e['venue_id']))
 
     # Save combined JSON

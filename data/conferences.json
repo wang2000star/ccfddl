@@ -198,11 +198,11 @@
     "aliases": []
   },
   {
-    "id": "fse",
+    "id": "fse-software-engineering",
     "abbreviation": "FSE",
     "full_name": "ACM International Conference on the Foundations of Software Engineering",
     "type": "conference",
-    "sub_type": "journal-type",
+    "sub_type": null,
     "ccf_rank": "A",
     "category_zh": "软件工程",
     "category_en": "Software Engineering",

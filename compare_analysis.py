@@ -2,13 +2,16 @@
 """Compare user's CCF data against 2026 7th edition official directory."""
 import openpyxl
 import json
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
 
 # ============================================================
 # 1. Load user data
 # ============================================================
 
 # Conferences
-wb_conf = openpyxl.load_workbook("C:/Users/82601/Desktop/DevByMe/ccfddl/conference_map.xlsx")
+wb_conf = openpyxl.load_workbook(BASE_DIR / "conference_map.xlsx")
 ws_conf = wb_conf["Sheet1"]
 user_confs = []
 for row in ws_conf.iter_rows(min_row=2, max_row=ws_conf.max_row, values_only=True):
@@ -21,7 +24,7 @@ for row in ws_conf.iter_rows(min_row=2, max_row=ws_conf.max_row, values_only=Tru
     })
 
 # Journals
-wb_jrnl = openpyxl.load_workbook("C:/Users/82601/Desktop/DevByMe/ccfddl/journal_map.xlsx")
+wb_jrnl = openpyxl.load_workbook(BASE_DIR / "journal_map.xlsx")
 ws_jrnl = wb_jrnl["Sheet1"]
 user_jrns = []
 for row in ws_jrnl.iter_rows(min_row=2, max_row=ws_jrnl.max_row, values_only=True):

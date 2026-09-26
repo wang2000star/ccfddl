@@ -9,21 +9,35 @@ const DataLoader = {
     websites: {},  // abbr -> website URL
     loaded: false,
 
+    async fetchJson(path, fallback) {
+        try {
+            const response = await fetch(path);
+            if (!response.ok) throw new Error(`Failed to load ${path}: HTTP ${response.status}`);
+            return await response.json();
+        } catch (error) {
+            if (fallback !== undefined) {
+                console.warn(`Optional data unavailable (${path}); using fallback.`, error);
+                return fallback;
+            }
+            throw error;
+        }
+    },
+
     async init() {
         if (this.loaded) return;
         try {
             const [confResp, jrnResp, metaResp, webResp, tlResp] = await Promise.all([
-                fetch('data/conferences.json'),
-                fetch('data/journals.json'),
-                fetch('data/metadata.json'),
-                fetch('data/websites.json').catch(() => Promise.resolve({ json: () => ({}) })),
-                fetch('data/timelines/all.json?v=' + Date.now()).catch(() => Promise.resolve({ json: () => [] }))
+                this.fetchJson('data/conferences.json'),
+                this.fetchJson('data/journals.json'),
+                this.fetchJson('data/metadata.json'),
+                this.fetchJson('data/websites.json', {}),
+                this.fetchJson('data/timelines/all.json', [])
             ]);
-            this.conferences = await confResp.json();
-            this.journals = await jrnResp.json();
-            this.metadata = await metaResp.json();
-            this.websites = await webResp.json();
-            const tlArray = await tlResp.json();
+            this.conferences = confResp;
+            this.journals = jrnResp;
+            this.metadata = metaResp;
+            this.websites = webResp;
+            const tlArray = tlResp;
 
             // Index by year -> venue_id -> [entries]
             this.timelines = {};
@@ -75,11 +89,13 @@ const DataLoader = {
     // Get venues by type with optional CHES/TCHES override
     getByType(type) {
         if (type === 'conference') {
-            return this.conferences;
-            // Note: TCHES is already in journal list; special handling is in filtering
+            return [
+                ...this.conferences,
+                ...this.journals.filter(j => this.JOURNAL_TYPE_OVERRIDES.has(j.id))
+            ];
         }
         if (type === 'journal') {
-            return this.journals;
+            return this.journals.filter(j => !this.JOURNAL_TYPE_OVERRIDES.has(j.id));
         }
         return this.getAllVenues();
     },
@@ -104,10 +120,11 @@ const DataLoader = {
         return counts;
     },
 
-    getWebsite(abbr) {
-        return this.websites[abbr] || null;
+    getWebsite(venue) {
+        if (typeof venue === 'string') return this.websites[venue] || null;
+        return this.websites[venue?.id] || this.websites[venue?.abbreviation] || null;
     },
 
     // Journal-type overrides: these journals are treated as conferences
-    JOURNAL_TYPE_OVERRIDES: new Set(['CHES', 'TCHES', 'FSE', 'IACR TCHES', 'IACR ToSC']),
+    JOURNAL_TYPE_OVERRIDES: new Set(['ches', 'fse', 'iacr-tches', 'iacr-tosc']),
 };

@@ -11,8 +11,8 @@ const Timeline = {
             const d = this._parseDate(dateStr);
             if (isNaN(d.getTime())) return dateStr;
             const locale = this.getLocale();
-            const month = d.toLocaleDateString(locale, { month: 'short' });
-            const day = d.getDate();
+            const month = d.toLocaleDateString(locale, { month: 'short', timeZone: 'UTC' });
+            const day = d.getUTCDate();
             return `${month} ${day}${tz ? ' ('+tz+')' : ''}`;
         } catch { return dateStr; }
     },
@@ -22,29 +22,67 @@ const Timeline = {
         try {
             const d = this._parseDate(dateStr);
             if (isNaN(d.getTime())) return dateStr;
-            const localStr = d.toLocaleDateString(this.getLocale(), { year: 'numeric', month: 'short', day: 'numeric' });
+            const localStr = d.toLocaleDateString(this.getLocale(), { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
             return `${localStr}${tz ? ' '+tz : ''}`;
         } catch { return dateStr; }
     },
 
-    _parseDate(dateStr) { return new Date(dateStr.replace(' AoE', '').replace(' US Pacific', '').replace(' US PDT', '').replace(' US EST', '') + 'T12:00:00Z'); },
-    toLocalTime(dateStr, tz) {
-        if (!dateStr) return '';
-        try { const d = this._parseDate(dateStr); if (isNaN(d.getTime())) return dateStr; return d.toLocaleString(this.getLocale(), { month:'short', day:'numeric', hour:'2-digit', minute:'2-digit', timeZoneName:'short' }); } catch { return dateStr; }
+    _parseDate(dateStr) {
+        const match = String(dateStr).match(/^(\d{4})-(\d{2})-(\d{2})/);
+        return match ? new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]), 12)) : new Date(NaN);
     },
 
-    daysUntil(dateStr) {
+    deadlineInstant(dateStr, timezone = 'AoE') {
+        const date = this._parseDate(dateStr);
+        if (Number.isNaN(date.getTime())) return null;
+        const [year, month, day] = [date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()];
+        const deadlineFields = Date.UTC(year, month, day, 23, 59, 59);
+        const zone = ({
+            'AoE': 'Etc/GMT+12',
+            'US Pacific': 'America/Los_Angeles',
+            'US PDT': 'America/Los_Angeles',
+            'US EST': 'America/New_York',
+            'CET': 'Europe/Paris',
+        })[timezone] || 'Etc/GMT+12';
+        if (timezone === 'AoE' || !['US Pacific', 'US PDT', 'US EST', 'CET'].includes(timezone)) {
+            return new Date(deadlineFields + 12 * 60 * 60 * 1000);
+        }
+
+        // Convert the deadline's wall-clock time in its source time zone to UTC.
+        let instant = deadlineFields;
+        const formatter = new Intl.DateTimeFormat('en-US', {
+            timeZone: zone, year: 'numeric', month: '2-digit', day: '2-digit',
+            hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23'
+        });
+        for (let i = 0; i < 3; i++) {
+            const parts = Object.fromEntries(formatter.formatToParts(new Date(instant)).map(p => [p.type, p.value]));
+            const wallClockAsUtc = Date.UTC(+parts.year, +parts.month - 1, +parts.day, +parts.hour, +parts.minute, +parts.second);
+            instant = deadlineFields - (wallClockAsUtc - instant);
+        }
+        return new Date(instant);
+    },
+
+    toLocalTime(dateStr, tz) {
+        if (!dateStr) return '';
+        try { const d = this.deadlineInstant(dateStr, tz); if (!d || isNaN(d.getTime())) return dateStr; return d.toLocaleString(this.getLocale(), { month:'short', day:'numeric', hour:'2-digit', minute:'2-digit', timeZoneName:'short' }); } catch { return dateStr; }
+    },
+
+    daysUntil(dateStr, timezone) {
         if (!dateStr) return null;
         try {
-            const target = new Date(this._parseDate(dateStr));
+            const target = this.deadlineInstant(dateStr, timezone);
+            if (!target) return null;
             const now = new Date();
-            const diff = Math.ceil((target - now) / 86400000);
-            return { days: diff, urgent: diff >= 0 && diff <= 30, past: diff < 0, upcoming: diff > 30 };
+            const targetDay = new Date(target.getFullYear(), target.getMonth(), target.getDate());
+            const currentDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+            const diffDays = Math.round((targetDay - currentDay) / 86400000);
+            const past = target < now;
+            return { days: diffDays, urgent: !past && diffDays <= 30, past, upcoming: diffDays > 30 };
         } catch { return null; }
     },
 
-    urgencyClass(dateStr) {
-        const d = this.daysUntil(dateStr);
+    urgencyClass(dateStr, timezone) {
+        const d = this.daysUntil(dateStr, timezone);
         if (!d) return '';
         if (d.past) return 'past';
         if (d.urgent) return 'urgent';
@@ -83,10 +121,10 @@ const Timeline = {
         ];
         for (const item of items) {
             if (timeline[item.key]) {
-                const cls = this.urgencyClass(timeline[item.key]);
-                const di = this.daysUntil(timeline[item.key]);
+                const cls = this.urgencyClass(timeline[item.key], tz);
+                const di = this.daysUntil(timeline[item.key], tz);
                 const dt = (di && di.days != null && !di.past) ? ` (${di.days}d)` : '';
-                const lt = (item.key === 'submission_deadline') ? `<br><span style="font-size:0.6rem;color:var(--color-text-muted);">🕐 ${this.toLocalTime(timeline[item.key], tz)} 本地</span>` : '';
+                const lt = (item.key === 'submission_deadline') ? `<br><span style="font-size:0.6rem;color:var(--color-text-muted);">🕐 ${this.toLocalTime(timeline[item.key], tz)} ${this.t('localTime')}</span>` : '';
                 rows.push(`<div class="timeline-row"><span class="timeline-label">${item.label}</span><span class="timeline-value ${cls}">${this.formatFullDate(timeline[item.key], tz)}${dt}${lt}</span></div>`);
             }
         }

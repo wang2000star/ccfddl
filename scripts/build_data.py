@@ -454,7 +454,6 @@ CCF_CONF_FULL = [
 ]
 
 # Journal-type conferences
-JOURNAL_TYPE = {"CHES", "TCHES", "FSE"}
 
 # ============================================================
 def normalize(s):
@@ -492,6 +491,7 @@ def build_conferences():
     raw = load_excel(BASE_DIR / "conference_map.xlsx")
     results = []
     unmatched = []
+    seen_ids = set()
 
     for row in raw:
         name = str(row[1]).strip() if row[1] else ""
@@ -507,12 +507,22 @@ def build_conferences():
         match, score = match_entry(name, CCF_CONF_FULL)
         if match:
             abbr, rank, cat_zh, cat_en = match
+            entry_id = generate_id(abbr)
+            # FSE also names the unrelated Foundations of Software Engineering.
+            # Keep the IACR Fast Software Encryption ID stable for timeline data.
+            if abbr == "FSE" and "foundations of software engineering" in normalize(name):
+                entry_id = "fse-software-engineering"
+            if entry_id in seen_ids:
+                entry_id = f"{entry_id}-{slugify(cat_en)}"
+            seen_ids.add(entry_id)
+            normalized_name = normalize(name)
+            is_journal_type = (abbr == "CHES" and "cryptographic hardware and embedded systems" in normalized_name) or (abbr == "FSE" and "fast software encryption" in normalized_name)
             results.append(OrderedDict([
-                ("id", generate_id(abbr)),
+                ("id", entry_id),
                 ("abbreviation", abbr),
                 ("full_name", name),
                 ("type", "conference"),
-                ("sub_type", "journal-type" if abbr in JOURNAL_TYPE else None),
+                ("sub_type", "journal-type" if is_journal_type else None),
                 ("ccf_rank", rank),
                 ("category_zh", cat_zh),
                 ("category_en", cat_en),
@@ -535,6 +545,7 @@ def build_journals():
     raw = load_excel(BASE_DIR / "journal_map.xlsx")
     results = []
     seen_ids = set()
+    conference_ids = {generate_id(entry[0]) for entry in CCF_CONF_FULL}
 
     official_journals = [
         ("TOCS", "ACM Transactions on Computer Systems", "A", "计算机体系结构", "Computer Architecture"),
@@ -852,8 +863,12 @@ def build_journals():
         if match:
             abbr, rank, cat_zh, cat_en = match
             entry_id = generate_id(abbr)
-            if entry_id in seen_ids:
+            if entry_id in seen_ids or entry_id in conference_ids:
                 entry_id = f"{entry_id}-{slugify(cat_en)}"
+                suffix = 2
+                while entry_id in seen_ids or entry_id in conference_ids:
+                    entry_id = f"{generate_id(abbr)}-{slugify(cat_en)}-{suffix}"
+                    suffix += 1
             seen_ids.add(entry_id)
 
             results.append(OrderedDict([

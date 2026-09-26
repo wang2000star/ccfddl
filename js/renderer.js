@@ -80,10 +80,11 @@ const Renderer = {
         const rank = venue.ccf_rank;
         const rankClass = `badge-${rank.toLowerCase()}`;
         const rankLabel = this.t(`rank${rank}`) || `CCF-${rank}`;
-        const isJT = venue.sub_type === 'journal-type' || (DataLoader.JOURNAL_TYPE_OVERRIDES && DataLoader.JOURNAL_TYPE_OVERRIDES.has(venue.abbreviation));
-        const year = (typeof Search !== 'undefined') ? (Search.state.year || '2026') : '2026';
-        const website = (DataLoader.getWebsite) ? DataLoader.getWebsite(venue.abbreviation) : null;
-        const tl = (DataLoader.getTimeline) ? DataLoader.getTimeline(venue.id, year) : null;
+        const isJT = venue.sub_type === 'journal-type' || (DataLoader.JOURNAL_TYPE_OVERRIDES && DataLoader.JOURNAL_TYPE_OVERRIDES.has(venue.id));
+        const selectedYear = (typeof Search !== 'undefined') ? (Search.state.year || '2026') : '2026';
+        const year = venue._timelineYear || (selectedYear === 'all' ? '2026' : selectedYear);
+        const website = (DataLoader.getWebsite) ? DataLoader.getWebsite(venue) : null;
+        const tl = venue._timeline || ((DataLoader.getTimeline) ? DataLoader.getTimeline(venue.id, year) : null);
         const webLink = website ? `<a href="${this.esc(website)}" target="_blank" class="badge badge-website" onclick="event.stopPropagation()">🌐 ${this.t('officialWebsite')}</a>` : '';
 
         return `
@@ -97,7 +98,7 @@ const Renderer = {
                     ${webLink}
                     <span class="badge badge-rank ${rankClass}">${rankLabel}</span>
                     ${isJT ? `<span class="badge badge-journal-type">${this.t('journalType')}</span>` : ''}
-                    <span class="badge badge-category">${this.esc(venue.category_zh)}</span>
+                    <span class="badge badge-category">${this.esc(I18N.locale === 'zh' ? venue.category_zh : venue.category_en)}</span>
                 </div>
             </div>
             ${this.buildTimeline(venue, tl)}
@@ -115,7 +116,7 @@ const Renderer = {
         }
 
         const idx = (venue._roundIndex != null) ? venue._roundIndex : 0;
-        const tl = timelines[idx] || timelines[0];
+        const tl = _tl || timelines[idx] || timelines[0];
         if (!tl) return `<div class="venue-timeline"><div class="timeline-no-data">${this.t('noTimeline')}</div></div>`;
 
         const total = venue._totalRounds || timelines.length;
@@ -124,18 +125,21 @@ const Renderer = {
         let html = label ? `<div class="timeline-round-label">${label}</div>` : '';
         html += Timeline.buildTimelineHTML(tl);
         if (tl.submission_deadline) {
-            const cd = this.countdown(tl.submission_deadline);
+        const cd = this.countdown(tl.submission_deadline, tl.timezone);
             if (cd) html += `<div class="countdown-badge ${cd.cls}">${cd.text}</div>`;
         }
         return html;
     },
 
-    countdown(dateStr) {
+    countdown(dateStr, timezone) {
         try {
-            const target = new Date(dateStr + 'T23:59:59');
+            const target = Timeline.deadlineInstant(dateStr, timezone);
+            if (!target) return null;
             const now = new Date();
-            const diffDays = Math.ceil((target - now) / 86400000);
-            if (diffDays < 0) return { text: this.t('overdue'), cls: 'cd-overdue' };
+            const targetDay = new Date(target.getFullYear(), target.getMonth(), target.getDate());
+            const currentDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+            const diffDays = Math.round((targetDay - currentDay) / 86400000);
+            if (target < now) return { text: this.t('overdue'), cls: 'cd-overdue' };
             if (diffDays === 0) return { text: '⚠ ' + this.t('daysLeft').replace('d left','Today'), cls: 'cd-urgent' };
             if (diffDays <= 7) return { text: `⚠ ${diffDays}d`, cls: 'cd-urgent' };
             if (diffDays <= 30) return { text: `${diffDays}d`, cls: 'cd-soon' };
@@ -159,7 +163,8 @@ const Renderer = {
         if (this.emptyState) this.emptyState.style.display = 'none';
 
         // Collect all venue-round combinations for Gantt
-        const year = (typeof Search !== 'undefined') ? (Search.state.year || '2026') : '2026';
+        const selectedYear = (typeof Search !== 'undefined') ? (Search.state.year || '2026') : '2026';
+        const year = selectedYear === 'all' ? String(new Date().getFullYear()) : selectedYear;
         const ganttRows = [];
         for (const v of venues) {
             const timelines = DataLoader.getTimelines ? DataLoader.getTimelines(v.id, year) : [];

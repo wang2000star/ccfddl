@@ -1,5 +1,8 @@
-import openpyxl, subprocess
-wb = openpyxl.load_workbook('C:/Users/82601/Desktop/DevByMe/ccfddl/timeline_data.xlsx')
+from pathlib import Path
+import openpyxl
+
+WORKBOOK = Path(__file__).resolve().parent.parent / 'timeline_data.xlsx'
+wb = openpyxl.load_workbook(WORKBOOK)
 ws = wb.active
 
 verified = [
@@ -28,19 +31,31 @@ verified = [
     ['eurocrypt','EUROCRYPT',2027,1,'2026-09-17','','2026-11-30','2026-12-05','2027-01-18','2027-02-08','2027-04-11','2027-04-15','Eindhoven, Netherlands','https://eurocrypt.iacr.org/2027/','AoE','','',''],
     ['asiacrypt','ASIACRYPT',2026,1,'2026-05-21','','2026-07-17','2026-07-22','2026-08-14','2026-09-14','2026-12-07','2026-12-11','Hong Kong, China','https://asiacrypt.iacr.org/2026/','AoE','','',''],
     ['tcc','TCC',2026,1,'2026-05-19','','','','2026-08-20','2026-09-15','2026-11-10','2026-11-13','TBD','https://tcc.iacr.org/2026/','AoE','','',''],
-    ['csf','CSF',2026,1,'2025-07-24','','','','2025-09-25','','2026-07-26','2026-07-29','Lisbon, Portugal','https://www.ieee-security.org/TC/CSF2026/','AoE','','',''],
-    ['csf','CSF',2026,2,'2025-10-09','','','','2025-12-11','','2026-07-26','2026-07-29','Lisbon, Portugal','https://www.ieee-security.org/TC/CSF2026/','AoE','','',''],
-    ['csf','CSF',2026,3,'2026-01-29','','','','2026-04-01','','2026-07-26','2026-07-29','Lisbon, Portugal','https://www.ieee-security.org/TC/CSF2026/','AoE','','',''],
+    ['csfw','CSF',2026,1,'2025-07-24','','','','2025-09-25','','2026-07-26','2026-07-29','Lisbon, Portugal','https://www.ieee-security.org/TC/CSF2026/','AoE','','',''],
+    ['csfw','CSF',2026,2,'2025-10-09','','','','2025-12-11','','2026-07-26','2026-07-29','Lisbon, Portugal','https://www.ieee-security.org/TC/CSF2026/','AoE','','',''],
+    ['csfw','CSF',2026,3,'2026-01-29','','','','2026-04-01','','2026-07-26','2026-07-29','Lisbon, Portugal','https://www.ieee-security.org/TC/CSF2026/','AoE','','',''],
     ['pkc','PKC',2026,1,'2025-10-24','','2025-12-16','2025-12-23','2026-02-13','2026-03-06','2026-05-25','2026-05-28','West Palm Beach, FL, USA','https://pkc.iacr.org/2026/','AoE','','',''],
     ['sigcomm','SIGCOMM',2026,1,'2026-02-06','','2026-04-27','2026-04-29','2026-05-11','','2026-08-17','2026-08-21','Denver, CO, USA','https://conferences.sigcomm.org/sigcomm/2026/','AoE','','',''],
     ['www','WWW',2026,1,'2025-10-24','','2026-01-06','2026-01-13','2026-01-24','2026-02-14','2026-04-19','2026-04-24','Perth, Australia','https://www2026.thewebconf.org/','AoE','','',''],
 ]
 
+existing = set()
+for sheet in wb.worksheets:
+    for row in sheet.iter_rows(min_row=2, values_only=True):
+        if len(row) >= 4 and row[0] and row[2] is not None:
+            existing.add((str(row[0]), int(row[2]), int(row[3] or 1)))
+
 nr = ws.max_row + 1
+added = 0
 for e in verified:
+    key = (str(e[0]), int(e[2]), int(e[3] or 1))
+    if key in existing:
+        continue
     for ci, v in enumerate(e, 1):
         if v != '': ws.cell(row=nr, column=ci, value=v)
+    existing.add(key)
     nr += 1
+    added += 1
 
-wb.save('C:/Users/82601/Desktop/DevByMe/ccfddl/timeline_data.xlsx')
-print(f'Added {len(verified)} verified entries. Total: {nr-2}')
+wb.save(WORKBOOK)
+print(f'Added {added} missing verified entries; workbook now has {len(existing)} unique venue/year/round records.')

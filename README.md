@@ -11,12 +11,14 @@ A bilingual web app to look up submission deadlines, rebuttal periods, acceptanc
 
 - 🔄 **会议/期刊切换** — 一键切换查看会议或期刊
 - 🏷️ **CCF等级筛选** — 按A/B/C等级过滤，支持多选
+- 📅 **年份筛选** — 按时间线年份查看，并可切换到全部年份
+- 🗂️ **全部类型** — 同时查看会议与期刊型会议/期刊
 - 🔍 **实时搜索** — 按名称或缩写快速查找
 - 📂 **领域分类** — 按10个CCF领域分类浏览
 - 🌐 **中英双语** — 一键切换中文/英文界面
 - 🌙 **深色模式** — 自动跟随系统主题
 - 📱 **响应式设计** — 完美适配桌面和移动端
-- 🏷️ **期刊型会议** — CHES/TCHES等特殊标识
+- 🏷️ **期刊型会议** — CHES/TCHES等特殊标识（按唯一 venue ID 区分同名缩写）
 
 ## 🚀 Quick Start / 快速开始
 
@@ -26,6 +28,20 @@ cd ccfddl
 npx serve .        # 或 python -m http.server 8000
 # 打开 http://localhost:8000
 ```
+
+## Rebuild JSON / 重建数据
+
+Python data scripts require `openpyxl`:
+
+```bash
+python -m pip install -r requirements.txt
+python scripts/build_data.py       # conference, journal, and metadata JSON from source spreadsheets
+python scripts/sync_from_excel.py  # timeline JSON from timeline_data.xlsx
+```
+
+`timeline_data.xlsx` is the source of truth for timeline records. The legacy
+`scripts/rebuild_data.py` entry point delegates to the safe Excel synchronizer;
+it no longer replaces the workbook with an incomplete embedded snapshot.
 
 ## 📊 Data / 数据
 

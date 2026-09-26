@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Rebuild timeline data with ONLY verified entries from official sources."""
-import json, os
+import json
+from pathlib import Path
 
-BASE = 'C:/Users/82601/Desktop/DevByMe/ccfddl/data/timelines'
+BASE = Path(__file__).resolve().parent.parent / 'data' / 'timelines'
+BASE.mkdir(parents=True, exist_ok=True)
 
 verified = [
     # === 2026: VERIFIED from official conference websites ===
@@ -145,21 +147,21 @@ for e in verified:
 unique.sort(key=lambda x: (x["venue_id"], x["year"], x.get("round", 1)))
 
 # Save all.json
-with open(f"{BASE}/all.json", "w", encoding="utf-8") as f:
+with open(BASE / "all.json", "w", encoding="utf-8") as f:
     json.dump(unique, f, ensure_ascii=False, indent=2)
 
 # Save per-year files (only years with data)
 years_present = sorted(set(e["year"] for e in unique))
 for year in years_present:
     entries = [e for e in unique if e["year"] == year]
-    with open(f"{BASE}/{year}.json", "w", encoding="utf-8") as f:
+    with open(BASE / f"{year}.json", "w", encoding="utf-8") as f:
         json.dump(entries, f, ensure_ascii=False, indent=2)
 
 # Remove old generated files for years without verified data
 for old_year in ["2025"]:
-    old_path = f"{BASE}/{old_year}.json"
-    if os.path.exists(old_path):
-        os.remove(old_path)
+    old_path = BASE / f"{old_year}.json"
+    if old_path.exists():
+        old_path.unlink()
 
 print(f"Verified entries: {len(unique)}")
 print(f"Unique venues: {len(set(e['venue_id'] for e in unique))}")

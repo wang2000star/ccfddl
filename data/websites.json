@@ -82,5 +82,6 @@
   "ICC": "https://icc2026.ieee-icc.org/",
   "ICASSP": "https://2026.ieeeicassp.org/",
   "ICIP": "https://2026.ieeeicip.org/",
-  "ISCAS": "https://ieee-iscas.org/"
+  "ISCAS": "https://ieee-iscas.org/",
+  "fse": "https://fse.iacr.org/"
 }

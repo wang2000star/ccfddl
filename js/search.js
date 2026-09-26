@@ -6,7 +6,7 @@ const Search = {
         type: 'conference',
         ranks: new Set(['A', 'B', 'C']),
         category: 'all',
-        year: 'all',
+        year: String(new Date().getFullYear()),
         query: '',
         sort: 'deadline',
         view: 'cards',
@@ -22,10 +22,10 @@ const Search = {
         } else if (this.state.type === 'conference') {
             venues = [...DataLoader.conferences];
             for (const j of DataLoader.journals) {
-                if (DataLoader.JOURNAL_TYPE_OVERRIDES.has(j.abbreviation)) venues.push(j);
+                if (DataLoader.JOURNAL_TYPE_OVERRIDES.has(j.id)) venues.push(j);
             }
         } else {
-            venues = DataLoader.journals.filter(j => !DataLoader.JOURNAL_TYPE_OVERRIDES.has(j.abbreviation));
+            venues = DataLoader.journals.filter(j => !DataLoader.JOURNAL_TYPE_OVERRIDES.has(j.id));
         }
 
         // 2. Rank filter
@@ -63,7 +63,7 @@ const Search = {
             // Group timelines by year
             const byYear = {};
             if (yearFilter === 'all') {
-                for (const y of ['2025','2026','2027']) {
+                for (const y of Object.keys(DataLoader.timelines).sort()) {
                     const tls = DataLoader.getTimelines(v.id, y);
                     if (tls && tls.length > 0) byYear[y] = tls;
                 }

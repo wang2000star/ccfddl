@@ -1309,7 +1309,7 @@
     "aliases": []
   },
   {
-    "id": "tcc",
+    "id": "tcc-computer-architecture",
     "abbreviation": "TCC",
     "full_name": "IEEE Transactions on Cloud Computing",
     "type": "journal",
@@ -1771,7 +1771,7 @@
     "aliases": []
   },
   {
-    "id": "cc",
+    "id": "cc-computer-networks",
     "abbreviation": "CC",
     "full_name": "Computer Communications",
     "type": "journal",

@@ -29,6 +29,7 @@ const App = {
         this.setupRankFilter();
         this.setupSearch();
         this.setupCategoryFilter();
+        this.setupYearFilter();
         this.setupSortFilter();
         this.setupViewToggle();
         this.setupLanguageToggle();
@@ -54,6 +55,7 @@ const App = {
 
         // Populate category dropdown
         this.populateCategories();
+        this.populateYears();
 
         // Set initial locale
         I18N.updateDOM();
@@ -154,12 +156,21 @@ const App = {
         });
     },
 
+    setupYearFilter() {
+        const select = document.getElementById('yearFilter');
+        if (!select) return;
+        select.addEventListener('change', () => {
+            Search.updateFilter('year', select.value);
+            this.refresh();
+        });
+    },
+
     setupLanguageToggle() {
         const btn = document.getElementById('langToggle');
         if (!btn) return;
 
         btn.addEventListener('click', () => {
-            I18n.toggle();
+            I18N.toggle();
             // Re-render to update card labels
             this.refresh();
         });
@@ -176,6 +187,18 @@ const App = {
             option.textContent = `${cat.zh} (${cat.en})`;
             select.appendChild(option);
         }
+    },
+
+    populateYears() {
+        const select = document.getElementById('yearFilter');
+        if (!select) return;
+        const years = Object.keys(DataLoader.timelines).sort();
+        const currentYear = String(new Date().getFullYear());
+        Search.state.year = years.includes(currentYear) ? currentYear : (years.at(-1) || 'all');
+        select.innerHTML = `<option value="all" data-i18n="yearAll">${I18N.t('yearAll')}</option>` + years.map(year =>
+            `<option value="${year}">${year}</option>`
+        ).join('');
+        select.value = Search.state.year;
     }
 };
 
